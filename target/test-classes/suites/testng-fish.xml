@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Hardcore" verbose="1" >
+    <test name="C:\EpamLab\FrameworkLab\src\test\java\test\WebDriverFishTest.java"   >
+        <classes>
+            <class name="test.WebDriverFishTest">
+                <methods>
+                    <include name="areSmthOK"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
