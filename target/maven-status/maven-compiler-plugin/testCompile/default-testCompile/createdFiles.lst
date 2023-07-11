@@ -1,8 +1,9 @@
 page\ShopPage.class
 utils\TestListener.class
 service\ItemFinder.class
-test\WebDriverFishTest.class
 utils\CustomConditions.class
 test\CommonConditions.class
 driver\DriverSingleton.class
 page\AbstractPage.class
+test\CorrectSearchTest.class
+service\SearchRequestReader.class

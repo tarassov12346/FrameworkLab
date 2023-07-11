@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-10T16:12:06 MSK" name="Hardcore" finished-at="2023-07-10T16:12:08 MSK" duration-ms="1953">
+  <suite started-at="2023-07-11T12:20:26 MSK" name="Hardcore" finished-at="2023-07-11T12:20:43 MSK" duration-ms="17512">
     <groups>
     </groups>
-    <test started-at="2023-07-10T16:12:06 MSK" name="C:\EpamLab\FrameworkLab\src\test\java\test\WebDriverFishTest.java" finished-at="2023-07-10T16:12:08 MSK" duration-ms="1953">
-      <class name="test.WebDriverFishTest">
-        <test-method signature="areSmthOK()[pri:0, instance:test.WebDriverFishTest@50850539]" started-at="2023-07-10T16:12:06 MSK" name="areSmthOK" description="compares VM Total Estimated Monthly Cost values on Calculator and in Email" finished-at="2023-07-10T16:12:06 MSK" duration-ms="9" status="PASS">
+    <test started-at="2023-07-11T12:20:26 MSK" name="C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java" finished-at="2023-07-11T12:20:43 MSK" duration-ms="17512">
+      <class name="test.CorrectSearchTest">
+        <test-method signature="doSelectedItemsCorrespondToSearchRequestOne()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:26 MSK" name="doSelectedItemsCorrespondToSearchRequestOne" description="compares the search request and the selected items" finished-at="2023-07-11T12:20:40 MSK" duration-ms="13943" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- areSmthOK -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.WebDriverFishTest@50850539]" started-at="2023-07-10T16:12:06 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-10T16:12:08 MSK" duration-ms="1834" status="PASS">
+        </test-method> <!-- doSelectedItemsCorrespondToSearchRequestOne -->
+        <test-method signature="doSelectedItemsCorrespondToSearchRequestTwo()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:40 MSK" name="doSelectedItemsCorrespondToSearchRequestTwo" description="compares the search request and the selected items" finished-at="2023-07-11T12:20:40 MSK" duration-ms="931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doSelectedItemsCorrespondToSearchRequestTwo -->
+        <test-method signature="doSelectedItemsCorrespondToSearchRequestThree()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:40 MSK" name="doSelectedItemsCorrespondToSearchRequestThree" description="compares the search request and the selected items" finished-at="2023-07-11T12:20:41 MSK" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doSelectedItemsCorrespondToSearchRequestThree -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:41 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-11T12:20:43 MSK" duration-ms="1591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.WebDriverFishTest -->
-    </test> <!-- C:\EpamLab\FrameworkLab\src\test\java\test\WebDriverFishTest.java -->
+      </class> <!-- test.CorrectSearchTest -->
+    </test> <!-- C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java -->
   </suite> <!-- Hardcore -->
 </testng-results>

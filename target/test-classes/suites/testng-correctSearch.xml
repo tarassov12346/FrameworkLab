@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Hardcore" verbose="1" >
+    <test name="C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java"   >
+        <classes>
+            <class name="test.CorrectSearchTest">
+                <methods>
+                    <include name="doSelectedItemsCorrespondToSearchRequestOne"/>
+                    <include name="doSelectedItemsCorrespondToSearchRequestTwo"/>
+                    <include name="doSelectedItemsCorrespondToSearchRequestThree"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
