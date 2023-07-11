@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Hardcore" class="navigator-link ">
-                    <span>C:\EpamLab\FrameworkLab\src\test\resources\suites\testng-fish.xml</span>
+                    <span>C:\EpamLab\FrameworkLab\src\test\resources\suites\testng-correctSearch.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Hardcore">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hardcore" title="test.WebDriverFishTest" class="method navigator-link" hash-for-method="areSmthOK">areSmthOK</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Hardcore" title="test.CorrectSearchTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToSearchRequestOne">doSelectedItemsCorrespondToSearchRequestOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hardcore" title="test.CorrectSearchTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToSearchRequestThree">doSelectedItemsCorrespondToSearchRequestThree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hardcore" title="test.CorrectSearchTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToSearchRequestTwo">doSelectedItemsCorrespondToSearchRequestTwo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Hardcore -->
@@ -121,16 +131,34 @@
           <div class="suite-Hardcore-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.WebDriverFishTest</span>
+              <span class="class-name">test.CorrectSearchTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="areSmthOK">
-                  </a> <!-- areSmthOK -->
-                  <span class="method-name">areSmthOK</span>
+                  <a name="doSelectedItemsCorrespondToSearchRequestOne">
+                  </a> <!-- doSelectedItemsCorrespondToSearchRequestOne -->
+                  <span class="method-name">doSelectedItemsCorrespondToSearchRequestOne</span>
                   <em>
-(compares VM Total Estimated Monthly Cost values on Calculator and in Email)                  </em>
+(compares the search request and the selected items)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doSelectedItemsCorrespondToSearchRequestThree">
+                  </a> <!-- doSelectedItemsCorrespondToSearchRequestThree -->
+                  <span class="method-name">doSelectedItemsCorrespondToSearchRequestThree</span>
+                  <em>
+(compares the search request and the selected items)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doSelectedItemsCorrespondToSearchRequestTwo">
+                  </a> <!-- doSelectedItemsCorrespondToSearchRequestTwo -->
+                  <span class="method-name">doSelectedItemsCorrespondToSearchRequestTwo</span>
+                  <em>
+(compares the search request and the selected items)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,22 +166,24 @@
         </div> <!-- panel Hardcore -->
         <div panel-name="test-xml-Hardcore" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\EpamLab\FrameworkLab\src\test\resources\suites\testng-fish.xml</span>
+            <span class="header-content">C:\EpamLab\FrameworkLab\src\test\resources\suites\testng-correctSearch.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Hardcore&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;C:\EpamLab\FrameworkLab\src\test\java\test\WebDriverFishTest.java&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.WebDriverFishTest&quot;&gt;
+      &lt;class name=&quot;test.CorrectSearchTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;areSmthOK&quot;/&gt;
+          &lt;include name=&quot;doSelectedItemsCorrespondToSearchRequestOne&quot;/&gt;
+          &lt;include name=&quot;doSelectedItemsCorrespondToSearchRequestTwo&quot;/&gt;
+          &lt;include name=&quot;doSelectedItemsCorrespondToSearchRequestThree&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.WebDriverFishTest --&gt;
+      &lt;/class&gt; &lt;!-- test.CorrectSearchTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- C:\EpamLab\FrameworkLab\src\test\java\test\WebDriverFishTest.java --&gt;
+  &lt;/test&gt; &lt;!-- C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java --&gt;
 &lt;/suite&gt; &lt;!-- Hardcore --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +195,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">C:\EpamLab\FrameworkLab\src\test\java\test\WebDriverFishTest.java (1 class)</span>
+                <span class="test-name">C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,16 +221,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'areSmthOK')
-data.setCell(0, 2, 'test.WebDriverFishTest')
-data.setCell(0, 3, 9);
+data.setCell(0, 1, 'doSelectedItemsCorrespondToSearchRequestOne')
+data.setCell(0, 2, 'test.CorrectSearchTest')
+data.setCell(0, 3, 13943);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'doSelectedItemsCorrespondToSearchRequestThree')
+data.setCell(1, 2, 'test.CorrectSearchTest')
+data.setCell(1, 3, 938);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doSelectedItemsCorrespondToSearchRequestTwo')
+data.setCell(2, 2, 'test.CorrectSearchTest')
+data.setCell(2, 3, 931);
 window.suiteTableData['Hardcore']= { tableData: data, tableDiv: 'times-div-Hardcore'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Hardcore">
               </div> <!-- times-div-Hardcore -->
             </div> <!-- times-div -->
@@ -226,14 +264,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.WebDriverFishTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.CorrectSearchTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">areSmthOK</span>
+                <span class="method-name">doSelectedItemsCorrespondToSearchRequestOne</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doSelectedItemsCorrespondToSearchRequestTwo</span>
+                <span class="method-start">13943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doSelectedItemsCorrespondToSearchRequestThree</span>
+                <span class="method-start">14874 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestCompleted</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">15812 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

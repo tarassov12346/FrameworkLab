@@ -1,8 +1,9 @@
 C:\EpamLab\FrameworkLab\src\test\java\page\ShopPage.java
 C:\EpamLab\FrameworkLab\src\test\java\test\CommonConditions.java
 C:\EpamLab\FrameworkLab\src\test\java\service\ItemFinder.java
-C:\EpamLab\FrameworkLab\src\test\java\test\WebDriverFishTest.java
 C:\EpamLab\FrameworkLab\src\test\java\utils\TestListener.java
 C:\EpamLab\FrameworkLab\src\test\java\page\AbstractPage.java
+C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java
 C:\EpamLab\FrameworkLab\src\test\java\driver\DriverSingleton.java
+C:\EpamLab\FrameworkLab\src\test\java\service\SearchRequestReader.java
 C:\EpamLab\FrameworkLab\src\test\java\utils\CustomConditions.java

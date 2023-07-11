@@ -1,16 +1,16 @@
 package service;
 
+import org.openqa.selenium.WebElement;
 import page.ShopPage;
+
+import java.util.List;
 
 public class ItemFinder {
 
-    public ShopPage shopPage =
-            new ShopPage();
+    public ShopPage shopPage = new ShopPage();
 
-    public ItemFinder getItem(String homePageUrl, String searchRequest) {
-        shopPage.openPage(homePageUrl);
-        return this;
+    public List<WebElement> getItems(String homePageUrl, String searchRequest) {
+        return shopPage.openPage(homePageUrl).enterSearchRequest(searchRequest).
+                clickSearchButton().getSearchResults();
     }
-
-    public void doSmth(){}
 }
