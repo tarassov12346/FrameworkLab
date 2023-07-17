@@ -1,7 +1,9 @@
 package page;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoggingPage extends AbstractPage{
     @FindBy(id = "exampleInputEmail1")
@@ -11,9 +13,16 @@ public class LoggingPage extends AbstractPage{
     @FindBy(name = "_csrf")
     private WebElement logInButton;
 
+    public static final String LOGGING_PAGE_URL = "http://shop.bugred.ru/user/login/index";
+
+    public LoggingPage(WebDriver driver) {
+        super(driver);
+        PageFactory.initElements(this.driver, this);
+    }
+
     @Override
-    public LoggingPage openPage(String loggingPageUrl) {
-        driver.get(loggingPageUrl);
+    public LoggingPage openPage() {
+        driver.get(LOGGING_PAGE_URL);
         return this;
     }
 
@@ -27,6 +36,6 @@ public class LoggingPage extends AbstractPage{
     }
     public ShopPage logIn(String email){
         logInButton.click();
-        return new ShopPage();
+        return new ShopPage(driver);
     }
 }
