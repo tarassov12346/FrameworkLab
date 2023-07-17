@@ -15,7 +15,7 @@ public class ItemFinder {
     }
 
 
-    public List<WebElement> getItems(String homePageUrl, String searchRequest) {
+    public List<WebElement> getItems(String searchRequest) {
         return shopPage.openPage().enterSearchRequest(searchRequest).
                 clickSearchButton().getSearchResults();
     }

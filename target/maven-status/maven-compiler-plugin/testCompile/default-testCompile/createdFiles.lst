@@ -3,7 +3,12 @@ utils\TestListener.class
 service\ItemFinder.class
 utils\CustomConditions.class
 test\CommonConditions.class
+page\RegistrationPage.class
+service\UserCreator.class
+service\UserPropertiesReader.class
 driver\DriverSingleton.class
 page\AbstractPage.class
 test\CorrectSearchTest.class
+model\User.class
+page\LoggingPage.class
 service\SearchRequestReader.class

@@ -2,24 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T12:20:26 MSK" name="Hardcore" finished-at="2023-07-11T12:20:43 MSK" duration-ms="17512">
+  <suite started-at="2023-07-17T19:10:14 MSK" name="Hardcore" finished-at="2023-07-17T19:10:28 MSK" duration-ms="13889">
     <groups>
     </groups>
-    <test started-at="2023-07-11T12:20:26 MSK" name="C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java" finished-at="2023-07-11T12:20:43 MSK" duration-ms="17512">
+    <test started-at="2023-07-17T19:10:14 MSK" name="C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java" finished-at="2023-07-17T19:10:28 MSK" duration-ms="13889">
       <class name="test.CorrectSearchTest">
-        <test-method signature="doSelectedItemsCorrespondToSearchRequestOne()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:26 MSK" name="doSelectedItemsCorrespondToSearchRequestOne" description="compares the search request and the selected items" finished-at="2023-07-11T12:20:40 MSK" duration-ms="13943" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CorrectSearchTest@708f5957]" started-at="2023-07-17T19:10:14 MSK" name="setUp" finished-at="2023-07-17T19:10:19 MSK" duration-ms="5239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doSelectedItemsCorrespondToSearchRequestOne()[pri:0, instance:test.CorrectSearchTest@708f5957]" started-at="2023-07-17T19:10:19 MSK" name="doSelectedItemsCorrespondToSearchRequestOne" description="compares the search request one and the selected items names" finished-at="2023-07-17T19:10:23 MSK" duration-ms="4387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSelectedItemsCorrespondToSearchRequestOne -->
-        <test-method signature="doSelectedItemsCorrespondToSearchRequestTwo()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:40 MSK" name="doSelectedItemsCorrespondToSearchRequestTwo" description="compares the search request and the selected items" finished-at="2023-07-11T12:20:40 MSK" duration-ms="931" status="PASS">
+        <test-method signature="doSelectedItemsCorrespondToSearchRequestTwo()[pri:0, instance:test.CorrectSearchTest@708f5957]" started-at="2023-07-17T19:10:23 MSK" name="doSelectedItemsCorrespondToSearchRequestTwo" description="compares the search request two and the selected items names" finished-at="2023-07-17T19:10:24 MSK" duration-ms="1102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSelectedItemsCorrespondToSearchRequestTwo -->
-        <test-method signature="doSelectedItemsCorrespondToSearchRequestThree()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:40 MSK" name="doSelectedItemsCorrespondToSearchRequestThree" description="compares the search request and the selected items" finished-at="2023-07-11T12:20:41 MSK" duration-ms="938" status="PASS">
+        <test-method signature="doSelectedItemsCorrespondToSearchRequestThree()[pri:0, instance:test.CorrectSearchTest@708f5957]" started-at="2023-07-17T19:10:24 MSK" name="doSelectedItemsCorrespondToSearchRequestThree" description="compares the search request three and the selected items names" finished-at="2023-07-17T19:10:26 MSK" duration-ms="1136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSelectedItemsCorrespondToSearchRequestThree -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectSearchTest@35ef1869]" started-at="2023-07-11T12:20:41 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-11T12:20:43 MSK" duration-ms="1591" status="PASS">
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectSearchTest@708f5957]" started-at="2023-07-17T19:10:26 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-17T19:10:28 MSK" duration-ms="1937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
