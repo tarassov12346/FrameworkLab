@@ -1,4 +1,5 @@
 # FrameworkLab
+mvn -Dbrowser=Chrome -Denvironment=qa -Duser=user -DsuiteXml=testng-registrationTest.xml clean test
 
 
 
