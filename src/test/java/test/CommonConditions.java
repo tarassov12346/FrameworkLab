@@ -1,6 +1,8 @@
 package test;
 
 import driver.DriverSingleton;
+import jdk.jfr.Description;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 import service.ItemFinder;
@@ -17,13 +19,19 @@ public class CommonConditions {
     protected static final String SEARCH_REQUEST_TWO = "search.request.two";
     protected static final String SEARCH_REQUEST_THREE = "search.request.three";
 
+    public  WebDriver driver;
+    @BeforeClass()
+    @Description("setUp() gets the driver type from the bundle")
+    public void setUp() {
+        driver = DriverSingleton.getDriver();
+    }
 
     public List<WebElement> getItemFinder(String searchRequest) {
         return getItemForStart(searchRequest);
     }
 
     private List<WebElement> getItemForStart(String searchRequest) {
-        return new ItemFinder().getItems(HOMEPAGE_URL, SearchRequestReader.getSearchData(searchRequest));
+        return new ItemFinder(driver).getItems(HOMEPAGE_URL, SearchRequestReader.getSearchData(searchRequest));
     }
 
     @AfterTest(description = "closes the browser")
