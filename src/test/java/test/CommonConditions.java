@@ -5,7 +5,6 @@ import jdk.jfr.Description;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
-import page.ShopPage;
 import service.ItemFinder;
 import service.SearchRequestReader;
 import utils.TestListener;

@@ -26,9 +26,9 @@ public class UserCreator {
      */
     public UserCreator(int length){
         length = length > 1 ? length : length * length;
-        name = RandomStringUtils.randomAlphanumeric(new Random().nextInt(length));
-        email = RandomStringUtils.randomAlphanumeric(new Random().nextInt(6)) + "@epam.com";
-        password = RandomStringUtils.randomAlphanumeric(new Random().nextInt(10));
+        name = RandomStringUtils.randomAlphanumeric(new Random().nextInt(length)+1);
+        email = RandomStringUtils.randomAlphanumeric(new Random().nextInt(6)+1) + "@epam.com";
+        password = RandomStringUtils.randomAlphanumeric(new Random().nextInt(10)+1);
         passwordRepeated = password;
     }
 
