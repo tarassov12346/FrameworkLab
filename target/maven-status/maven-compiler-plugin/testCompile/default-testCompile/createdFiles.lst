@@ -1,5 +1,6 @@
 page\ShopPage.class
 utils\TestListener.class
+test\RegistrationPageTest.class
 service\ItemFinder.class
 utils\CustomConditions.class
 test\CommonConditions.class

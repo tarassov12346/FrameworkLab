@@ -35,7 +35,6 @@ public class RegistrationPage extends AbstractPage{
 
     public RegistrationPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(this.driver, this);
     }
 
     @Override

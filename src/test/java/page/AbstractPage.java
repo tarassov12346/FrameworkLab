@@ -1,6 +1,5 @@
 package page;
 
-import driver.DriverSingleton;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,16 +15,17 @@ public abstract class AbstractPage {
 
     protected AbstractPage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(this.driver, this);
     }
     protected abstract AbstractPage openPage();
-    protected WebElement waitUntilVisibility(WebElement webElement) {
+    protected WebElement waitForElementVisibility(WebElement webElement) {
         return new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.visibilityOf(webElement));
     }
-    protected WebElement waitUntilVisibility(String locator) {
+    protected WebElement waitForElementVisibility(String locator) {
         return new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 
-    private WebElement waitUntilVisibilityOf(WebElement webElement, int time) {
+    protected WebElement waitForElementVisibility(WebElement webElement, long time) {
         return new WebDriverWait(driver, Duration.ofSeconds(time))
                 .until(ExpectedConditions.visibilityOf(webElement));
     }

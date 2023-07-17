@@ -17,7 +17,6 @@ public class LoggingPage extends AbstractPage{
 
     public LoggingPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(this.driver, this);
     }
 
     @Override

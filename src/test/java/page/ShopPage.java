@@ -46,13 +46,13 @@ public class ShopPage  extends AbstractPage{
 
     public ShopPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(this.driver, this);
         logger.info("Page initialized");
     }
 
     @Override
     public ShopPage openPage() {
         driver.get(HOMEPAGE_URL);
+        PageFactory.initElements(this.driver, this);
         logger.info("Page loaded");
         return this;
     }
@@ -74,8 +74,4 @@ public class ShopPage  extends AbstractPage{
         return driver.findElements(By.xpath("//div[2]/div[2]/div[1]/*"));
     }
 
-    private void waitForElementVisibility(WebElement element, long secondsToWait) {
-        new WebDriverWait(driver, Duration.ofSeconds(secondsToWait)).
-                until(ExpectedConditions.visibilityOf(element));
-    }
 }

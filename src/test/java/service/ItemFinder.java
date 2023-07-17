@@ -10,6 +10,7 @@ import java.util.List;
 
 public class ItemFinder {
     public ShopPage shopPage;
+
     public ItemFinder(WebDriver driver){
         shopPage = new ShopPage(driver);
     }
