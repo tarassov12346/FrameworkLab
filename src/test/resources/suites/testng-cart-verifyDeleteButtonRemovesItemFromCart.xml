@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+<suite name="Cart verifyDeleteButtonRemovesItemFromCart" verbose="1">
+  <test name="Cart verifyDeleteButtonRemovesItemFromCart">
+    <classes>
+      <class name="test.CartTest">
+        <methods>
+          <include name="verifyDeleteButtonRemovesItemFromCart" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

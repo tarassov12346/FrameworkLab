@@ -17,7 +17,6 @@ import java.time.Duration;
 public class RegistrationPage extends AbstractPage{
 
     public static final String REGISTRATION_PAGE_URL = "http://shop.bugred.ru/user/register/index";
-    public static final int EXPLICIT_WAIT = 5;
     protected final Logger logger = LogManager.getRootLogger();
     User testUser;
     @FindBy(id = "exampleInputName")
@@ -57,8 +56,9 @@ public class RegistrationPage extends AbstractPage{
                 .fillAffirmationPassword(testUser.passwordRepeated());
         return this;
     }
+
     public RegistrationPage fillName(String name){
-        waitUntilVisibilityOf(nameInput).sendKeys(name);
+        waitForElementVisibility(nameInput, EXPLICIT_WAIT).sendKeys(name);
         return this;
     }
 
@@ -66,30 +66,28 @@ public class RegistrationPage extends AbstractPage{
         emailInput.sendKeys(email);
         return this;
     }
+
     public RegistrationPage fillPassword(String password){
         passwordInput.sendKeys(password);
         return this;
     }
+
     public RegistrationPage fillAffirmationPassword(String password) {
         passwordAffirmationInput.sendKeys(password);
         return this;
     }
+    
     public AbstractPage submitForm() {
         submitButton.click();
         if (driver.findElements(By.linkText("Пользователь с таким email уже зарегистрирован!")).isEmpty()) {
-            waitUntilVisibilityOf(alertButton).click();
+            waitForElementVisibility(alertButton, EXPLICIT_WAIT).click();
             logger.info("Registration has been completed successfully");
             return new LoggingPage(driver);
         } else {
             // Logg or error or some logic
-            waitUntilVisibilityOf(alertButton).click();
+            waitForElementVisibility(alertButton, EXPLICIT_WAIT).click();
             logger.info("Registration hasn't been completed successfully");
             return this;
         }
     }
-    private WebElement waitUntilVisibilityOf(WebElement webElement) {
-        return new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT))
-                .until(ExpectedConditions.visibilityOf(webElement));
-    }
-
 }
