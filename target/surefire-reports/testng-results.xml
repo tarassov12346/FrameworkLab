@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-17T20:26:22 MSK" name="Hardcore" finished-at="2023-07-17T20:26:30 MSK" duration-ms="7249">
+  <suite started-at="2023-07-18T14:38:58 UZT" name="Cart" finished-at="2023-07-18T14:39:09 UZT" duration-ms="11197">
     <groups>
     </groups>
-    <test started-at="2023-07-17T20:26:22 MSK" name="C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java" finished-at="2023-07-17T20:26:30 MSK" duration-ms="7249">
-      <class name="test.CorrectSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CorrectSearchTest@43195e57]" started-at="2023-07-17T20:26:22 MSK" name="setUp" finished-at="2023-07-17T20:26:26 MSK" duration-ms="3261" status="PASS">
+    <test started-at="2023-07-18T14:38:58 UZT" name="Cart" finished-at="2023-07-18T14:39:09 UZT" duration-ms="11197">
+      <class name="test.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:38:58 UZT" name="setUp" finished-at="2023-07-18T14:39:03 UZT" duration-ms="4372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doSelectedItemsCorrespondToSearchRequestOne()[pri:0, instance:test.CorrectSearchTest@43195e57]" started-at="2023-07-17T20:26:26 MSK" name="doSelectedItemsCorrespondToSearchRequestOne" description="compares the search request one and the selected items names" finished-at="2023-07-17T20:26:28 MSK" duration-ms="2320" status="PASS">
+        <test-method signature="verifyDeleteButtonRemovesItemFromCart()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:03 UZT" name="verifyDeleteButtonRemovesItemFromCart" finished-at="2023-07-18T14:39:07 UZT" duration-ms="4654" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToSearchRequestOne -->
-        <test-method signature="doSelectedItemsCorrespondToSearchRequestTwo()[pri:0, instance:test.CorrectSearchTest@43195e57]" started-at="2023-07-17T20:26:28 MSK" name="doSelectedItemsCorrespondToSearchRequestTwo" description="compares the search request two and the selected items names" finished-at="2023-07-17T20:26:29 MSK" duration-ms="582" status="PASS">
+        </test-method> <!-- verifyDeleteButtonRemovesItemFromCart -->
+        <test-method signature="verifyItemAddedtoCartAppearInCartPage()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:07 UZT" name="verifyItemAddedtoCartAppearInCartPage" finished-at="2023-07-18T14:39:09 UZT" duration-ms="1863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToSearchRequestTwo -->
-        <test-method signature="doSelectedItemsCorrespondToSearchRequestThree()[pri:0, instance:test.CorrectSearchTest@43195e57]" started-at="2023-07-17T20:26:29 MSK" name="doSelectedItemsCorrespondToSearchRequestThree" description="compares the search request three and the selected items names" finished-at="2023-07-17T20:26:29 MSK" duration-ms="794" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToSearchRequestThree -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectSearchTest@43195e57]" started-at="2023-07-17T20:26:29 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-17T20:26:30 MSK" duration-ms="232" status="PASS">
+        </test-method> <!-- verifyItemAddedtoCartAppearInCartPage -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:09 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-18T14:39:09 UZT" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.CorrectSearchTest -->
-    </test> <!-- C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java -->
-  </suite> <!-- Hardcore -->
+      </class> <!-- test.CartTest -->
+    </test> <!-- Cart -->
+  </suite> <!-- Cart -->
 </testng-results>
