@@ -1,6 +1,16 @@
 # FrameworkLab
-mvn -Dbrowser=Chrome -Denvironment=qa -Duser=user -DsuiteXml=testng-registrationTest.xml clean test
+mvn -Dbrowser=Chrome -Denvironment=qa_red -Duser=user -DsuiteXml=testng-registrationTest.xml clean test
 
+mvn -Dbrowser=chrome -Denvironment=qa_red -DsuiteXml=testng-correctSearch.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa_red -DsuiteXml=testng-correctFilter.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa_black -DsuiteXml=testng-correctFilter.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa_blue -DsuiteXml=testng-correctFilter.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa_green -DsuiteXml=testng-correctFilter.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa_white -DsuiteXml=testng-correctFilter.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa_brown -DsuiteXml=testng-correctFilter.xml clean test
+
+mvn -Dbrowser=chrome -Denvironment=qa_red -DsuiteXml=testng-cart-verifyDeleteButtonRemovesItemFromCart.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa_red -DsuiteXml=testng-cart-verifyItemAddedToCartAppearInCartPage.xml clean test
 
 
 ## Getting started

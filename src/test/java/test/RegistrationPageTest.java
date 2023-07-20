@@ -1,6 +1,5 @@
 package test;
 
-import driver.DriverSingleton;
 import org.testng.annotations.Test;
 import page.RegistrationPage;
 

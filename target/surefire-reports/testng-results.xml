@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-18T14:38:58 UZT" name="Cart" finished-at="2023-07-18T14:39:09 UZT" duration-ms="11197">
+  <suite started-at="2023-07-20T10:55:43 MSK" name="Hardcore" finished-at="2023-07-20T10:56:34 MSK" duration-ms="51013">
     <groups>
     </groups>
-    <test started-at="2023-07-18T14:38:58 UZT" name="Cart" finished-at="2023-07-18T14:39:09 UZT" duration-ms="11197">
-      <class name="test.CartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:38:58 UZT" name="setUp" finished-at="2023-07-18T14:39:03 UZT" duration-ms="4372" status="PASS">
+    <test started-at="2023-07-20T10:55:43 MSK" name="C:\EpamLab\2\frameworkLab\src\test\java\test\CorrectFilterTest.java" finished-at="2023-07-20T10:56:34 MSK" duration-ms="51013">
+      <class name="test.CorrectFilterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:55:43 MSK" name="setUp" finished-at="2023-07-20T10:55:47 MSK" duration-ms="4497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDeleteButtonRemovesItemFromCart()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:03 UZT" name="verifyDeleteButtonRemovesItemFromCart" finished-at="2023-07-18T14:39:07 UZT" duration-ms="4654" status="PASS">
+        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:55:47 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of given color" finished-at="2023-07-20T10:55:57 MSK" duration-ms="10092" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteButtonRemovesItemFromCart -->
-        <test-method signature="verifyItemAddedtoCartAppearInCartPage()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:07 UZT" name="verifyItemAddedtoCartAppearInCartPage" finished-at="2023-07-18T14:39:09 UZT" duration-ms="1863" status="PASS">
+        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
+        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfPriceRank()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:55:57 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfPriceRank" description="checks the selected items to be of given price rank" finished-at="2023-07-20T10:56:33 MSK" duration-ms="35962" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyItemAddedtoCartAppearInCartPage -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:09 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-18T14:39:09 UZT" duration-ms="223" status="PASS">
+        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfPriceRank -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:56:33 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-20T10:56:34 MSK" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.CartTest -->
-    </test> <!-- Cart -->
-  </suite> <!-- Cart -->
+      </class> <!-- test.CorrectFilterTest -->
+    </test> <!-- C:\EpamLab\2\frameworkLab\src\test\java\test\CorrectFilterTest.java -->
+  </suite> <!-- Hardcore -->
 </testng-results>

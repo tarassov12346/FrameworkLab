@@ -1,14 +1,14 @@
-2023-07-18 14:38:59,781 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
-2023-07-18 14:38:59,810 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
-2023-07-18 14:38:59,811 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
-2023-07-18 14:38:59,819 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3b8ee898
-2023-07-18 14:38:59,848 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
-2023-07-18 14:38:59,849 DEBUG internal.PlatformDependent0 [main] Java version: 17
-2023-07-18 14:38:59,853 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
-2023-07-18 14:38:59,856 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
-2023-07-18 14:38:59,860 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
-2023-07-18 14:38:59,863 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
-2023-07-18 14:38:59,865 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
+2023-07-20 10:55:44,089 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-07-20 10:55:44,120 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-07-20 10:55:44,120 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-07-20 10:55:44,127 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@58065f0c
+2023-07-20 10:55:44,158 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-07-20 10:55:44,158 DEBUG internal.PlatformDependent0 [main] Java version: 18
+2023-07-20 10:55:44,158 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-07-20 10:55:44,158 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-07-20 10:55:44,174 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-07-20 10:55:44,174 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-07-20 10:55:44,174 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
@@ -35,11 +35,9 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:33) ~[test-classes/:?]
-	at test.CommonConditions.setUp(CommonConditions.java:25) ~[test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at test.CommonConditions.setUp(CommonConditions.java:40) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
@@ -66,12 +64,12 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
-2023-07-18 14:38:59,893 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
-2023-07-18 14:38:59,896 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
-java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @680dc59c
-	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
+2023-07-20 10:55:44,205 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-07-20 10:55:44,205 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @7fc2413d
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
 	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
 	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
 	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
@@ -96,11 +94,9 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:33) ~[test-classes/:?]
-	at test.CommonConditions.setUp(CommonConditions.java:25) ~[test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at test.CommonConditions.setUp(CommonConditions.java:40) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
@@ -127,59 +123,183 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
-2023-07-18 14:38:59,924 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
-2023-07-18 14:38:59,926 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
-2023-07-18 14:38:59,928 DEBUG internal.PlatformDependent [main] maxDirectMemory: 778043392 bytes (maybe)
-2023-07-18 14:38:59,930 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2023-07-18 14:38:59,932 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2023-07-18 14:38:59,935 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
-2023-07-18 14:38:59,937 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2023-07-18 14:38:59,945 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
-2023-07-18 14:38:59,949 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
-2023-07-18 14:38:59,969 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
-2023-07-18 14:39:00,009 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2023-07-18 14:39:00,013 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2023-07-18 14:39:00,151 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2023-07-18 14:39:00,153 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2023-07-18 14:39:00,213 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 4
-2023-07-18 14:39:00,232 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
-2023-07-18 14:39:00,233 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
-2023-07-18 14:39:00,241 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@66ba7e45
-2023-07-18 14:39:00,245 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@15fdd1f2
-2023-07-18 14:39:00,249 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@cb0f763
-2023-07-18 14:39:00,250 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@7573e12f
-2023-07-18 14:39:00,301 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 4
-2023-07-18 14:39:00,302 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 4
-2023-07-18 14:39:00,303 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
-2023-07-18 14:39:00,303 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
-2023-07-18 14:39:00,304 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
-2023-07-18 14:39:00,305 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
-2023-07-18 14:39:00,306 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
-2023-07-18 14:39:00,306 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2023-07-18 14:39:00,306 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
-2023-07-18 14:39:00,307 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2023-07-18 14:39:00,308 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
-2023-07-18 14:39:00,308 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2023-07-18 14:39:00,333 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
-2023-07-18 14:39:00,334 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
-2023-07-18 14:39:00,334 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2023-07-18 14:39:00,864 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 21945 (auto-detected)
-2023-07-18 14:39:00,868 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
-2023-07-18 14:39:00,869 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
-2023-07-18 14:39:00,873 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
-2023-07-18 14:39:00,879 DEBUG util.NetUtil [Forwarding newSession on session null to remote] /proc/sys/net/core/somaxconn: 4096
-2023-07-18 14:39:00,891 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 00:22:68:ff:fe:77:dc:0c (auto-detected)
-2023-07-18 14:39:01,001 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
-2023-07-18 14:39:01,003 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
-2023-07-18 14:39:01,005 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@645f31d7
-2023-07-18 14:39:01,049 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
-2023-07-18 14:39:01,050 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
-2023-07-18 14:39:01,051 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
-2023-07-18 14:39:01,051 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
-2023-07-18 14:39:02,706 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
-2023-07-18 14:39:02,978 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0x1005d0b198c65dfc
-2023-07-18 14:39:03,319 INFO  [main] Page initialized
-2023-07-18 14:39:05,654 INFO  [main] Page loaded
-2023-07-18 14:39:07,895 INFO  [main] Page initialized
-2023-07-18 14:39:08,159 INFO  [main] Page loaded
-2023-07-18 14:39:09,765 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
+2023-07-20 10:55:44,205 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-07-20 10:55:44,205 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
+2023-07-20 10:55:44,205 DEBUG internal.PlatformDependent [main] maxDirectMemory: 2147483648 bytes (maybe)
+2023-07-20 10:55:44,221 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\User\AppData\Local\Temp (java.io.tmpdir)
+2023-07-20 10:55:44,221 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-07-20 10:55:44,221 DEBUG internal.PlatformDependent [main] Platform: Windows
+2023-07-20 10:55:44,221 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-07-20 10:55:44,227 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-07-20 10:55:44,227 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-07-20 10:55:44,227 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-07-20 10:55:44,266 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-07-20 10:55:44,407 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-07-20 10:55:44,409 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-07-20 10:55:44,580 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-07-20 10:55:44,580 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-07-20 10:55:44,641 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 8
+2023-07-20 10:55:44,662 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-07-20 10:55:44,662 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-07-20 10:55:44,684 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6293e39e
+2023-07-20 10:55:44,692 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3daa82be
+2023-07-20 10:55:44,695 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@ec1b2e4
+2023-07-20 10:55:44,695 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@29a69a35
+2023-07-20 10:55:44,695 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@67e28be3
+2023-07-20 10:55:44,705 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@e344ad3
+2023-07-20 10:55:44,705 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@de18f63
+2023-07-20 10:55:44,705 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@108bdbd8
+2023-07-20 10:55:44,757 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 8
+2023-07-20 10:55:44,757 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 8
+2023-07-20 10:55:44,759 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-07-20 10:55:44,759 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-07-20 10:55:44,759 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-07-20 10:55:44,759 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-07-20 10:55:44,759 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-07-20 10:55:44,759 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-07-20 10:55:44,759 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-07-20 10:55:44,767 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-07-20 10:55:44,767 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-07-20 10:55:44,770 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-07-20 10:55:44,810 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-07-20 10:55:44,810 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-07-20 10:55:44,813 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-07-20 10:55:45,468 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 10984 (auto-detected)
+2023-07-20 10:55:45,478 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-07-20 10:55:45,478 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-07-20 10:55:45,489 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-07-20 10:55:45,489 DEBUG util.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-07-20 10:55:45,511 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 10:fe:ed:ff:fe:1d:a3:16 (auto-detected)
+2023-07-20 10:55:45,607 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-07-20 10:55:45,616 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-07-20 10:55:45,616 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3300c3e9
+2023-07-20 10:55:45,661 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-07-20 10:55:45,661 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-07-20 10:55:45,661 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-07-20 10:55:45,661 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-07-20 10:55:46,893 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-07-20 10:55:47,235 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0x54e5f57dd5097fa2
+2023-07-20 10:55:47,699 INFO  [main] Page initialized
+2023-07-20 10:55:49,010 INFO  [main] Page loaded
+2023-07-20 10:55:49,771 INFO  [main] Page initialized
+2023-07-20 10:55:49,952 INFO  [main] Page loaded
+2023-07-20 10:55:50,622 INFO  [main] Page initialized
+2023-07-20 10:55:50,821 INFO  [main] Page loaded
+2023-07-20 10:55:51,683 INFO  [main] Page initialized
+2023-07-20 10:55:51,801 INFO  [main] Page initialized
+2023-07-20 10:55:51,968 INFO  [main] Page loaded
+2023-07-20 10:55:52,797 INFO  [main] Page initialized
+2023-07-20 10:55:52,901 INFO  [main] Page initialized
+2023-07-20 10:55:53,054 INFO  [main] Page loaded
+2023-07-20 10:55:53,790 INFO  [main] Page initialized
+2023-07-20 10:55:53,867 INFO  [main] Page initialized
+2023-07-20 10:55:54,026 INFO  [main] Page loaded
+2023-07-20 10:55:54,735 INFO  [main] Page initialized
+2023-07-20 10:55:54,816 INFO  [main] Page initialized
+2023-07-20 10:55:54,981 INFO  [main] Page loaded
+2023-07-20 10:55:55,680 INFO  [main] Page initialized
+2023-07-20 10:55:55,760 INFO  [main] Page initialized
+2023-07-20 10:55:55,913 INFO  [main] Page loaded
+2023-07-20 10:55:56,682 INFO  [main] Page initialized
+2023-07-20 10:55:56,758 INFO  [main] Page initialized
+2023-07-20 10:55:56,901 INFO  [main] Page loaded
+2023-07-20 10:55:57,628 INFO  [main] Page initialized
+2023-07-20 10:55:57,715 INFO  [main] Page initialized
+2023-07-20 10:55:57,868 INFO  [main] Page loaded
+2023-07-20 10:55:58,842 INFO  [main] Page initialized
+2023-07-20 10:55:59,008 INFO  [main] Page loaded
+2023-07-20 10:56:00,014 INFO  [main] Page initialized
+2023-07-20 10:56:00,234 INFO  [main] Page loaded
+2023-07-20 10:56:01,413 INFO  [main] Page initialized
+2023-07-20 10:56:01,464 INFO  [main] Page initialized
+2023-07-20 10:56:01,507 INFO  [main] Page initialized
+2023-07-20 10:56:01,667 INFO  [main] Page loaded
+2023-07-20 10:56:02,884 INFO  [main] Page initialized
+2023-07-20 10:56:02,924 INFO  [main] Page initialized
+2023-07-20 10:56:02,958 INFO  [main] Page initialized
+2023-07-20 10:56:03,172 INFO  [main] Page loaded
+2023-07-20 10:56:04,373 INFO  [main] Page initialized
+2023-07-20 10:56:04,412 INFO  [main] Page initialized
+2023-07-20 10:56:04,435 INFO  [main] Page initialized
+2023-07-20 10:56:04,612 INFO  [main] Page loaded
+2023-07-20 10:56:05,678 INFO  [main] Page initialized
+2023-07-20 10:56:05,714 INFO  [main] Page initialized
+2023-07-20 10:56:05,737 INFO  [main] Page initialized
+2023-07-20 10:56:05,902 INFO  [main] Page loaded
+2023-07-20 10:56:07,038 INFO  [main] Page initialized
+2023-07-20 10:56:07,083 INFO  [main] Page initialized
+2023-07-20 10:56:07,109 INFO  [main] Page initialized
+2023-07-20 10:56:07,268 INFO  [main] Page loaded
+2023-07-20 10:56:08,351 INFO  [main] Page initialized
+2023-07-20 10:56:08,386 INFO  [main] Page initialized
+2023-07-20 10:56:08,413 INFO  [main] Page initialized
+2023-07-20 10:56:08,574 INFO  [main] Page loaded
+2023-07-20 10:56:09,691 INFO  [main] Page initialized
+2023-07-20 10:56:09,731 INFO  [main] Page initialized
+2023-07-20 10:56:09,747 INFO  [main] Page initialized
+2023-07-20 10:56:09,921 INFO  [main] Page loaded
+2023-07-20 10:56:11,018 INFO  [main] Page initialized
+2023-07-20 10:56:11,055 INFO  [main] Page initialized
+2023-07-20 10:56:11,088 INFO  [main] Page initialized
+2023-07-20 10:56:11,239 INFO  [main] Page loaded
+2023-07-20 10:56:12,368 INFO  [main] Page initialized
+2023-07-20 10:56:12,405 INFO  [main] Page initialized
+2023-07-20 10:56:12,436 INFO  [main] Page initialized
+2023-07-20 10:56:12,578 INFO  [main] Page loaded
+2023-07-20 10:56:13,748 INFO  [main] Page initialized
+2023-07-20 10:56:13,788 INFO  [main] Page initialized
+2023-07-20 10:56:13,804 INFO  [main] Page initialized
+2023-07-20 10:56:13,991 INFO  [main] Page loaded
+2023-07-20 10:56:15,150 INFO  [main] Page initialized
+2023-07-20 10:56:15,188 INFO  [main] Page initialized
+2023-07-20 10:56:15,205 INFO  [main] Page initialized
+2023-07-20 10:56:15,363 INFO  [main] Page loaded
+2023-07-20 10:56:16,421 INFO  [main] Page initialized
+2023-07-20 10:56:16,460 INFO  [main] Page initialized
+2023-07-20 10:56:16,492 INFO  [main] Page initialized
+2023-07-20 10:56:16,635 INFO  [main] Page loaded
+2023-07-20 10:56:17,706 INFO  [main] Page initialized
+2023-07-20 10:56:17,871 INFO  [main] Page loaded
+2023-07-20 10:56:19,052 INFO  [main] Page initialized
+2023-07-20 10:56:19,087 INFO  [main] Page initialized
+2023-07-20 10:56:19,113 INFO  [main] Page initialized
+2023-07-20 10:56:19,260 INFO  [main] Page loaded
+2023-07-20 10:56:20,487 INFO  [main] Page initialized
+2023-07-20 10:56:20,522 INFO  [main] Page initialized
+2023-07-20 10:56:20,555 INFO  [main] Page initialized
+2023-07-20 10:56:20,708 INFO  [main] Page loaded
+2023-07-20 10:56:21,960 INFO  [main] Page initialized
+2023-07-20 10:56:21,995 INFO  [main] Page initialized
+2023-07-20 10:56:22,027 INFO  [main] Page initialized
+2023-07-20 10:56:22,163 INFO  [main] Page loaded
+2023-07-20 10:56:23,400 INFO  [main] Page initialized
+2023-07-20 10:56:23,437 INFO  [main] Page initialized
+2023-07-20 10:56:23,452 INFO  [main] Page initialized
+2023-07-20 10:56:23,612 INFO  [main] Page loaded
+2023-07-20 10:56:24,856 INFO  [main] Page initialized
+2023-07-20 10:56:24,891 INFO  [main] Page initialized
+2023-07-20 10:56:24,909 INFO  [main] Page initialized
+2023-07-20 10:56:25,079 INFO  [main] Page loaded
+2023-07-20 10:56:26,317 INFO  [main] Page initialized
+2023-07-20 10:56:26,351 INFO  [main] Page initialized
+2023-07-20 10:56:26,368 INFO  [main] Page initialized
+2023-07-20 10:56:26,535 INFO  [main] Page loaded
+2023-07-20 10:56:27,724 INFO  [main] Page initialized
+2023-07-20 10:56:27,778 INFO  [main] Page initialized
+2023-07-20 10:56:27,812 INFO  [main] Page initialized
+2023-07-20 10:56:28,026 INFO  [main] Page loaded
+2023-07-20 10:56:29,322 INFO  [main] Page initialized
+2023-07-20 10:56:29,359 INFO  [main] Page initialized
+2023-07-20 10:56:29,393 INFO  [main] Page initialized
+2023-07-20 10:56:29,540 INFO  [main] Page loaded
+2023-07-20 10:56:30,729 INFO  [main] Page initialized
+2023-07-20 10:56:30,778 INFO  [main] Page initialized
+2023-07-20 10:56:30,811 INFO  [main] Page initialized
+2023-07-20 10:56:30,983 INFO  [main] Page loaded
+2023-07-20 10:56:32,188 INFO  [main] Page initialized
+2023-07-20 10:56:32,228 INFO  [main] Page initialized
+2023-07-20 10:56:32,262 INFO  [main] Page initialized
+2023-07-20 10:56:32,427 INFO  [main] Page loaded
+2023-07-20 10:56:33,587 INFO  [main] Page initialized
+2023-07-20 10:56:33,625 INFO  [main] Page initialized
+2023-07-20 10:56:33,692 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
