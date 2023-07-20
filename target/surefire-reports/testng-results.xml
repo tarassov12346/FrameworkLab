@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-20T10:55:43 MSK" name="Hardcore" finished-at="2023-07-20T10:56:34 MSK" duration-ms="51013">
+  <suite started-at="2023-07-20T11:13:15 MSK" name="Cart verifyItemAddedtoCartAppearInCartPage" finished-at="2023-07-20T11:13:22 MSK" duration-ms="6546">
     <groups>
     </groups>
-    <test started-at="2023-07-20T10:55:43 MSK" name="C:\EpamLab\2\frameworkLab\src\test\java\test\CorrectFilterTest.java" finished-at="2023-07-20T10:56:34 MSK" duration-ms="51013">
-      <class name="test.CorrectFilterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:55:43 MSK" name="setUp" finished-at="2023-07-20T10:55:47 MSK" duration-ms="4497" status="PASS">
+    <test started-at="2023-07-20T11:13:15 MSK" name="Cart verifyItemAddedtoCartAppearInCartPage" finished-at="2023-07-20T11:13:22 MSK" duration-ms="6546">
+      <class name="test.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CartTest@7714e963]" started-at="2023-07-20T11:13:15 MSK" name="setUp" finished-at="2023-07-20T11:13:19 MSK" duration-ms="4109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:55:47 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of given color" finished-at="2023-07-20T10:55:57 MSK" duration-ms="10092" status="PASS">
+        <test-method signature="verifyItemAddedtoCartAppearInCartPage()[pri:0, instance:test.CartTest@7714e963]" started-at="2023-07-20T11:13:19 MSK" name="verifyItemAddedtoCartAppearInCartPage" finished-at="2023-07-20T11:13:21 MSK" duration-ms="2029" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfPriceRank()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:55:57 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfPriceRank" description="checks the selected items to be of given price rank" finished-at="2023-07-20T10:56:33 MSK" duration-ms="35962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfPriceRank -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectFilterTest@1ea9f6af]" started-at="2023-07-20T10:56:33 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-20T10:56:34 MSK" duration-ms="403" status="PASS">
+        </test-method> <!-- verifyItemAddedtoCartAppearInCartPage -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CartTest@7714e963]" started-at="2023-07-20T11:13:21 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-20T11:13:22 MSK" duration-ms="318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.CorrectFilterTest -->
-    </test> <!-- C:\EpamLab\2\frameworkLab\src\test\java\test\CorrectFilterTest.java -->
-  </suite> <!-- Hardcore -->
+      </class> <!-- test.CartTest -->
+    </test> <!-- Cart verifyItemAddedtoCartAppearInCartPage -->
+  </suite> <!-- Cart verifyItemAddedtoCartAppearInCartPage -->
 </testng-results>
