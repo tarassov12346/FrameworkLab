@@ -15,21 +15,11 @@ import java.util.List;
 @Listeners({TestListener.class})
 public class CommonConditions {
 
-    protected static final String SEARCH_REQUEST_ONE = "search.request.one";
-    protected static final String SEARCH_REQUEST_TWO = "search.request.two";
-    protected static final String SEARCH_REQUEST_THREE = "search.request.three";
-
     protected static final String LOWER_PRICE = "lower.price";
     protected static final String UPPER_PRICE = "upper.price";
 
     protected static final Double LOWER_PRICE_DOUBLE_VALUE = Double.parseDouble(SearchRequestReader.getSearchData("lower.price"));
     protected static final Double UPPER_PRICE_DOUBLE_VALUE = Double.parseDouble(SearchRequestReader.getSearchData("upper.price"));
-
-
-    protected static final String SEARCH_COLOUR = "search.colour";
-    protected static final String CHECK_COLOUR = SearchRequestReader.getSearchData("check.colour");
-
-    protected static final int SEARCH_COLOUR_INT_VALUE = Integer.parseInt(SearchRequestReader.getSearchData(SEARCH_COLOUR));
 
     int numberOfPages;
 
@@ -41,12 +31,12 @@ public class CommonConditions {
     }
 
     public List<WebElement> getItemsBySearchRequest(String searchRequest) {
-        return new ItemFinder(driver).getItems(SearchRequestReader.getSearchData(searchRequest));
+        return new ItemFinder(driver).getItems(searchRequest);
     }
 
-    public void setNumberOfPagesForColor(){
+    public void setNumberOfPagesForColor(String searchColour){
         numberOfPages=new ItemFilter(driver).
-                shopPage.openPage().checkBoxColour(SEARCH_COLOUR_INT_VALUE).
+                shopPage.openPage().checkBoxColour(Integer.parseInt(searchColour)).
                 clickSearchLowerButton().getPagesButtonsNumber();
         if (numberOfPages>1) numberOfPages -= 1;
     }
@@ -58,9 +48,9 @@ public class CommonConditions {
         if (numberOfPages>1) numberOfPages -= 1;
     }
 
-    public List<WebElement> filterItemsByColorBoxTick(int page){
+    public List<WebElement> filterItemsByColorBoxTick(int page, String searchColour){
 
-        return new ItemFilter(driver).filterItemsByColor(SearchRequestReader.getSearchData(SEARCH_COLOUR),page);
+        return new ItemFilter(driver).filterItemsByColor(searchColour,page);
     }
 
     public  List<WebElement> filterItemsByGivenPriceRank(String lowerPrice, String upperPrice, int page){

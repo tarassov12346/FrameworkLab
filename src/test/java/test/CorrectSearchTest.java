@@ -1,34 +1,26 @@
 package test;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import service.SearchRequestReader;
 
 import java.util.Locale;
 
 public class CorrectSearchTest extends CommonConditions {
-    @Test(description = "compares the search request one and the selected items names")
-    public void doSelectedItemsCorrespondToSearchRequestOne() {
-        getItemsBySearchRequest(SEARCH_REQUEST_ONE).
-                forEach(item -> Assert.assertTrue(item.getText().toLowerCase(Locale.ROOT).
-                        contains(SearchRequestReader.getSearchData(SEARCH_REQUEST_ONE).toLowerCase(Locale.ROOT))));
+
+    @DataProvider
+    public Object[][] dataProviderMethod() {
+        return new Object[][]{
+                {"Пальто"},
+                {"Шорты"},
+                {"Топик"}
+        };
     }
 
-    @Test(description = "compares the search request two and the selected items names")
-    public void doSelectedItemsCorrespondToSearchRequestTwo() {
-        getItemsBySearchRequest(SEARCH_REQUEST_TWO).
+    @Test(description = "checks the selected items correspond to search request", dataProvider = "dataProviderMethod")
+    public void doSelectedItemsCorrespondToSearchRequest(String data) {
+        getItemsBySearchRequest(data).
                 forEach(item -> Assert.assertTrue(item.getText().toLowerCase(Locale.ROOT).
-                        contains(SearchRequestReader.getSearchData(SEARCH_REQUEST_TWO).toLowerCase(Locale.ROOT))));
+                        contains(data.toLowerCase(Locale.ROOT))));
     }
-
-    @Test(description = "compares the search request three and the selected items names")
-    public void doSelectedItemsCorrespondToSearchRequestThree() {
-        getItemsBySearchRequest(SEARCH_REQUEST_THREE).
-                forEach(item -> Assert.assertTrue(item.getText().toLowerCase(Locale.ROOT).
-                        contains(SearchRequestReader.getSearchData(SEARCH_REQUEST_THREE).toLowerCase(Locale.ROOT))));
-    }
-
-
-
-
 }
