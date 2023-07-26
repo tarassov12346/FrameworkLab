@@ -6,6 +6,7 @@
 /home/oyatullo/frameworklab/src/test/java/test/CartTest.java
 /home/oyatullo/frameworklab/src/test/java/page/LoggingPage.java
 /home/oyatullo/frameworklab/src/test/java/page/HeaderPage.java
+/home/oyatullo/frameworklab/src/test/java/page/ProfilePage.java
 /home/oyatullo/frameworklab/src/test/java/driver/DriverSingleton.java
 /home/oyatullo/frameworklab/src/test/java/page/RegistrationPage.java
 /home/oyatullo/frameworklab/src/test/java/service/UserCreator.java

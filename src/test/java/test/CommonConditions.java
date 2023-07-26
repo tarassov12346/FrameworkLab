@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 import service.ItemFinder;
 import service.SearchRequestReader;
+import page.HeaderPage;
 import utils.TestListener;
 
 import java.util.List;
@@ -32,5 +33,11 @@ public class CommonConditions {
     @AfterTest(description = "closes the browser")
     public void afterTestCompleted() {
         DriverSingleton.closeDriver();
+    }
+    
+    @AfterMethod(onlyForGroups = {"logOut"})
+    public void logOut() {
+        new HeaderPage(driver).clickAccountButton()
+        	.clickLogOutButton();
     }
 }

@@ -17,3 +17,4 @@ test/CommonConditions.class
 utils/CustomConditions.class
 model/User.class
 page/AbstractPage.class
+page/ProfilePage.class

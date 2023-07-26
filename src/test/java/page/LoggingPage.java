@@ -30,10 +30,10 @@ public class LoggingPage extends AbstractPage{
         return this;
     }
     public LoggingPage fillPassword(String password){
-        emailInput.sendKeys(password);
+        passwordInput.sendKeys(password);
         return this;
     }
-    public ShopPage logIn(String email){
+    public ShopPage logIn(){
         logInButton.click();
         return new ShopPage(driver);
     }

@@ -16,17 +16,17 @@ public class DriverSingleton {
     public static WebDriver getDriver() {
         if (null == driver) {
             switch (System.getProperty("browser")) {
-                case "firefox": {
+                case "firefox" -> {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
                 }
-                case "edge": {
+                case "edge" -> {
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
                 }
-                default: {
+                default -> {
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--remote-allow-origins=*");
@@ -41,5 +41,9 @@ public class DriverSingleton {
     public static void closeDriver() {
         driver.quit();
         driver = null;
+    }
+    
+    public static void jumpToPreviousPage() {
+        driver.navigate().back();    
     }
 }

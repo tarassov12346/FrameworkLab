@@ -3,6 +3,7 @@ package page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.TimeoutException;
 
 public class ItemPage extends AbstractPage {
     private final String CART_PAGE = "http://shop.bugred.ru/shop/cart/index";
@@ -34,5 +35,13 @@ public class ItemPage extends AbstractPage {
     
     public String getItemName() {
         return itemNameTextBox.getText();
+    }
+    
+    public boolean isItemAvailable() {
+        try {
+            return waitForElementVisibility(addToCartButton, EXPLICIT_WAIT).isDisplayed();
+        } catch (TimeoutException e) {
+            return false;
+        }
     }
 }

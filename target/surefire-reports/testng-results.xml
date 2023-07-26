@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-18T14:38:58 UZT" name="Cart" finished-at="2023-07-18T14:39:09 UZT" duration-ms="11197">
+  <suite started-at="2023-07-26T12:51:42 UZT" name="Smoke" finished-at="2023-07-26T12:52:17 UZT" duration-ms="34262">
     <groups>
     </groups>
-    <test started-at="2023-07-18T14:38:58 UZT" name="Cart" finished-at="2023-07-18T14:39:09 UZT" duration-ms="11197">
-      <class name="test.CartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:38:58 UZT" name="setUp" finished-at="2023-07-18T14:39:03 UZT" duration-ms="4372" status="PASS">
+    <test started-at="2023-07-26T12:51:42 UZT" name="Smoke" finished-at="2023-07-26T12:52:17 UZT" duration-ms="34262">
+      <class name="test.RegistrationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:51:42 UZT" name="setUp" finished-at="2023-07-26T12:52:02 UZT" duration-ms="19594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDeleteButtonRemovesItemFromCart()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:03 UZT" name="verifyDeleteButtonRemovesItemFromCart" finished-at="2023-07-18T14:39:07 UZT" duration-ms="4654" status="PASS">
+        <test-method signature="randomUserRegistrationTest()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:52:02 UZT" name="randomUserRegistrationTest" description="Random user registration test" finished-at="2023-07-26T12:52:13 UZT" duration-ms="11112" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteButtonRemovesItemFromCart -->
-        <test-method signature="verifyItemAddedtoCartAppearInCartPage()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:07 UZT" name="verifyItemAddedtoCartAppearInCartPage" finished-at="2023-07-18T14:39:09 UZT" duration-ms="1863" status="PASS">
+        </test-method> <!-- randomUserRegistrationTest -->
+        <test-method signature="userFromBundleRegistrationTest()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:52:13 UZT" name="userFromBundleRegistrationTest" description="Registration of user from bundle " finished-at="2023-07-26T12:52:16 UZT" duration-ms="2062" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyItemAddedtoCartAppearInCartPage -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CartTest@7219ec67]" started-at="2023-07-18T14:39:09 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-18T14:39:09 UZT" duration-ms="223" status="PASS">
+        </test-method> <!-- userFromBundleRegistrationTest -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:52:16 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-26T12:52:17 UZT" duration-ms="969" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.CartTest -->
-    </test> <!-- Cart -->
-  </suite> <!-- Cart -->
+      </class> <!-- test.RegistrationPageTest -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Smoke -->
 </testng-results>
