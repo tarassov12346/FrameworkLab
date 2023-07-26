@@ -25,7 +25,7 @@ public abstract class AbstractPage {
         	.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    protected WebElement waitForElementVisibility(WebElement element, int time) {
+    protected WebElement waitForElementVisibility(WebElement element, long time) {
         return new WebDriverWait(driver, Duration.ofSeconds(time))
                 .until(ExpectedConditions.visibilityOf(element));
     }
