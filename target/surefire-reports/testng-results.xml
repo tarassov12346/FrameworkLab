@@ -1,148 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2023-07-26T12:51:42 UZT" name="Smoke" finished-at="2023-07-26T12:52:17 UZT" duration-ms="34262">
+  <suite started-at="2023-07-29T13:30:34 UZT" name="Cart" finished-at="2023-07-29T13:31:03 UZT" duration-ms="28621">
     <groups>
+      <group name="logOut">
+        <method signature="CartTest.verifyBookedItemsStoredInAccountProfile()[pri:0, instance:test.CartTest@7c469c48]" name="verifyBookedItemsStoredInAccountProfile" class="test.CartTest"/>
+      </group> <!-- logOut -->
     </groups>
-    <test started-at="2023-07-26T12:51:42 UZT" name="Smoke" finished-at="2023-07-26T12:52:17 UZT" duration-ms="34262">
-      <class name="test.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:51:42 UZT" name="setUp" finished-at="2023-07-26T12:52:02 UZT" duration-ms="19594" status="PASS">
+    <test started-at="2023-07-29T13:30:34 UZT" name="Cart" finished-at="2023-07-29T13:31:03 UZT" duration-ms="28621">
+      <class name="test.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:30:34 UZT" name="setUp" finished-at="2023-07-29T13:30:40 UZT" duration-ms="5511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="randomUserRegistrationTest()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:52:02 UZT" name="randomUserRegistrationTest" description="Random user registration test" finished-at="2023-07-26T12:52:13 UZT" duration-ms="11112" status="PASS">
+        <test-method signature="verifyBookedItemsStoredInAccountProfile()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:30:40 UZT" name="verifyBookedItemsStoredInAccountProfile" finished-at="2023-07-29T13:30:47 UZT" duration-ms="7189" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- randomUserRegistrationTest -->
-        <test-method signature="userFromBundleRegistrationTest()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:52:13 UZT" name="userFromBundleRegistrationTest" description="Registration of user from bundle " finished-at="2023-07-26T12:52:16 UZT" duration-ms="2062" status="PASS">
+        </test-method> <!-- verifyBookedItemsStoredInAccountProfile -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:30:47 UZT" name="logOut" finished-at="2023-07-29T13:30:48 UZT" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userFromBundleRegistrationTest -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.RegistrationPageTest@12d4bf7e]" started-at="2023-07-26T12:52:16 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-26T12:52:17 UZT" duration-ms="969" status="PASS">
+        </test-method> <!-- logOut -->
+        <test-method signature="verifyDeleteButtonRemovesItemFromCart()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:30:48 UZT" name="verifyDeleteButtonRemovesItemFromCart" finished-at="2023-07-29T13:30:50 UZT" duration-ms="2482" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.RegistrationPageTest -->
-    </test> <!-- Smoke -->
-  </suite> <!-- Smoke -->
-=======
-  <suite started-at="2023-07-25T12:06:40 MSK" name="Filter" finished-at="2023-07-25T12:09:24 MSK" duration-ms="164489">
-    <groups>
-    </groups>
-    <test started-at="2023-07-25T12:06:40 MSK" name="C:\EpamLab\2\frameworkLab\src\test\java\test\CorrectFilterTest.java" finished-at="2023-07-25T12:09:24 MSK" duration-ms="164489">
-      <class name="test.CorrectFilterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:06:40 MSK" name="setUp" finished-at="2023-07-25T12:06:43 MSK" duration-ms="3838" status="PASS">
+        </test-method> <!-- verifyDeleteButtonRemovesItemFromCart -->
+        <test-method signature="verifyItemAddedToCartAppearInCartPage()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:30:50 UZT" name="verifyItemAddedToCartAppearInCartPage" finished-at="2023-07-29T13:30:52 UZT" duration-ms="1913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:06:44 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethod" finished-at="2023-07-25T12:06:49 MSK" duration-ms="5897" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0, 0, 0]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyItemAddedToCartAppearInCartPage -->
+        <test-method signature="verifyItemIsBookedWithPhoneAndAddress()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:30:52 UZT" name="verifyItemIsBookedWithPhoneAndAddress" finished-at="2023-07-29T13:30:55 UZT" duration-ms="3168" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:06:49 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethod" finished-at="2023-07-25T12:06:54 MSK" duration-ms="4178" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[14, 82, 247]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyItemIsBookedWithPhoneAndAddress -->
+        <test-method signature="verifyItemIsNotBookedWithoutAddress()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:30:55 UZT" name="verifyItemIsNotBookedWithoutAddress" finished-at="2023-07-29T13:31:03 UZT" duration-ms="7440" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:06:54 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethod" finished-at="2023-07-25T12:06:54 MSK" duration-ms="715" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[224, 124, 11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:06:54 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethod" finished-at="2023-07-25T12:07:18 MSK" duration-ms="23795" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[20, 235, 56]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:07:18 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethod" finished-at="2023-07-25T12:07:27 MSK" duration-ms="9137" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[254, 8, 8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:07:27 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethod" finished-at="2023-07-25T12:08:07 MSK" duration-ms="40194" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[246, 244, 244]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfPriceRank()[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:08:07 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfPriceRank" description="checks the selected items to be of given price rank" finished-at="2023-07-25T12:09:23 MSK" duration-ms="75884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfPriceRank -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectFilterTest@10fde30a]" started-at="2023-07-25T12:09:23 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-25T12:09:24 MSK" duration-ms="691" status="PASS">
+        </test-method> <!-- verifyItemIsNotBookedWithoutAddress -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CartTest@7c469c48]" started-at="2023-07-29T13:31:03 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-07-29T13:31:03 UZT" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.CorrectFilterTest -->
-    </test> <!-- C:\EpamLab\2\frameworkLab\src\test\java\test\CorrectFilterTest.java -->
-  </suite> <!-- Filter -->
->>>>>>> main
+      </class> <!-- test.CartTest -->
+    </test> <!-- Cart -->
+  </suite> <!-- Cart -->
 </testng-results>

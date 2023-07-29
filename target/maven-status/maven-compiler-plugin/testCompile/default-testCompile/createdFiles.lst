@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 test/CorrectSearchTest.class
 service/SearchRequestReader.class
 service/UserPropertiesReader.class
@@ -6,39 +5,19 @@ driver/DriverSingleton.class
 test/RegistrationPageTest.class
 service/ItemFinder.class
 test/CartTest.class
+service/PageService.class
 service/UserCreator.class
+test/CorrectFilterTest.class
 page/CartPage.class
 page/HeaderPage.class
 page/ShopPage.class
 utils/TestListener.class
 page/RegistrationPage.class
 page/LoggingPage.class
+service/ItemFilter.class
 page/ItemPage.class
 test/CommonConditions.class
 utils/CustomConditions.class
 model/User.class
 page/AbstractPage.class
 page/ProfilePage.class
-=======
-page\ShopPage.class
-page\ItemPage.class
-page\HeaderPage.class
-page\RegistrationPage.class
-page\CartPage.class
-page\AbstractPage.class
-test\CorrectSearchTest.class
-model\User.class
-page\LoggingPage.class
-service\SearchRequestReader.class
-utils\TestListener.class
-test\RegistrationPageTest.class
-service\ItemFinder.class
-utils\CustomConditions.class
-test\CommonConditions.class
-test\CorrectFilterTest.class
-service\UserCreator.class
-test\CartTest.class
-service\UserPropertiesReader.class
-driver\DriverSingleton.class
-service\ItemFilter.class
->>>>>>> main

@@ -5,10 +5,7 @@ mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-correctSearch.xml clean 
 
 mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-correctFilter.xml clean test
 
-mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-cart-verifyDeleteButtonRemovesItemFromCart.xml clean test
-
-mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-cart-verifyItemAddedToCartAppearInCartPage.xml clean test
-
+mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-cart-all.xml clean test
 
 ## Getting started
 

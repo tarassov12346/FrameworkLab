@@ -22,12 +22,7 @@ public class ProfilePage extends AbstractPage {
     
     public boolean isBookingRegistered(String booking) {
         List<WebElement> bookingNumbers = getAllBookingNumbers();
-        for (WebElement bookingNumber : bookingNumbers) {
-            if (booking.equals(bookingNumber.getText())) {
-                return true;
-            }
-        }
-        return false;
+        return bookingNumbers.stream().anyMatch(bookingNumber -> booking.equals(bookingNumber.getText()));
     }
     
     public List<WebElement> getAllBookingNumbers() {

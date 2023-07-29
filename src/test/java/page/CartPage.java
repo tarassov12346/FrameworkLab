@@ -58,22 +58,12 @@ public class CartPage extends AbstractPage {
     
     public boolean isItemInCart(String itemName) {
         List<WebElement> itemsInCart = getAllItemsInCart();
-        for(WebElement item : itemsInCart) {
-            if (itemName.equals(item.getText())) {
-                return true;
-            }
-        }
-        return false;
+        return itemsInCart.stream().anyMatch(item -> itemName.equals(item.getText()));
     }
     
     public boolean isItemRemovedFromCart(String itemName) {
-        List<WebElement> itemsInCart = getAllItemsInCart();
-        for(WebElement item : itemsInCart) {
-            if (itemName.equals(item.getText())) {
-                return false;
-            }
-        }
-        return true;
+         List<WebElement> itemsInCart = getAllItemsInCart();
+         return itemsInCart.stream().noneMatch(item -> itemName.equals(item.getText()));
     }
     
     public CartPage clickRemoveItemButton(String itemName) {
