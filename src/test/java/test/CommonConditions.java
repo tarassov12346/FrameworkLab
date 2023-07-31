@@ -49,6 +49,13 @@ public class CommonConditions {
         if (numberOfPages>1) numberOfPages -= 1;
     }
 
+    public void setNumberOfPagesForSize(String searchSize){
+        numberOfPages=new ItemFilter(driver).
+                shopPage.openPage().checkBoxSize(Integer.parseInt(searchSize)).
+                clickSearchLowerButton().getPagesButtonsNumber();
+        if (numberOfPages>1) numberOfPages -= 1;
+    }
+
     public void setNumberOfPagesForPriceRank(String lowerPrice, String upperPrice){
         numberOfPages=new ItemFilter(driver).shopPage.openPage().
                 enterLowerPrice(SearchRequestReader.getSearchData(lowerPrice)).
@@ -61,6 +68,12 @@ public class CommonConditions {
         return new ItemFilter(driver).filterItemsByColor(searchColour,page);
     }
 
+    public List<WebElement> filterItemsBySizeBoxTick(int page, String searchColour){
+
+        return new ItemFilter(driver).filterItemsBySize(searchColour,page);
+    }
+
+
     public  List<WebElement> filterItemsByGivenPriceRank(String lowerPrice, String upperPrice, int page){
 
         return new ItemFilter(driver).filterItemsByPrice(SearchRequestReader.getSearchData(lowerPrice),SearchRequestReader.getSearchData(upperPrice), page);
@@ -68,6 +81,10 @@ public class CommonConditions {
 
     public String getItemColoursAsString(){
         return new ItemFilter(driver).shopPage.getItemColoursAsString();
+    }
+
+    public String getItemSize(){
+        return new ItemFilter(driver).shopPage.getItemSize();
     }
 
     public Double getItemPrice(){

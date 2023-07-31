@@ -15,7 +15,12 @@ public class ItemFilter {
     }
 
     public List<WebElement> filterItemsByColor(String value, int page) {
-        return shopPage.openPage().checkBoxColour(Integer.valueOf(value)).clickSearchLowerButton()
+        return shopPage.openPage().checkBoxColour(Integer.parseInt(value)).clickSearchLowerButton()
+                .clickPageButton(page).getSearchResults();
+    }
+
+    public List<WebElement> filterItemsBySize(String value, int page) {
+        return shopPage.openPage().checkBoxSize(Integer.parseInt(value)).clickSearchLowerButton()
                 .clickPageButton(page).getSearchResults();
     }
 

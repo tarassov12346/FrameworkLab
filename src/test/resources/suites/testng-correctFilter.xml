@@ -10,6 +10,7 @@
             <class name="test.CorrectFilterTest">
                 <methods>
                     <include name="doSelectedItemsCorrespondToFilterConditionsOfColor"/>
+                    <include name="doSelectedItemsCorrespondToFilterConditionsOfSize"/>
                     <include name="doSelectedItemsCorrespondToFilterConditionsOfPriceRank"/>
                 </methods>
             </class>
