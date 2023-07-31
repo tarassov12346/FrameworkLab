@@ -31,8 +31,15 @@ public class CommonConditions {
         driver = DriverSingleton.getDriver();
     }
 
-    public List<WebElement> getItemsBySearchRequest(String searchRequest) {
-        return new ItemFinder(driver).getItems(searchRequest);
+    public void setNumberOfPagesForSearchRequest(String searchRequest){
+        numberOfPages=new ItemFinder(driver).
+                shopPage.openPage().enterSearchRequest(searchRequest).
+                clickSearchButton().getPagesButtonsNumber();
+        if (numberOfPages>1) numberOfPages -= 1;
+    }
+
+    public List<WebElement> getItemsBySearchRequest(int page,String searchRequest) {
+        return new ItemFinder(driver).getItems(searchRequest,page);
     }
 
     public void setNumberOfPagesForColor(String searchColour){
