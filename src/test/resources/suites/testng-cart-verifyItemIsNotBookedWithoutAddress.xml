@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+<suite name="Cart verifyItemIsNotBookedWithoutAddress" verbose="1">
+  <test name="Cart verifyItemIsNotBookedWithoutAddress">
+    <classes>
+      <class name="test.CartTest">
+        <methods>
+          <include name="verifyItemIsNotBookedWithoutAddress" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,6 +1,6 @@
 package page;
 
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -20,9 +20,9 @@ public abstract class AbstractPage {
 
     protected abstract AbstractPage openPage();
     
-    protected WebElement waitForElementToBeClickable(String locator, int time) {
+    protected WebElement waitForElementToBeClickable(WebElement element, int time) {
         return new WebDriverWait(driver, Duration.ofSeconds(time))
-        	.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+        	.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     protected WebElement waitForElementVisibility(WebElement element, long time) {

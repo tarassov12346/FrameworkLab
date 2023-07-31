@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
-<suite name="Cart verifyItemAddedtoCartAppearInCartPage" verbose="1">
-  <test name="Cart verifyItemAddedtoCartAppearInCartPage">
+<suite name="Cart verifyItemAddedToCartAppearInCartPage" verbose="1">
+  <test name="Cart verifyItemAddedToCartAppearInCartPage">
     <classes>
       <class name="test.CartTest">
         <methods>
-          <include name="verifyItemAddedtoCartAppearInCartPage" />
+          <include name="verifyItemAddedToCartAppearInCartPage" />
         </methods>
       </class>
     </classes>

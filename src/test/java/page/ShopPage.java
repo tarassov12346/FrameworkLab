@@ -1,5 +1,7 @@
 package page;
 
+import driver.DriverSingleton;
+import page.ItemPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -16,9 +18,9 @@ public class ShopPage extends AbstractPage {
     private final long TIME_OUT = 40;
     protected static final String HOMEPAGE_URL = "http://shop.bugred.ru/";
     Logger logger = LogManager.getRootLogger();
+    
+    private By itemButtonBy = By.xpath("//a[contains(@href, 'item')]");
 
-    @FindBy(xpath = "//a[contains(@href, 'item')]")
-    private WebElement firstItemButton;
     @FindBy(xpath = "//*[@id='navbarSupportedContent']/form/input")
     private WebElement searchInput;
     @FindBy(xpath = "//*[@id='navbarSupportedContent']/form/button")
@@ -61,9 +63,29 @@ public class ShopPage extends AbstractPage {
         return this;
     }
 
-    public ItemPage clickItem() {
-        waitForElementVisibility(firstItemButton, EXPLICIT_WAIT).click();
+    public ItemPage getItemAvailableInShop() {
+        //Not all items in shop are available. It is not possible to enter count and book them.
+        //Items that can be booked are considered as available.
+        List<WebElement> items = getAllItemsOnPage();
+        for(int i = 0; i < items.size(); i++) {
+            ItemPage itemPage = clickItem(items.get(i));
+            if (itemPage.isItemAvailable()) {
+                return itemPage;
+            }
+            DriverSingleton.jumpToPreviousPage();
+            items = getAllItemsOnPage();
+        }
+        return null;
+    }
+
+
+    public ItemPage clickItem(WebElement element) {
+        waitForElementVisibility(element, EXPLICIT_WAIT).click();
         return new ItemPage(driver);
+    }
+    
+    public List<WebElement> getAllItemsOnPage() {
+        return driver.findElements(itemButtonBy);
     }
 
 

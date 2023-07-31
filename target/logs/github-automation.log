@@ -1,14 +1,14 @@
-2023-07-25 12:06:40,942 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
-2023-07-25 12:06:40,966 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
-2023-07-25 12:06:40,967 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
-2023-07-25 12:06:40,974 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1a2bcd56
-2023-07-25 12:06:41,015 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
-2023-07-25 12:06:41,016 DEBUG internal.PlatformDependent0 [main] Java version: 18
-2023-07-25 12:06:41,019 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
-2023-07-25 12:06:41,022 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
-2023-07-25 12:06:41,022 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
-2023-07-25 12:06:41,026 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
-2023-07-25 12:06:41,028 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
+2023-07-29 13:30:37,080 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-07-29 13:30:37,118 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-07-29 13:30:37,130 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-07-29 13:30:37,135 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4bee18dc
+2023-07-29 13:30:37,185 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-07-29 13:30:37,187 DEBUG internal.PlatformDependent0 [main] Java version: 17
+2023-07-29 13:30:37,191 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-07-29 13:30:37,193 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-07-29 13:30:37,195 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-07-29 13:30:37,200 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-07-29 13:30:37,202 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
@@ -35,9 +35,11 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:31) ~[test-classes/:?]
-	at test.CommonConditions.setUp(CommonConditions.java:30) ~[test-classes/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at test.CommonConditions.setUp(CommonConditions.java:31) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
@@ -64,12 +66,12 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
-2023-07-25 12:06:41,055 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
-2023-07-25 12:06:41,058 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
-java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @57db2b13
-	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394) ~[?:?]
+2023-07-29 13:30:37,222 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-07-29 13:30:37,225 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @680dc59c
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
 	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
 	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
 	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
@@ -94,9 +96,11 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:31) ~[test-classes/:?]
-	at test.CommonConditions.setUp(CommonConditions.java:30) ~[test-classes/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at test.CommonConditions.setUp(CommonConditions.java:31) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
@@ -123,442 +127,61 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
-2023-07-25 12:06:41,064 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
-2023-07-25 12:06:41,065 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
-2023-07-25 12:06:41,069 DEBUG internal.PlatformDependent [main] maxDirectMemory: 2147483648 bytes (maybe)
-2023-07-25 12:06:41,076 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\User\AppData\Local\Temp (java.io.tmpdir)
-2023-07-25 12:06:41,076 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2023-07-25 12:06:41,077 DEBUG internal.PlatformDependent [main] Platform: Windows
-2023-07-25 12:06:41,080 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
-2023-07-25 12:06:41,080 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2023-07-25 12:06:41,091 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
-2023-07-25 12:06:41,092 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
-2023-07-25 12:06:41,110 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
-2023-07-25 12:06:41,149 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2023-07-25 12:06:41,150 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2023-07-25 12:06:41,179 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2023-07-25 12:06:41,180 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2023-07-25 12:06:41,247 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 8
-2023-07-25 12:06:41,270 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
-2023-07-25 12:06:41,272 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
-2023-07-25 12:06:41,297 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1b495d4
-2023-07-25 12:06:41,301 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@12fe1f28
-2023-07-25 12:06:41,303 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@503df2d0
-2023-07-25 12:06:41,308 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@26fb4d06
-2023-07-25 12:06:41,310 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@c269425
-2023-07-25 12:06:41,315 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6e43ddd6
-2023-07-25 12:06:41,318 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@51d719bc
-2023-07-25 12:06:41,324 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2d38edfd
-2023-07-25 12:06:41,368 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 8
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 8
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
-2023-07-25 12:06:41,374 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2023-07-25 12:06:41,403 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
-2023-07-25 12:06:41,406 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
-2023-07-25 12:06:41,406 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2023-07-25 12:06:41,963 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 12772 (auto-detected)
-2023-07-25 12:06:41,968 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
-2023-07-25 12:06:41,968 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
-2023-07-25 12:06:41,981 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2023-07-25 12:06:41,984 DEBUG util.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2023-07-25 12:06:42,005 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 10:fe:ed:ff:fe:1d:a3:16 (auto-detected)
-2023-07-25 12:06:42,107 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
-2023-07-25 12:06:42,109 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
-2023-07-25 12:06:42,109 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5cdbf1e
-2023-07-25 12:06:42,154 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
-2023-07-25 12:06:42,155 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
-2023-07-25 12:06:42,156 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
-2023-07-25 12:06:42,157 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
-2023-07-25 12:06:43,190 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
-2023-07-25 12:06:43,487 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0x3df99b672964bd56
-2023-07-25 12:06:44,094 INFO  [main] Page initialized
-2023-07-25 12:06:45,319 INFO  [main] Page loaded
-2023-07-25 12:06:46,061 INFO  [main] Page initialized
-2023-07-25 12:06:46,357 INFO  [main] Page loaded
-2023-07-25 12:06:47,150 INFO  [main] Page initialized
-2023-07-25 12:06:47,452 INFO  [main] Page loaded
-2023-07-25 12:06:48,476 INFO  [main] Page initialized
-2023-07-25 12:06:48,645 INFO  [main] Page initialized
-2023-07-25 12:06:48,961 INFO  [main] Page loaded
-2023-07-25 12:06:49,802 INFO  [main] Page initialized
-2023-07-25 12:06:49,906 INFO  [main] Page initialized
-2023-07-25 12:06:50,169 INFO  [main] Page loaded
-2023-07-25 12:06:50,681 INFO  [main] Page initialized
-2023-07-25 12:06:50,964 INFO  [main] Page loaded
-2023-07-25 12:06:51,564 INFO  [main] Page initialized
-2023-07-25 12:06:51,825 INFO  [main] Page loaded
-2023-07-25 12:06:52,734 INFO  [main] Page initialized
-2023-07-25 12:06:52,861 INFO  [main] Page initialized
-2023-07-25 12:06:53,144 INFO  [main] Page loaded
-2023-07-25 12:06:53,987 INFO  [main] Page initialized
-2023-07-25 12:06:54,082 INFO  [main] Page initialized
-2023-07-25 12:06:54,377 INFO  [main] Page loaded
-2023-07-25 12:06:54,801 INFO  [main] Page initialized
-2023-07-25 12:06:55,076 INFO  [main] Page loaded
-2023-07-25 12:06:55,618 INFO  [main] Page initialized
-2023-07-25 12:06:55,841 INFO  [main] Page loaded
-2023-07-25 12:06:56,365 INFO  [main] Page initialized
-2023-07-25 12:06:56,625 INFO  [main] Page loaded
-2023-07-25 12:06:57,470 INFO  [main] Page initialized
-2023-07-25 12:06:57,548 INFO  [main] Page initialized
-2023-07-25 12:06:57,795 INFO  [main] Page loaded
-2023-07-25 12:06:58,697 INFO  [main] Page initialized
-2023-07-25 12:06:58,780 INFO  [main] Page initialized
-2023-07-25 12:06:59,026 INFO  [main] Page loaded
-2023-07-25 12:06:59,813 INFO  [main] Page initialized
-2023-07-25 12:06:59,900 INFO  [main] Page initialized
-2023-07-25 12:07:00,181 INFO  [main] Page loaded
-2023-07-25 12:07:00,957 INFO  [main] Page initialized
-2023-07-25 12:07:01,045 INFO  [main] Page initialized
-2023-07-25 12:07:01,332 INFO  [main] Page loaded
-2023-07-25 12:07:02,109 INFO  [main] Page initialized
-2023-07-25 12:07:02,185 INFO  [main] Page initialized
-2023-07-25 12:07:02,474 INFO  [main] Page loaded
-2023-07-25 12:07:03,273 INFO  [main] Page initialized
-2023-07-25 12:07:03,354 INFO  [main] Page initialized
-2023-07-25 12:07:03,638 INFO  [main] Page loaded
-2023-07-25 12:07:04,402 INFO  [main] Page initialized
-2023-07-25 12:07:04,484 INFO  [main] Page initialized
-2023-07-25 12:07:04,741 INFO  [main] Page loaded
-2023-07-25 12:07:05,545 INFO  [main] Page initialized
-2023-07-25 12:07:05,620 INFO  [main] Page initialized
-2023-07-25 12:07:05,892 INFO  [main] Page loaded
-2023-07-25 12:07:06,604 INFO  [main] Page initialized
-2023-07-25 12:07:06,687 INFO  [main] Page initialized
-2023-07-25 12:07:06,963 INFO  [main] Page loaded
-2023-07-25 12:07:07,698 INFO  [main] Page initialized
-2023-07-25 12:07:07,775 INFO  [main] Page initialized
-2023-07-25 12:07:08,062 INFO  [main] Page loaded
-2023-07-25 12:07:08,786 INFO  [main] Page initialized
-2023-07-25 12:07:08,862 INFO  [main] Page initialized
-2023-07-25 12:07:09,134 INFO  [main] Page loaded
-2023-07-25 12:07:09,914 INFO  [main] Page initialized
-2023-07-25 12:07:09,992 INFO  [main] Page initialized
-2023-07-25 12:07:10,257 INFO  [main] Page loaded
-2023-07-25 12:07:11,003 INFO  [main] Page initialized
-2023-07-25 12:07:11,275 INFO  [main] Page loaded
-2023-07-25 12:07:12,245 INFO  [main] Page initialized
-2023-07-25 12:07:12,337 INFO  [main] Page initialized
-2023-07-25 12:07:12,591 INFO  [main] Page loaded
-2023-07-25 12:07:13,511 INFO  [main] Page initialized
-2023-07-25 12:07:13,602 INFO  [main] Page initialized
-2023-07-25 12:07:13,861 INFO  [main] Page loaded
-2023-07-25 12:07:14,786 INFO  [main] Page initialized
-2023-07-25 12:07:14,869 INFO  [main] Page initialized
-2023-07-25 12:07:15,143 INFO  [main] Page loaded
-2023-07-25 12:07:15,963 INFO  [main] Page initialized
-2023-07-25 12:07:16,048 INFO  [main] Page initialized
-2023-07-25 12:07:16,344 INFO  [main] Page loaded
-2023-07-25 12:07:17,244 INFO  [main] Page initialized
-2023-07-25 12:07:17,320 INFO  [main] Page initialized
-2023-07-25 12:07:17,603 INFO  [main] Page loaded
-2023-07-25 12:07:18,518 INFO  [main] Page initialized
-2023-07-25 12:07:18,594 INFO  [main] Page initialized
-2023-07-25 12:07:18,870 INFO  [main] Page loaded
-2023-07-25 12:07:19,385 INFO  [main] Page initialized
-2023-07-25 12:07:19,655 INFO  [main] Page loaded
-2023-07-25 12:07:20,132 INFO  [main] Page initialized
-2023-07-25 12:07:20,376 INFO  [main] Page loaded
-2023-07-25 12:07:21,089 INFO  [main] Page initialized
-2023-07-25 12:07:21,165 INFO  [main] Page initialized
-2023-07-25 12:07:21,441 INFO  [main] Page loaded
-2023-07-25 12:07:22,255 INFO  [main] Page initialized
-2023-07-25 12:07:22,346 INFO  [main] Page initialized
-2023-07-25 12:07:22,580 INFO  [main] Page loaded
-2023-07-25 12:07:23,282 INFO  [main] Page initialized
-2023-07-25 12:07:23,363 INFO  [main] Page initialized
-2023-07-25 12:07:23,631 INFO  [main] Page loaded
-2023-07-25 12:07:24,377 INFO  [main] Page initialized
-2023-07-25 12:07:24,460 INFO  [main] Page initialized
-2023-07-25 12:07:24,748 INFO  [main] Page loaded
-2023-07-25 12:07:25,477 INFO  [main] Page initialized
-2023-07-25 12:07:25,547 INFO  [main] Page initialized
-2023-07-25 12:07:25,822 INFO  [main] Page loaded
-2023-07-25 12:07:26,612 INFO  [main] Page initialized
-2023-07-25 12:07:26,684 INFO  [main] Page initialized
-2023-07-25 12:07:26,968 INFO  [main] Page loaded
-2023-07-25 12:07:27,655 INFO  [main] Page initialized
-2023-07-25 12:07:27,734 INFO  [main] Page initialized
-2023-07-25 12:07:28,041 INFO  [main] Page loaded
-2023-07-25 12:07:28,495 INFO  [main] Page initialized
-2023-07-25 12:07:28,770 INFO  [main] Page loaded
-2023-07-25 12:07:29,311 INFO  [main] Page initialized
-2023-07-25 12:07:29,606 INFO  [main] Page loaded
-2023-07-25 12:07:30,322 INFO  [main] Page initialized
-2023-07-25 12:07:30,405 INFO  [main] Page initialized
-2023-07-25 12:07:30,687 INFO  [main] Page loaded
-2023-07-25 12:07:31,399 INFO  [main] Page initialized
-2023-07-25 12:07:31,477 INFO  [main] Page initialized
-2023-07-25 12:07:31,744 INFO  [main] Page loaded
-2023-07-25 12:07:32,431 INFO  [main] Page initialized
-2023-07-25 12:07:32,504 INFO  [main] Page initialized
-2023-07-25 12:07:32,782 INFO  [main] Page loaded
-2023-07-25 12:07:33,563 INFO  [main] Page initialized
-2023-07-25 12:07:33,652 INFO  [main] Page initialized
-2023-07-25 12:07:33,926 INFO  [main] Page loaded
-2023-07-25 12:07:34,674 INFO  [main] Page initialized
-2023-07-25 12:07:34,740 INFO  [main] Page initialized
-2023-07-25 12:07:35,033 INFO  [main] Page loaded
-2023-07-25 12:07:35,775 INFO  [main] Page initialized
-2023-07-25 12:07:35,855 INFO  [main] Page initialized
-2023-07-25 12:07:36,097 INFO  [main] Page loaded
-2023-07-25 12:07:36,786 INFO  [main] Page initialized
-2023-07-25 12:07:36,857 INFO  [main] Page initialized
-2023-07-25 12:07:37,138 INFO  [main] Page loaded
-2023-07-25 12:07:37,913 INFO  [main] Page initialized
-2023-07-25 12:07:37,994 INFO  [main] Page initialized
-2023-07-25 12:07:38,306 INFO  [main] Page loaded
-2023-07-25 12:07:39,020 INFO  [main] Page initialized
-2023-07-25 12:07:39,095 INFO  [main] Page initialized
-2023-07-25 12:07:39,383 INFO  [main] Page loaded
-2023-07-25 12:07:40,115 INFO  [main] Page initialized
-2023-07-25 12:07:40,183 INFO  [main] Page initialized
-2023-07-25 12:07:40,471 INFO  [main] Page loaded
-2023-07-25 12:07:41,166 INFO  [main] Page initialized
-2023-07-25 12:07:41,241 INFO  [main] Page initialized
-2023-07-25 12:07:41,511 INFO  [main] Page loaded
-2023-07-25 12:07:42,216 INFO  [main] Page initialized
-2023-07-25 12:07:42,285 INFO  [main] Page initialized
-2023-07-25 12:07:42,574 INFO  [main] Page loaded
-2023-07-25 12:07:43,357 INFO  [main] Page initialized
-2023-07-25 12:07:43,612 INFO  [main] Page loaded
-2023-07-25 12:07:44,487 INFO  [main] Page initialized
-2023-07-25 12:07:44,569 INFO  [main] Page initialized
-2023-07-25 12:07:44,885 INFO  [main] Page loaded
-2023-07-25 12:07:45,851 INFO  [main] Page initialized
-2023-07-25 12:07:45,931 INFO  [main] Page initialized
-2023-07-25 12:07:46,205 INFO  [main] Page loaded
-2023-07-25 12:07:47,125 INFO  [main] Page initialized
-2023-07-25 12:07:47,215 INFO  [main] Page initialized
-2023-07-25 12:07:47,473 INFO  [main] Page loaded
-2023-07-25 12:07:48,358 INFO  [main] Page initialized
-2023-07-25 12:07:48,441 INFO  [main] Page initialized
-2023-07-25 12:07:48,725 INFO  [main] Page loaded
-2023-07-25 12:07:49,606 INFO  [main] Page initialized
-2023-07-25 12:07:49,687 INFO  [main] Page initialized
-2023-07-25 12:07:49,913 INFO  [main] Page loaded
-2023-07-25 12:07:50,803 INFO  [main] Page initialized
-2023-07-25 12:07:50,876 INFO  [main] Page initialized
-2023-07-25 12:07:51,171 INFO  [main] Page loaded
-2023-07-25 12:07:52,007 INFO  [main] Page initialized
-2023-07-25 12:07:52,080 INFO  [main] Page initialized
-2023-07-25 12:07:52,362 INFO  [main] Page loaded
-2023-07-25 12:07:53,216 INFO  [main] Page initialized
-2023-07-25 12:07:53,287 INFO  [main] Page initialized
-2023-07-25 12:07:53,531 INFO  [main] Page loaded
-2023-07-25 12:07:54,418 INFO  [main] Page initialized
-2023-07-25 12:07:54,490 INFO  [main] Page initialized
-2023-07-25 12:07:54,756 INFO  [main] Page loaded
-2023-07-25 12:07:55,661 INFO  [main] Page initialized
-2023-07-25 12:07:55,732 INFO  [main] Page initialized
-2023-07-25 12:07:55,986 INFO  [main] Page loaded
-2023-07-25 12:07:56,919 INFO  [main] Page initialized
-2023-07-25 12:07:57,000 INFO  [main] Page initialized
-2023-07-25 12:07:57,273 INFO  [main] Page loaded
-2023-07-25 12:07:58,125 INFO  [main] Page initialized
-2023-07-25 12:07:58,194 INFO  [main] Page initialized
-2023-07-25 12:07:58,464 INFO  [main] Page loaded
-2023-07-25 12:07:59,174 INFO  [main] Page initialized
-2023-07-25 12:07:59,460 INFO  [main] Page loaded
-2023-07-25 12:08:00,303 INFO  [main] Page initialized
-2023-07-25 12:08:00,373 INFO  [main] Page initialized
-2023-07-25 12:08:00,663 INFO  [main] Page loaded
-2023-07-25 12:08:01,536 INFO  [main] Page initialized
-2023-07-25 12:08:01,607 INFO  [main] Page initialized
-2023-07-25 12:08:01,872 INFO  [main] Page loaded
-2023-07-25 12:08:02,730 INFO  [main] Page initialized
-2023-07-25 12:08:02,797 INFO  [main] Page initialized
-2023-07-25 12:08:03,083 INFO  [main] Page loaded
-2023-07-25 12:08:03,986 INFO  [main] Page initialized
-2023-07-25 12:08:04,060 INFO  [main] Page initialized
-2023-07-25 12:08:04,340 INFO  [main] Page loaded
-2023-07-25 12:08:05,405 INFO  [main] Page initialized
-2023-07-25 12:08:05,476 INFO  [main] Page initialized
-2023-07-25 12:08:05,755 INFO  [main] Page loaded
-2023-07-25 12:08:06,638 INFO  [main] Page initialized
-2023-07-25 12:08:06,703 INFO  [main] Page initialized
-2023-07-25 12:08:06,987 INFO  [main] Page loaded
-2023-07-25 12:08:07,855 INFO  [main] Page initialized
-2023-07-25 12:08:07,932 INFO  [main] Page initialized
-2023-07-25 12:08:08,175 INFO  [main] Page loaded
-2023-07-25 12:08:09,676 INFO  [main] Page initialized
-2023-07-25 12:08:09,908 INFO  [main] Page loaded
-2023-07-25 12:08:10,880 INFO  [main] Page initialized
-2023-07-25 12:08:11,137 INFO  [main] Page loaded
-2023-07-25 12:08:12,287 INFO  [main] Page initialized
-2023-07-25 12:08:12,346 INFO  [main] Page initialized
-2023-07-25 12:08:12,376 INFO  [main] Page initialized
-2023-07-25 12:08:12,669 INFO  [main] Page loaded
-2023-07-25 12:08:13,837 INFO  [main] Page initialized
-2023-07-25 12:08:13,869 INFO  [main] Page initialized
-2023-07-25 12:08:13,897 INFO  [main] Page initialized
-2023-07-25 12:08:14,234 INFO  [main] Page loaded
-2023-07-25 12:08:15,388 INFO  [main] Page initialized
-2023-07-25 12:08:15,425 INFO  [main] Page initialized
-2023-07-25 12:08:15,453 INFO  [main] Page initialized
-2023-07-25 12:08:15,747 INFO  [main] Page loaded
-2023-07-25 12:08:16,899 INFO  [main] Page initialized
-2023-07-25 12:08:16,934 INFO  [main] Page initialized
-2023-07-25 12:08:16,963 INFO  [main] Page initialized
-2023-07-25 12:08:17,227 INFO  [main] Page loaded
-2023-07-25 12:08:18,367 INFO  [main] Page initialized
-2023-07-25 12:08:18,402 INFO  [main] Page initialized
-2023-07-25 12:08:18,433 INFO  [main] Page initialized
-2023-07-25 12:08:18,699 INFO  [main] Page loaded
-2023-07-25 12:08:19,833 INFO  [main] Page initialized
-2023-07-25 12:08:19,870 INFO  [main] Page initialized
-2023-07-25 12:08:19,901 INFO  [main] Page initialized
-2023-07-25 12:08:20,183 INFO  [main] Page loaded
-2023-07-25 12:08:21,379 INFO  [main] Page initialized
-2023-07-25 12:08:21,426 INFO  [main] Page initialized
-2023-07-25 12:08:21,457 INFO  [main] Page initialized
-2023-07-25 12:08:21,747 INFO  [main] Page loaded
-2023-07-25 12:08:22,840 INFO  [main] Page initialized
-2023-07-25 12:08:22,879 INFO  [main] Page initialized
-2023-07-25 12:08:22,911 INFO  [main] Page initialized
-2023-07-25 12:08:23,185 INFO  [main] Page loaded
-2023-07-25 12:08:24,412 INFO  [main] Page initialized
-2023-07-25 12:08:24,472 INFO  [main] Page initialized
-2023-07-25 12:08:24,503 INFO  [main] Page initialized
-2023-07-25 12:08:24,774 INFO  [main] Page loaded
-2023-07-25 12:08:25,895 INFO  [main] Page initialized
-2023-07-25 12:08:25,940 INFO  [main] Page initialized
-2023-07-25 12:08:25,967 INFO  [main] Page initialized
-2023-07-25 12:08:26,242 INFO  [main] Page loaded
-2023-07-25 12:08:27,514 INFO  [main] Page initialized
-2023-07-25 12:08:27,548 INFO  [main] Page initialized
-2023-07-25 12:08:27,577 INFO  [main] Page initialized
-2023-07-25 12:08:27,845 INFO  [main] Page loaded
-2023-07-25 12:08:28,902 INFO  [main] Page initialized
-2023-07-25 12:08:28,936 INFO  [main] Page initialized
-2023-07-25 12:08:28,967 INFO  [main] Page initialized
-2023-07-25 12:08:29,237 INFO  [main] Page loaded
-2023-07-25 12:08:30,395 INFO  [main] Page initialized
-2023-07-25 12:08:30,683 INFO  [main] Page loaded
-2023-07-25 12:08:31,995 INFO  [main] Page initialized
-2023-07-25 12:08:32,029 INFO  [main] Page initialized
-2023-07-25 12:08:32,056 INFO  [main] Page initialized
-2023-07-25 12:08:32,422 INFO  [main] Page loaded
-2023-07-25 12:08:33,725 INFO  [main] Page initialized
-2023-07-25 12:08:33,764 INFO  [main] Page initialized
-2023-07-25 12:08:33,790 INFO  [main] Page initialized
-2023-07-25 12:08:34,097 INFO  [main] Page loaded
-2023-07-25 12:08:35,445 INFO  [main] Page initialized
-2023-07-25 12:08:35,491 INFO  [main] Page initialized
-2023-07-25 12:08:35,524 INFO  [main] Page initialized
-2023-07-25 12:08:35,798 INFO  [main] Page loaded
-2023-07-25 12:08:37,065 INFO  [main] Page initialized
-2023-07-25 12:08:37,099 INFO  [main] Page initialized
-2023-07-25 12:08:37,133 INFO  [main] Page initialized
-2023-07-25 12:08:37,387 INFO  [main] Page loaded
-2023-07-25 12:08:38,702 INFO  [main] Page initialized
-2023-07-25 12:08:38,745 INFO  [main] Page initialized
-2023-07-25 12:08:38,775 INFO  [main] Page initialized
-2023-07-25 12:08:39,037 INFO  [main] Page loaded
-2023-07-25 12:08:40,354 INFO  [main] Page initialized
-2023-07-25 12:08:40,390 INFO  [main] Page initialized
-2023-07-25 12:08:40,420 INFO  [main] Page initialized
-2023-07-25 12:08:40,690 INFO  [main] Page loaded
-2023-07-25 12:08:42,019 INFO  [main] Page initialized
-2023-07-25 12:08:42,057 INFO  [main] Page initialized
-2023-07-25 12:08:42,088 INFO  [main] Page initialized
-2023-07-25 12:08:42,360 INFO  [main] Page loaded
-2023-07-25 12:08:43,742 INFO  [main] Page initialized
-2023-07-25 12:08:43,779 INFO  [main] Page initialized
-2023-07-25 12:08:43,808 INFO  [main] Page initialized
-2023-07-25 12:08:44,093 INFO  [main] Page loaded
-2023-07-25 12:08:45,359 INFO  [main] Page initialized
-2023-07-25 12:08:45,397 INFO  [main] Page initialized
-2023-07-25 12:08:45,431 INFO  [main] Page initialized
-2023-07-25 12:08:45,685 INFO  [main] Page loaded
-2023-07-25 12:08:47,059 INFO  [main] Page initialized
-2023-07-25 12:08:47,093 INFO  [main] Page initialized
-2023-07-25 12:08:47,122 INFO  [main] Page initialized
-2023-07-25 12:08:47,414 INFO  [main] Page loaded
-2023-07-25 12:08:48,740 INFO  [main] Page initialized
-2023-07-25 12:08:48,781 INFO  [main] Page initialized
-2023-07-25 12:08:48,808 INFO  [main] Page initialized
-2023-07-25 12:08:49,103 INFO  [main] Page loaded
-2023-07-25 12:08:50,372 INFO  [main] Page initialized
-2023-07-25 12:08:50,414 INFO  [main] Page initialized
-2023-07-25 12:08:50,446 INFO  [main] Page initialized
-2023-07-25 12:08:50,725 INFO  [main] Page loaded
-2023-07-25 12:08:52,137 INFO  [main] Page initialized
-2023-07-25 12:08:52,441 INFO  [main] Page loaded
-2023-07-25 12:08:53,798 INFO  [main] Page initialized
-2023-07-25 12:08:53,844 INFO  [main] Page initialized
-2023-07-25 12:08:53,876 INFO  [main] Page initialized
-2023-07-25 12:08:54,143 INFO  [main] Page loaded
-2023-07-25 12:08:55,577 INFO  [main] Page initialized
-2023-07-25 12:08:55,632 INFO  [main] Page initialized
-2023-07-25 12:08:55,663 INFO  [main] Page initialized
-2023-07-25 12:08:55,934 INFO  [main] Page loaded
-2023-07-25 12:08:57,283 INFO  [main] Page initialized
-2023-07-25 12:08:57,328 INFO  [main] Page initialized
-2023-07-25 12:08:57,363 INFO  [main] Page initialized
-2023-07-25 12:08:57,676 INFO  [main] Page loaded
-2023-07-25 12:08:59,156 INFO  [main] Page initialized
-2023-07-25 12:08:59,196 INFO  [main] Page initialized
-2023-07-25 12:08:59,223 INFO  [main] Page initialized
-2023-07-25 12:08:59,520 INFO  [main] Page loaded
-2023-07-25 12:09:00,840 INFO  [main] Page initialized
-2023-07-25 12:09:00,873 INFO  [main] Page initialized
-2023-07-25 12:09:00,903 INFO  [main] Page initialized
-2023-07-25 12:09:01,175 INFO  [main] Page loaded
-2023-07-25 12:09:02,755 INFO  [main] Page initialized
-2023-07-25 12:09:02,787 INFO  [main] Page initialized
-2023-07-25 12:09:02,814 INFO  [main] Page initialized
-2023-07-25 12:09:03,103 INFO  [main] Page loaded
-2023-07-25 12:09:04,497 INFO  [main] Page initialized
-2023-07-25 12:09:04,531 INFO  [main] Page initialized
-2023-07-25 12:09:04,563 INFO  [main] Page initialized
-2023-07-25 12:09:04,902 INFO  [main] Page loaded
-2023-07-25 12:09:06,499 INFO  [main] Page initialized
-2023-07-25 12:09:06,537 INFO  [main] Page initialized
-2023-07-25 12:09:06,569 INFO  [main] Page initialized
-2023-07-25 12:09:06,795 INFO  [main] Page loaded
-2023-07-25 12:09:08,153 INFO  [main] Page initialized
-2023-07-25 12:09:08,192 INFO  [main] Page initialized
-2023-07-25 12:09:08,220 INFO  [main] Page initialized
-2023-07-25 12:09:08,492 INFO  [main] Page loaded
-2023-07-25 12:09:09,943 INFO  [main] Page initialized
-2023-07-25 12:09:09,987 INFO  [main] Page initialized
-2023-07-25 12:09:10,022 INFO  [main] Page initialized
-2023-07-25 12:09:10,326 INFO  [main] Page loaded
-2023-07-25 12:09:11,846 INFO  [main] Page initialized
-2023-07-25 12:09:11,880 INFO  [main] Page initialized
-2023-07-25 12:09:11,908 INFO  [main] Page initialized
-2023-07-25 12:09:12,191 INFO  [main] Page loaded
-2023-07-25 12:09:13,647 INFO  [main] Page initialized
-2023-07-25 12:09:13,679 INFO  [main] Page initialized
-2023-07-25 12:09:13,706 INFO  [main] Page initialized
-2023-07-25 12:09:13,981 INFO  [main] Page loaded
-2023-07-25 12:09:15,203 INFO  [main] Page initialized
-2023-07-25 12:09:15,469 INFO  [main] Page loaded
-2023-07-25 12:09:16,877 INFO  [main] Page initialized
-2023-07-25 12:09:16,916 INFO  [main] Page initialized
-2023-07-25 12:09:16,952 INFO  [main] Page initialized
-2023-07-25 12:09:17,214 INFO  [main] Page loaded
-2023-07-25 12:09:18,778 INFO  [main] Page initialized
-2023-07-25 12:09:18,817 INFO  [main] Page initialized
-2023-07-25 12:09:18,847 INFO  [main] Page initialized
-2023-07-25 12:09:19,126 INFO  [main] Page loaded
-2023-07-25 12:09:20,421 INFO  [main] Page initialized
-2023-07-25 12:09:20,456 INFO  [main] Page initialized
-2023-07-25 12:09:20,483 INFO  [main] Page initialized
-2023-07-25 12:09:20,761 INFO  [main] Page loaded
-2023-07-25 12:09:22,065 INFO  [main] Page initialized
-2023-07-25 12:09:22,101 INFO  [main] Page initialized
-2023-07-25 12:09:22,129 INFO  [main] Page initialized
-2023-07-25 12:09:22,404 INFO  [main] Page loaded
-2023-07-25 12:09:23,737 INFO  [main] Page initialized
-2023-07-25 12:09:23,783 INFO  [main] Page initialized
-2023-07-25 12:09:23,829 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
+2023-07-29 13:30:37,236 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-07-29 13:30:37,237 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
+2023-07-29 13:30:37,239 DEBUG internal.PlatformDependent [main] maxDirectMemory: 778043392 bytes (maybe)
+2023-07-29 13:30:37,239 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2023-07-29 13:30:37,242 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-07-29 13:30:37,244 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-07-29 13:30:37,245 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-07-29 13:30:37,249 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-07-29 13:30:37,250 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-07-29 13:30:37,266 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-07-29 13:30:37,298 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-07-29 13:30:37,299 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-07-29 13:30:37,319 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-07-29 13:30:37,319 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-07-29 13:30:37,362 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 4
+2023-07-29 13:30:37,384 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-07-29 13:30:37,384 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-07-29 13:30:37,394 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@2c6ee758
+2023-07-29 13:30:37,397 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@2a1debfa
+2023-07-29 13:30:37,399 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@44de94c3
+2023-07-29 13:30:37,402 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@256aa5f2
+2023-07-29 13:30:37,455 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 4
+2023-07-29 13:30:37,463 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 4
+2023-07-29 13:30:37,464 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-07-29 13:30:37,464 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-07-29 13:30:37,466 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-07-29 13:30:37,467 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-07-29 13:30:37,468 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-07-29 13:30:37,469 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-07-29 13:30:37,469 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-07-29 13:30:37,470 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-07-29 13:30:37,471 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-07-29 13:30:37,472 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-07-29 13:30:37,497 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-07-29 13:30:37,498 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-07-29 13:30:37,501 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-07-29 13:30:38,020 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 16932 (auto-detected)
+2023-07-29 13:30:38,025 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-07-29 13:30:38,026 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-07-29 13:30:38,035 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2023-07-29 13:30:38,046 DEBUG util.NetUtil [Forwarding newSession on session null to remote] /proc/sys/net/core/somaxconn: 4096
+2023-07-29 13:30:38,055 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 00:22:68:ff:fe:77:dc:0c (auto-detected)
+2023-07-29 13:30:38,158 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-07-29 13:30:38,159 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-07-29 13:30:38,159 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1f6bea25
+2023-07-29 13:30:38,217 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-07-29 13:30:38,217 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-07-29 13:30:38,218 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-07-29 13:30:38,218 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-07-29 13:30:39,868 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-07-29 13:30:40,106 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0x7deecc5e6001a753
+2023-07-29 13:30:43,689 INFO  [main] Page initialized
+2023-07-29 13:30:43,696 INFO  [main] Page initialized
+2023-07-29 13:30:48,505 INFO  [main] Page initialized
+2023-07-29 13:30:50,946 INFO  [main] Page initialized
+2023-07-29 13:30:52,912 INFO  [main] Page initialized
+2023-07-29 13:30:56,143 INFO  [main] Page initialized
+2023-07-29 13:31:03,245 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26

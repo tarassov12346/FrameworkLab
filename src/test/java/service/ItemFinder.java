@@ -13,7 +13,6 @@ public class ItemFinder {
         shopPage = new ShopPage(driver);
     }
 
-
     public List<WebElement> getItems(String searchRequest) {
         return shopPage.openPage().enterSearchRequest(searchRequest).
                 clickSearchButton().getSearchResults();

@@ -8,6 +8,14 @@ public class HeaderPage extends AbstractPage {
     private final String HOMEPAGE_URL = "http://shop.bugred.ru/";
     @FindBy(xpath = "//a[contains(@href, 'cart')]")
     private WebElement cartButton;
+    @FindBy(xpath = "//*[contains(@href, 'login')]")
+    private WebElement loginButton;
+    @FindBy(id = "navbarDropdown2")
+    private WebElement accountButton;
+    @FindBy(xpath = "//a[contains(text(), 'Личный кабинет')]")
+    private WebElement personalProfileButton;
+    @FindBy(xpath = "//a[contains(text(), 'Выйти')]")
+    private WebElement logOutButton;
 
     public HeaderPage(WebDriver driver) {
         super(driver);
@@ -22,5 +30,25 @@ public class HeaderPage extends AbstractPage {
     public CartPage clickCartButton() {
         cartButton.click();
         return new CartPage(driver);
-    }    
+    }
+    
+    public LoggingPage clickLoginButton() {
+        loginButton.click();
+        return new LoggingPage(driver);
+    }
+    
+    public HeaderPage clickAccountButton() {
+        accountButton.click();
+        return this;
+    }
+    
+    public ProfilePage clickPersonalProfileButton() {
+        personalProfileButton.click();
+        return new ProfilePage(driver);
+    }
+    
+    public LoggingPage clickLogOutButton() {
+        logOutButton.click();
+        return new LoggingPage(driver);
+    }
 }
