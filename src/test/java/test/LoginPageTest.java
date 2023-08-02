@@ -4,46 +4,42 @@ import model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.LoginPage;
 import service.UserCreator;
 
-public class LoginPageTest extends CommonConditions{
+public class LoginPageTest extends CommonConditions {
 
     protected final Logger logger = LogManager.getRootLogger();
+    LoginPage loginPage;
 
+    @BeforeClass
+    public void preRegisterUserForLoginPageTests() {
+        registerUserFromBundle();
+    }
 
-//    @BeforeClass(alwaysRun = true,
-//            description = "Open login page")
-//    public void openLoginPage() {
-//        LoginPage loginPage = new LoginPage(driver);
-//        loginPage.openPage();
-//        logger.info("Login page opened");
-//    }
+    @BeforeMethod(description = "Initializes and opens registration page")
+    public void initialPage() {
+        loginPage = new LoginPage(driver);
+        loginPage.openPage();
+    }
 
     @Test(description = "Login by existing user data")
     public void loginUserFromBundleTest() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.openPage();
-        logger.info("Login user from bundle test started");
-        User user = new UserCreator(false).createUser();
+        logger.info("[loginUserFromBundleTest] : has been started");
 
-        loginPage.fillEmail(user.email())
-                .fillPassword(user.password())
-                .logIn();
-        Assert.assertEquals(driver.getCurrentUrl(), "http://shop.bugred.ru/");
+        User user = new UserCreator(true).createUser();
+        Assert.assertNotNull(loginPage.fillFieldsAndLoginUser(user));
     }
 
-    @Test(description = "Login with wrong user data")
-    public void loginWithInvalidDataTest() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.openPage();
-        logger.info("Login with invalid data test started");
-        User user = new UserCreator(true).createUser();
-        loginPage.fillEmail(user.email())
-                .fillPassword(user.password() + " ")
-                .logIn();
-        //Assert.assertTrue(loginPage.logInFaillureCheck());
+    @Test(description = "Login unregistered user")
+    public void loginUnRegisteredUser() {
+        logger.info("[loginUserWithInvalid%sTest] : has been started");
+
+        User user = new UserCreator(false).createUser();
+        Assert.assertNull(loginPage.fillFieldsAndLoginUser(user));
     }
 
 }

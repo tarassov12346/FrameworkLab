@@ -1,9 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke" verbose="1" >
-    <test name="Smoke"   >
+<suite name="Login page Tests" verbose="1">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+    </listeners>
+    <test name="Smoke">
         <classes>
-            <class name="test.LoginPageTest" />
+            <class name="test.LoginPageTest"/>
         </classes>
     </test>
 </suite>

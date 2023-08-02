@@ -31,7 +31,6 @@ public class UserCreator {
         }
     }
 
-
     public User createUser() {
         return new User(name, email, password, passwordRepeated);
     }
