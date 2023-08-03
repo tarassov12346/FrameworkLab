@@ -7,7 +7,6 @@ page\RegistrationPage.class
 page\RegistrationPage$1.class
 test\LoginPageTest.class
 page\CartPage.class
-page\Test.class
 utils\CustomExceptions$PasswordMismatchException.class
 page\ProfilePage.class
 page\AbstractPage.class
