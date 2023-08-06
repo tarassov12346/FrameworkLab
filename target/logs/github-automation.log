@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-08-07 00:45:02,563 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
 2023-08-07 00:45:02,589 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
 2023-08-07 00:45:02,591 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
@@ -9,6 +10,19 @@
 2023-08-07 00:45:02,638 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
 2023-08-07 00:45:02,643 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
 2023-08-07 00:45:02,646 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
+=======
+2023-08-03 09:28:15,695 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-08-03 09:28:15,725 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-08-03 09:28:15,726 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-08-03 09:28:15,736 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@e5cbff2
+2023-08-03 09:28:15,773 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-08-03 09:28:15,774 DEBUG internal.PlatformDependent0 [main] Java version: 18
+2023-08-03 09:28:15,779 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-08-03 09:28:15,781 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-08-03 09:28:15,782 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-08-03 09:28:15,784 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-08-03 09:28:15,786 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
+>>>>>>> main
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
@@ -36,10 +50,15 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:31) ~[test-classes/:?]
 	at test.CommonConditions.setUp(CommonConditions.java:38) ~[test-classes/:?]
+<<<<<<< HEAD
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+=======
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+>>>>>>> main
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
@@ -66,12 +85,21 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
+<<<<<<< HEAD
 2023-08-07 00:45:02,677 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
 2023-08-07 00:45:02,692 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @39ae7041
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+=======
+2023-08-03 09:28:15,813 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-08-03 09:28:15,817 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5c86a017
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+>>>>>>> main
 	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
 	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
 	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
@@ -97,10 +125,15 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:31) ~[test-classes/:?]
 	at test.CommonConditions.setUp(CommonConditions.java:38) ~[test-classes/:?]
+<<<<<<< HEAD
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+=======
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+>>>>>>> main
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
@@ -127,6 +160,7 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
+<<<<<<< HEAD
 2023-08-07 00:45:02,702 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
 2023-08-07 00:45:02,702 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
 2023-08-07 00:45:02,704 DEBUG internal.PlatformDependent [main] maxDirectMemory: 778043392 bytes (maybe)
@@ -193,3 +227,76 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 2023-08-07 00:45:17,280 INFO  [main] Page initialized
 2023-08-07 00:45:17,620 INFO  [main] Page loaded
 2023-08-07 00:45:19,494 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
+=======
+2023-08-03 09:28:15,830 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-08-03 09:28:15,831 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
+2023-08-03 09:28:15,843 DEBUG internal.PlatformDependent [main] maxDirectMemory: 2147483648 bytes (maybe)
+2023-08-03 09:28:15,844 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\User\AppData\Local\Temp (java.io.tmpdir)
+2023-08-03 09:28:15,845 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-08-03 09:28:15,847 DEBUG internal.PlatformDependent [main] Platform: Windows
+2023-08-03 09:28:15,852 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-08-03 09:28:15,853 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-08-03 09:28:15,857 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-08-03 09:28:15,858 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-08-03 09:28:15,879 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-08-03 09:28:15,935 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-08-03 09:28:15,937 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-08-03 09:28:15,966 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-08-03 09:28:15,969 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-08-03 09:28:16,030 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 8
+2023-08-03 09:28:16,053 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-08-03 09:28:16,053 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-08-03 09:28:16,076 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@20f6f88c
+2023-08-03 09:28:16,081 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5875de6a
+2023-08-03 09:28:16,083 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@608fe01f
+2023-08-03 09:28:16,087 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2687725a
+2023-08-03 09:28:16,091 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5a75ec37
+2023-08-03 09:28:16,094 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2c05ff9d
+2023-08-03 09:28:16,096 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@33956d1a
+2023-08-03 09:28:16,099 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2e1ddc90
+2023-08-03 09:28:16,146 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 8
+2023-08-03 09:28:16,147 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 8
+2023-08-03 09:28:16,148 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-08-03 09:28:16,149 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-08-03 09:28:16,152 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-08-03 09:28:16,152 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-08-03 09:28:16,153 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-08-03 09:28:16,154 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-08-03 09:28:16,154 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-08-03 09:28:16,155 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-08-03 09:28:16,157 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-08-03 09:28:16,162 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-08-03 09:28:16,189 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-08-03 09:28:16,191 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-08-03 09:28:16,193 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-08-03 09:28:16,737 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 15124 (auto-detected)
+2023-08-03 09:28:16,741 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-08-03 09:28:16,741 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-08-03 09:28:16,754 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-08-03 09:28:16,756 DEBUG util.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-08-03 09:28:16,776 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 10:fe:ed:ff:fe:1d:a3:16 (auto-detected)
+2023-08-03 09:28:16,881 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-08-03 09:28:16,883 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-08-03 09:28:16,886 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1d7de863
+2023-08-03 09:28:16,933 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-08-03 09:28:16,933 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-08-03 09:28:16,934 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-08-03 09:28:16,935 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-08-03 09:28:18,027 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-08-03 09:28:18,344 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0xe785a901874cc928
+2023-08-03 09:28:20,841 INFO  [main] Problems with registration
+2023-08-03 09:28:20,842 INFO  [main] User from bundle already registered
+2023-08-03 09:28:21,033 INFO  [main] Registration page has been opened for initialPage
+2023-08-03 09:28:21,060 INFO  [main] [preregisteredUserFromBundleRegistrationTest] : has been started
+2023-08-03 09:28:22,038 INFO  [main] Problems with registration
+2023-08-03 09:28:22,165 INFO  [main] Registration page has been opened for initialPage
+2023-08-03 09:28:22,177 INFO  [main] [randomUserRegistrationTest] : has been started
+2023-08-03 09:28:23,693 INFO  [main] Registration has been completed successfully
+2023-08-03 09:28:23,917 INFO  [main] Registration page has been opened for initialPage
+2023-08-03 09:28:23,935 INFO  [main] [registerUserWithInvalidNameTest] : has been started
+2023-08-03 09:28:25,276 INFO  [main] Registration page has been opened for initialPage
+2023-08-03 09:28:25,284 INFO  [main] [registerUserWithInvalidEmailTest] : has been started
+2023-08-03 09:28:26,752 INFO  [main] Registration page has been opened for initialPage
+2023-08-03 09:28:26,757 INFO  [main] [registerUserWithInvalidPasswordTest] : has been started
+2023-08-03 09:28:27,830 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
+>>>>>>> main

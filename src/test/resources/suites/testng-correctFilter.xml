@@ -5,7 +5,7 @@
     <listeners>
         <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
     </listeners>
-    <test name="C:\EpamLab\2\frameworkLab\src\test\java\test\CorrectFilterTest.java">
+    <test name="CorrectFilterTest">
         <classes>
             <class name="test.CorrectFilterTest">
                 <methods>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -101,4 +102,90 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
       </class> <!-- test.CorrectSearchTest -->
     </test> <!-- C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java -->
   </suite> <!-- Search -->
+=======
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-03T09:28:14 MSK" name="Registration page Tests" finished-at="2023-08-03T09:28:28 MSK" duration-ms="13979">
+    <groups>
+    </groups>
+    <test started-at="2023-08-03T09:28:14 MSK" name="Registration page Tests" finished-at="2023-08-03T09:28:28 MSK" duration-ms="13979">
+      <class name="test.RegistrationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:14 MSK" name="setUp" description="setUp() gets the driver type from the bundle" finished-at="2023-08-03T09:28:18 MSK" duration-ms="4409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="preRegisterUserForRegistrationPageTests()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:18 MSK" name="preRegisterUserForRegistrationPageTests" finished-at="2023-08-03T09:28:20 MSK" duration-ms="2222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preRegisterUserForRegistrationPageTests -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:20 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-03T09:28:21 MSK" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="preregisteredUserFromBundleRegistrationTest()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:21 MSK" name="preregisteredUserFromBundleRegistrationTest" description="Registration of user from bundle " finished-at="2023-08-03T09:28:22 MSK" duration-ms="1001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preregisteredUserFromBundleRegistrationTest -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:22 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-03T09:28:22 MSK" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="randomUserRegistrationTest()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:22 MSK" name="randomUserRegistrationTest" description="Random user registration test" finished-at="2023-08-03T09:28:23 MSK" duration-ms="1593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomUserRegistrationTest -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:23 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-03T09:28:23 MSK" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="registerUserWithInvalidData(utils.RegistrationOptions)[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:23 MSK" name="registerUserWithInvalidData" description="Register user with invalid data input" data-provider="dataProviderMethodForInvalidDataTest" finished-at="2023-08-03T09:28:25 MSK" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithInvalidData -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:25 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-03T09:28:25 MSK" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="registerUserWithInvalidData(utils.RegistrationOptions)[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:25 MSK" name="registerUserWithInvalidData" description="Register user with invalid data input" data-provider="dataProviderMethodForInvalidDataTest" finished-at="2023-08-03T09:28:26 MSK" duration-ms="1238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMAIL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithInvalidData -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:26 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-03T09:28:26 MSK" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="registerUserWithInvalidData(utils.RegistrationOptions)[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:26 MSK" name="registerUserWithInvalidData" description="Register user with invalid data input" data-provider="dataProviderMethodForInvalidDataTest" finished-at="2023-08-03T09:28:27 MSK" duration-ms="1062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PASSWORD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithInvalidData -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.RegistrationPageTest@383790cf]" started-at="2023-08-03T09:28:27 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-08-03T09:28:28 MSK" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCompleted -->
+      </class> <!-- test.RegistrationPageTest -->
+    </test> <!-- Registration page Tests -->
+  </suite> <!-- Registration page Tests -->
+>>>>>>> main
 </testng-results>
