@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+/home/oyatullo/frameworklab/src/test/java/service/LogOutService.java
+/home/oyatullo/frameworklab/src/test/java/service/UserPropertiesReader.java
+/home/oyatullo/frameworklab/src/test/java/page/ItemPage.java
+/home/oyatullo/frameworklab/src/test/java/service/ItemFinder.java
+/home/oyatullo/frameworklab/src/test/java/test/CartTest.java
+/home/oyatullo/frameworklab/src/test/java/page/LoginPage.java
+/home/oyatullo/frameworklab/src/test/java/service/UserCreator.java
+/home/oyatullo/frameworklab/src/test/java/page/AbstractPage.java
+/home/oyatullo/frameworklab/src/test/java/test/CorrectSearchTest.java
+/home/oyatullo/frameworklab/src/test/java/page/CartPage.java
+/home/oyatullo/frameworklab/src/test/java/utils/CustomExceptions.java
+/home/oyatullo/frameworklab/src/test/java/test/LoginPageTest.java
+/home/oyatullo/frameworklab/src/test/java/service/SearchRequestReader.java
+/home/oyatullo/frameworklab/src/test/java/utils/CustomConditions.java
+/home/oyatullo/frameworklab/src/test/java/test/RegistrationPageTest.java
+/home/oyatullo/frameworklab/src/test/java/utils/RegistrationOptions.java
+/home/oyatullo/frameworklab/src/test/java/page/ShopPage.java
+/home/oyatullo/frameworklab/src/test/java/service/ItemFilter.java
+/home/oyatullo/frameworklab/src/test/java/page/HeaderPage.java
+/home/oyatullo/frameworklab/src/test/java/page/ProfilePage.java
+/home/oyatullo/frameworklab/src/test/java/driver/DriverSingleton.java
+/home/oyatullo/frameworklab/src/test/java/page/RegistrationPage.java
+/home/oyatullo/frameworklab/src/test/java/service/PageService.java
+/home/oyatullo/frameworklab/src/test/java/test/CorrectFilterTest.java
+/home/oyatullo/frameworklab/src/test/java/model/User.java
+/home/oyatullo/frameworklab/src/test/java/test/CommonConditions.java
+/home/oyatullo/frameworklab/src/test/java/utils/TestListener.java
+=======
 C:\EpamLab\6\frameworklab\src\test\java\page\CartPage.java
 C:\EpamLab\6\frameworklab\src\test\java\page\ShopPage.java
 C:\EpamLab\6\frameworklab\src\test\java\service\LogOutService.java
@@ -25,3 +54,4 @@ C:\EpamLab\6\frameworklab\src\test\java\utils\TestListener.java
 C:\EpamLab\6\frameworklab\src\test\java\test\CommonConditions.java
 C:\EpamLab\6\frameworklab\src\test\java\test\CorrectFilterTest.java
 C:\EpamLab\6\frameworklab\src\test\java\page\ProfilePage.java
+>>>>>>> main
