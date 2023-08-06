@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
 <suite name="Cart verifyItemIsBookedWithPhoneAndAddress" verbose="1">
+  <listeners>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+  </listeners>
   <test name="Cart verifyItemIsBookedWithPhoneAndAddress">
     <classes>
       <class name="test.CartTest">
