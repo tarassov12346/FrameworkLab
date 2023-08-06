@@ -1,48 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-01T20:32:12 UZT" name="Cart" finished-at="2023-08-01T20:32:52 UZT" duration-ms="39918">
+  <suite started-at="2023-08-07T00:45:00 UZT" name="Search" finished-at="2023-08-07T00:45:19 UZT" duration-ms="19407">
     <groups>
-      <group name="logOut">
-        <method signature="CartTest.verifyBookedItemsStoredInAccountProfile()[pri:0, instance:test.CartTest@2c88b9fc]" name="verifyBookedItemsStoredInAccountProfile" class="test.CartTest"/>
-      </group> <!-- logOut -->
     </groups>
-    <test started-at="2023-08-01T20:32:12 UZT" name="Cart" finished-at="2023-08-01T20:32:52 UZT" duration-ms="39918">
-      <class name="test.CartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:12 UZT" name="setUp" finished-at="2023-08-01T20:32:25 UZT" duration-ms="13452" status="PASS">
+    <test started-at="2023-08-07T00:45:00 UZT" name="C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java" finished-at="2023-08-07T00:45:19 UZT" duration-ms="19407">
+      <class name="test.CorrectSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CorrectSearchTest@5cf8edcf]" started-at="2023-08-07T00:45:00 UZT" name="setUp" description="setUp() gets the driver type from the bundle" finished-at="2023-08-07T00:45:05 UZT" duration-ms="5471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyBookedItemsStoredInAccountProfile()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:25 UZT" name="verifyBookedItemsStoredInAccountProfile" finished-at="2023-08-01T20:32:34 UZT" duration-ms="8654" status="PASS">
+        <test-method signature="doSelectedItemsCorrespondToSearchRequest(java.lang.String)[pri:0, instance:test.CorrectSearchTest@5cf8edcf]" started-at="2023-08-07T00:45:05 UZT" name="doSelectedItemsCorrespondToSearchRequest" description="checks the selected items correspond to search request" data-provider="dataProviderMethod" finished-at="2023-08-07T00:45:10 UZT" duration-ms="4975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Пальто]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBookedItemsStoredInAccountProfile -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:34 UZT" name="logOut" finished-at="2023-08-01T20:32:35 UZT" duration-ms="597" status="PASS">
+        </test-method> <!-- doSelectedItemsCorrespondToSearchRequest -->
+        <test-method signature="doSelectedItemsCorrespondToSearchRequest(java.lang.String)[pri:0, instance:test.CorrectSearchTest@5cf8edcf]" started-at="2023-08-07T00:45:10 UZT" name="doSelectedItemsCorrespondToSearchRequest" description="checks the selected items correspond to search request" data-provider="dataProviderMethod" finished-at="2023-08-07T00:45:13 UZT" duration-ms="2947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Шорты]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method signature="verifyDeleteButtonRemovesItemFromCart()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:35 UZT" name="verifyDeleteButtonRemovesItemFromCart" finished-at="2023-08-01T20:32:37 UZT" duration-ms="2331" status="PASS">
+        </test-method> <!-- doSelectedItemsCorrespondToSearchRequest -->
+        <test-method signature="doSelectedItemsCorrespondToSearchRequest(java.lang.String)[pri:0, instance:test.CorrectSearchTest@5cf8edcf]" started-at="2023-08-07T00:45:13 UZT" name="doSelectedItemsCorrespondToSearchRequest" description="checks the selected items correspond to search request" data-provider="dataProviderMethod" finished-at="2023-08-07T00:45:18 UZT" duration-ms="5135" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Товар]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at test.CorrectSearchTest.lambda$doSelectedItemsCorrespondToSearchRequest$0(CorrectSearchTest.java:27)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at test.CorrectSearchTest.lambda$doSelectedItemsCorrespondToSearchRequest$1(CorrectSearchTest.java:27)
+at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+at test.CorrectSearchTest.doSelectedItemsCorrespondToSearchRequest(CorrectSearchTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteButtonRemovesItemFromCart -->
-        <test-method signature="verifyItemAddedToCartAppearInCartPage()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:37 UZT" name="verifyItemAddedToCartAppearInCartPage" finished-at="2023-08-01T20:32:39 UZT" duration-ms="2020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyItemAddedToCartAppearInCartPage -->
-        <test-method signature="verifyItemIsBookedWithPhoneAndAddress()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:39 UZT" name="verifyItemIsBookedWithPhoneAndAddress" finished-at="2023-08-01T20:32:43 UZT" duration-ms="3705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyItemIsBookedWithPhoneAndAddress -->
-        <test-method signature="verifyItemIsNotBookedWithoutAddress()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:43 UZT" name="verifyItemIsNotBookedWithoutAddress" finished-at="2023-08-01T20:32:51 UZT" duration-ms="8449" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyItemIsNotBookedWithoutAddress -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CartTest@2c88b9fc]" started-at="2023-08-01T20:32:51 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-08-01T20:32:52 UZT" duration-ms="519" status="PASS">
+        </test-method> <!-- doSelectedItemsCorrespondToSearchRequest -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectSearchTest@5cf8edcf]" started-at="2023-08-07T00:45:19 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-08-07T00:45:19 UZT" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.CartTest -->
-    </test> <!-- Cart -->
-  </suite> <!-- Cart -->
+      </class> <!-- test.CorrectSearchTest -->
+    </test> <!-- C:\EpamLab\FrameworkLab\src\test\java\test\CorrectSearchTest.java -->
+  </suite> <!-- Search -->
 </testng-results>

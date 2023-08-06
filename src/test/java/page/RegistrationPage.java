@@ -3,15 +3,17 @@ package page;
 import model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import service.UserCreator;
+import utils.RegistrationOptions;
 
-public class RegistrationPage extends AbstractPage{
+import static utils.CustomExceptions.UserAlreadyRegisteredException;
 
-    public static final String REGISTRATION_PAGE_URL = "http://shop.bugred.ru/user/register/index";
+public class RegistrationPage extends AbstractPage {
+
+    private static final String REGISTRATION_PAGE_URL = "http://shop.bugred.ru/user/register/index";
     protected final Logger logger = LogManager.getRootLogger();
     User testUser;
     @FindBy(id = "exampleInputName")
@@ -37,32 +39,55 @@ public class RegistrationPage extends AbstractPage{
         return this;
     }
 
-    public RegistrationPage registerUser(Boolean fromBundle){
-
-        if (fromBundle){
-            testUser = new UserCreator().createUser();
+    public LoginPage registerUser(boolean random) {
+        if (random) {
+            testUser = new UserCreator(false).createUser();
         } else {
-            testUser = new UserCreator(5).createUser();
+            testUser = new UserCreator(true).createUser();
         }
-        this
-                .fillName(testUser.name())
+        return fillForms();
+    }
+
+    public RegistrationPage registerUser(RegistrationOptions option) {
+
+        switch (option) {
+            case NAME -> testUser = new UserCreator(false).createUserWithBlankName();
+            case EMAIL -> testUser = new UserCreator(false).creteUserWithInvalidEmail();
+            case PASSWORD -> testUser = new UserCreator(false).createUserWithDifferentPasswords();
+            case DEFAULT -> testUser = new UserCreator(false).createUser();
+        }
+        return fillFormsWithInvalidData();
+    }
+
+    public LoginPage fillForms() {
+        this.fillName(testUser.name())
                 .fillEmail(testUser.email())
                 .fillPassword(testUser.password())
-                .fillAffirmationPassword(testUser.passwordRepeated());
+                .fillAffirmationPassword(testUser.passwordRepeated())
+                .submitForm();
+        return new LoginPage(driver);
+    }
+
+    public RegistrationPage fillFormsWithInvalidData() {
+        this.fillName(testUser.name())
+                .fillEmail(testUser.email())
+                .fillPassword(testUser.password())
+                .fillAffirmationPassword(testUser.passwordRepeated())
+                .submitBadForm();
         return this;
     }
 
-    public RegistrationPage fillName(String name){
-        waitForElementVisibility(nameInput, EXPLICIT_WAIT).sendKeys(name);
+    public RegistrationPage fillName(String name) {
+        waitForElementVisibility(nameInput).sendKeys(name);
         return this;
     }
 
-    public RegistrationPage fillEmail(String email){
+    public RegistrationPage fillEmail(String email) {
         emailInput.sendKeys(email);
         return this;
     }
 
-    public RegistrationPage fillPassword(String password){
+    public RegistrationPage fillPassword(String password) {
         passwordInput.sendKeys(password);
         return this;
     }
@@ -71,18 +96,34 @@ public class RegistrationPage extends AbstractPage{
         passwordAffirmationInput.sendKeys(password);
         return this;
     }
-    
-    public AbstractPage submitForm() {
+
+    public LoginPage submitForm() {
         submitButton.click();
-        if (driver.findElements(By.linkText("Пользователь с таким email уже зарегистрирован!")).isEmpty()) {
-            waitForElementVisibility(alertButton, EXPLICIT_WAIT).click();
+        waitForElementVisibility(alertButton);
+        if (!checkIfElementExistByLinkText("Пользователь с таким email уже зарегистрирован!")) {
+            alertButton.click();
             logger.info("Registration has been completed successfully");
-            return new LoggingPage(driver);
+            return new LoginPage(driver);
         } else {
-            // Logg or error or some logic
-            waitForElementVisibility(alertButton, EXPLICIT_WAIT).click();
-            logger.info("Registration hasn't been completed successfully");
-            return this;
+            logger.info("Problems with registration");
+            throw new UserAlreadyRegisteredException("User with your properties has been already registered");
         }
     }
+
+    public RegistrationPage submitBadForm() {
+        submitButton.click();
+        return this;
+    }
+
+    public boolean getFieldValidation(RegistrationOptions option) {
+        return switch (option) {
+            case NAME -> checkIfInputIsValid(nameInput);
+            case EMAIL -> checkIfInputIsValid(emailInput);
+            case PASSWORD -> checkIfInputIsValid(passwordInput) && checkIfInputIsValid(passwordAffirmationInput);
+            case DEFAULT -> true;
+        };
+    }
+
 }
+
+

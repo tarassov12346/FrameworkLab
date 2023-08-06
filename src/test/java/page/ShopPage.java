@@ -1,7 +1,6 @@
 package page;
 
 import driver.DriverSingleton;
-import page.ItemPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -26,10 +25,6 @@ public class ShopPage extends AbstractPage {
     @FindBy(xpath = "//*[@id='navbarSupportedContent']/form/button")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//form/p[3]/input")
-    private WebElement checkBoxRedColour;
-    @FindBy(xpath = "//form/p[21]/input")
-    private WebElement checkBox42Size;
 
     @FindBy(xpath = "//form/p[33]/input")
     private WebElement priceFromBox;
@@ -48,6 +43,8 @@ public class ShopPage extends AbstractPage {
 
 
     private final String COLOUR_SELECT = "//input[@value='%s'][@name='colors[]']";
+
+    private final String SIZE_SELECT = "//input[@value='%s'][@name='sizes[]']";
 
 
     public ShopPage(WebDriver driver) {
@@ -124,8 +121,8 @@ public class ShopPage extends AbstractPage {
         return this;
     }
 
-    public ShopPage checkBox42Size() {
-        checkBoxHandling(checkBox42Size);
+    public ShopPage checkBoxSize(int value) {
+        checkBoxHandling(driver.findElement(By.xpath(String.format(SIZE_SELECT, value))));
         return this;
     }
 

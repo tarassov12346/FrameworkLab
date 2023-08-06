@@ -32,9 +32,9 @@ public class HeaderPage extends AbstractPage {
         return new CartPage(driver);
     }
     
-    public LoggingPage clickLoginButton() {
+    public LoginPage clickLoginButton() {
         loginButton.click();
-        return new LoggingPage(driver);
+        return new LoginPage(driver);
     }
     
     public HeaderPage clickAccountButton() {
@@ -47,8 +47,8 @@ public class HeaderPage extends AbstractPage {
         return new ProfilePage(driver);
     }
     
-    public LoggingPage clickLogOutButton() {
+    public LoginPage clickLogOutButton() {
         logOutButton.click();
-        return new LoggingPage(driver);
+        return new LoginPage(driver);
     }
 }

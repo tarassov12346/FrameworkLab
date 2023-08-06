@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 public class CorrectFilterTest extends CommonConditions {
 
     @DataProvider
-    public Object[][] dataProviderMethod() {
+    public Object[][] dataProviderMethodForColorTest() {
         return new Object[][]{
                 {"1", "0, 0, 0"},        //black
                 {"3", "14, 82, 247"},    //blue
@@ -20,7 +20,16 @@ public class CorrectFilterTest extends CommonConditions {
         };
     }
 
-    @Test(description = "checks the selected items to be of ticked color", dataProvider = "dataProviderMethod")
+    @DataProvider
+    public Object[][] dataProviderMethodForSizeTest() {
+        return new Object[][]{
+                {"5", "50"},
+                {"7", "42"},
+                {"3", "30"}
+        };
+    }
+
+    @Test(description = "checks the selected items to be of ticked color", dataProvider = "dataProviderMethodForColorTest")
     public void doSelectedItemsCorrespondToFilterConditionsOfColor(String searchColour, String checkColour) {
         setNumberOfPagesForColor(searchColour);
         if (numberOfPages > 0) {
@@ -28,6 +37,19 @@ public class CorrectFilterTest extends CommonConditions {
                 IntStream.range(0, filterItemsByColorBoxTick(pageIndex, searchColour).size()).boxed().toList().forEach(elementIndex -> {
                     filterItemsByColorBoxTick(pageIndex, searchColour).get(elementIndex).click();
                     Assert.assertTrue(getItemColoursAsString().contains(String.format("background-color: rgb(%s);", checkColour)));
+                });
+            });
+        }
+    }
+
+    @Test(description = "checks the selected items to be of ticked size", dataProvider = "dataProviderMethodForSizeTest")
+    public void doSelectedItemsCorrespondToFilterConditionsOfSize(String searchSize, String checkSize) {
+        setNumberOfPagesForSize(searchSize);
+        if (numberOfPages > 0) {
+            IntStream.range(0, numberOfPages).boxed().toList().forEach(pageIndex -> {
+                IntStream.range(0, filterItemsBySizeBoxTick(pageIndex, searchSize).size()).boxed().toList().forEach(elementIndex -> {
+                    filterItemsBySizeBoxTick(pageIndex, searchSize).get(elementIndex).click();
+                    Assert.assertTrue(getItemSize().contains(checkSize));
                 });
             });
         }
