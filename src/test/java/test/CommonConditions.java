@@ -88,9 +88,9 @@ public class CommonConditions {
         return new ItemFilter(driver).filterItemsByColor(searchColour, page);
     }
 
-    public List<WebElement> filterItemsBySizeBoxTick(int page, String searchColour) {
+    public List<WebElement> filterItemsBySizeBoxTick(int page, String searchSize) {
 
-        return new ItemFilter(driver).filterItemsBySize(searchColour, page);
+        return new ItemFilter(driver).filterItemsBySize(searchSize, page);
     }
 
 
