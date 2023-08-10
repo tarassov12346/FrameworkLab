@@ -1,5 +1,7 @@
+C:\EpamLab\7\frameworklab\src\test\java\attributes\StepDefinitionsForSearch.java
 C:\EpamLab\7\frameworklab\src\test\java\service\SearchRequestReader.java
 C:\EpamLab\7\frameworklab\src\test\java\test\CorrectSearchTest.java
+C:\EpamLab\7\frameworklab\src\test\java\attributes\Hook.java
 C:\EpamLab\7\frameworklab\src\test\java\model\User.java
 C:\EpamLab\7\frameworklab\src\test\java\page\ProfilePage.java
 C:\EpamLab\7\frameworklab\src\test\java\page\ShopPage.java
@@ -16,6 +18,7 @@ C:\EpamLab\7\frameworklab\src\test\java\service\PageService.java
 C:\EpamLab\7\frameworklab\src\test\java\test\RegistrationPageTest.java
 C:\EpamLab\7\frameworklab\src\test\java\test\LoginPageTest.java
 C:\EpamLab\7\frameworklab\src\test\java\utils\RegistrationOptions.java
+C:\EpamLab\7\frameworklab\src\test\java\attributes\StepDefinitionsForFilter.java
 C:\EpamLab\7\frameworklab\src\test\java\page\RegistrationPage.java
 C:\EpamLab\7\frameworklab\src\test\java\page\HeaderPage.java
 C:\EpamLab\7\frameworklab\src\test\java\service\UserPropertiesReader.java
@@ -24,4 +27,5 @@ C:\EpamLab\7\frameworklab\src\test\java\page\ItemPage.java
 C:\EpamLab\7\frameworklab\src\test\java\page\LoginPage.java
 C:\EpamLab\7\frameworklab\src\test\java\service\UserCreator.java
 C:\EpamLab\7\frameworklab\src\test\java\utils\CustomExceptions.java
+C:\EpamLab\7\frameworklab\src\test\java\RunCucumberTest.java
 C:\EpamLab\7\frameworklab\src\test\java\service\LogOutService.java
