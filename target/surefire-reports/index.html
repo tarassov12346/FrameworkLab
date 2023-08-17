@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Filter" class="navigator-link">
-              <span class="suite-name border-passed">Filter</span>
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Filter" class="navigator-link ">
-                    <span>C:\EpamLab\7\frameworklab\src\test\resources\suites\testng-correctFilter.xml</span>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Filter" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Filter" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Filter" class="navigator-link ">
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Filter" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Filter" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Filter" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,66 +92,115 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">18 methods, 2 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Filter" class="hide-methods passed suite-Filter"> (hide)</a> <!-- hide-methods passed suite-Filter -->
-                      <a href="#" panel-name="suite-Filter" class="show-methods passed suite-Filter"> (show)</a> <!-- show-methods passed suite-Filter -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Filter">
+                    <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfColor(11, 20, 235, 56)">doSelectedItemsCorrespondToFilterConditionsOfColor(11, 20, 235, 56)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfColor(2, 254, 8, 8)">doSelectedItemsCorrespondToFilterConditionsOfColor(2, 254, 8, 8)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By search request a user can get the items of given names&quot;, &quot;The Internet http://shop.bugred.ru/ We...)">runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfColor(1, 0, 0, 0)">doSelectedItemsCorrespondToFilterConditionsOfColor(1, 0, 0, 0)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the size  a user can get the items of given sizes&quot;, &quot;The Internet http://shop.bugred.ru/...)">runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfColor(12, 224, 124, 11)">doSelectedItemsCorrespondToFilterConditionsOfColor(12, 224, 124, 11)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By search request a user can get the items of given names&quot;, &quot;The Internet http://shop.bugred.ru/ We...)">runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfColor(5, 246, 244, 244)">doSelectedItemsCorrespondToFilterConditionsOfColor(5, 246, 244, 244)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By entering lower and upper price rank  a user can get the items of given price rank&quot;, &quot;The Interne...)">runScenario("By entering lower and upper price rank  a user can get the items of given price rank", "The Interne...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfColor(3, 14, 82, 247)">doSelectedItemsCorrespondToFilterConditionsOfColor(3, 14, 82, 247)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By search request a user can get the items of given names&quot;, &quot;The Internet http://shop.bugred.ru/ We...)">runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfPriceRank">doSelectedItemsCorrespondToFilterConditionsOfPriceRank</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the size  a user can get the items of given sizes&quot;, &quot;The Internet http://shop.bugred.ru/...)">runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfSize(7, 42)">doSelectedItemsCorrespondToFilterConditionsOfSize(7, 42)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the size  a user can get the items of given sizes&quot;, &quot;The Internet http://shop.bugred.ru/...)">runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfSize(3, 30)">doSelectedItemsCorrespondToFilterConditionsOfSize(3, 30)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;Item can be added to cart&quot;, &quot;Cart&quot;)">runScenario("Item can be added to cart", "Cart")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Filter" title="test.CorrectFilterTest" class="method navigator-link" hash-for-method="doSelectedItemsCorrespondToFilterConditionsOfSize(5, 50)">doSelectedItemsCorrespondToFilterConditionsOfSize(5, 50)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Filter -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;Item can be booked with full credentials&quot;, &quot;Cart&quot;)">runScenario("Item can be booked with full credentials", "Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;Item can be removed from cart&quot;, &quot;Cart&quot;)">runScenario("Item can be removed from cart", "Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;Booked items are stored in account profile&quot;, &quot;Cart&quot;)">runScenario("Booked items are stored in account profile", "Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;Item cannot be booked with partial credentials (only with phone number)&quot;, &quot;Cart&quot;)">runScenario("Item cannot be booked with partial credentials (only with phone number)", "Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -162,295 +211,482 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Filter" class="panel Filter">
-          <div class="suite-Filter-class-passed">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.CorrectFilterTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">RunCucumberTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfColor(11, 20, 235, 56)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor(11, 20, 235, 56) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor</span>
-                  <span class="parameters">(11,20, 235, 56)</span>
+                  <a name="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">
+                  </a> <!-- runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the color  a user can get the items of given colors","The Internet http://shop.bugred.ru/ Website")</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at page.ShopPage.clickPageButton(ShopPage.java:115)
+	at service.ItemFilter.filterItemsByColor(ItemFilter.java:19)
+	at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$0(StepDefinitionsForFilter.java:40)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$1(StepDefinitionsForFilter.java:39)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at attributes.StepDefinitionsForFilter.i_should_see_items_with_colors_corresponding_to(StepDefinitionsForFilter.java:38)
+	at ✽.I should see items with colors 3 corresponding to &quot;14, 82, 247&quot;(file:///home/oyatullo/frameworklab/src/test/resources/features/attributes/filter.feature:10)
+
+</div> <!-- stack-trace -->
                   <em>
-(checks the selected items to be of ticked color)                  </em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfColor(2, 254, 8, 8)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor(2, 254, 8, 8) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor</span>
-                  <span class="parameters">(2,254, 8, 8)</span>
+                  <a name="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">
+                  </a> <!-- runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the color  a user can get the items of given colors","The Internet http://shop.bugred.ru/ Website")</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at page.ShopPage.clickPageButton(ShopPage.java:115)
+	at service.ItemFilter.filterItemsByColor(ItemFilter.java:19)
+	at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$0(StepDefinitionsForFilter.java:40)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$1(StepDefinitionsForFilter.java:39)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at attributes.StepDefinitionsForFilter.i_should_see_items_with_colors_corresponding_to(StepDefinitionsForFilter.java:38)
+	at ✽.I should see items with colors 2 corresponding to &quot;254, 8, 8&quot;(file:///home/oyatullo/frameworklab/src/test/resources/features/attributes/filter.feature:10)
+
+</div> <!-- stack-trace -->
                   <em>
-(checks the selected items to be of ticked color)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfColor(1, 0, 0, 0)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor(1, 0, 0, 0) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor</span>
-                  <span class="parameters">(1,0, 0, 0)</span>
-                  <em>
-(checks the selected items to be of ticked color)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfColor(12, 224, 124, 11)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor(12, 224, 124, 11) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor</span>
-                  <span class="parameters">(12,224, 124, 11)</span>
-                  <em>
-(checks the selected items to be of ticked color)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfColor(5, 246, 244, 244)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor(5, 246, 244, 244) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor</span>
-                  <span class="parameters">(5,246, 244, 244)</span>
-                  <em>
-(checks the selected items to be of ticked color)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfColor(3, 14, 82, 247)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor(3, 14, 82, 247) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor</span>
-                  <span class="parameters">(3,14, 82, 247)</span>
-                  <em>
-(checks the selected items to be of ticked color)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfPriceRank">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfPriceRank -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfPriceRank</span>
-                  <em>
-(checks the selected items to be of given price rank)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfSize(7, 42)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfSize(7, 42) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfSize</span>
-                  <span class="parameters">(7,42)</span>
-                  <em>
-(checks the selected items to be of ticked size)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfSize(3, 30)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfSize(3, 30) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfSize</span>
-                  <span class="parameters">(3,30)</span>
-                  <em>
-(checks the selected items to be of ticked size)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doSelectedItemsCorrespondToFilterConditionsOfSize(5, 50)">
-                  </a> <!-- doSelectedItemsCorrespondToFilterConditionsOfSize(5, 50) -->
-                  <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfSize</span>
-                  <span class="parameters">(5,50)</span>
-                  <em>
-(checks the selected items to be of ticked size)                  </em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Filter-class-passed -->
-        </div> <!-- panel Filter -->
-        <div panel-name="test-xml-Filter" class="panel">
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">RunCucumberTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">
+                  </a> <!-- runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the color  a user can get the items of given colors","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By search request a user can get the items of given names&quot;, &quot;The Internet http://shop.bugred.ru/ We...)">
+                  </a> <!-- runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By search request a user can get the items of given names","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By ticking the size  a user can get the items of given sizes&quot;, &quot;The Internet http://shop.bugred.ru/...)">
+                  </a> <!-- runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the size  a user can get the items of given sizes","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By search request a user can get the items of given names&quot;, &quot;The Internet http://shop.bugred.ru/ We...)">
+                  </a> <!-- runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By search request a user can get the items of given names","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By entering lower and upper price rank  a user can get the items of given price rank&quot;, &quot;The Interne...)">
+                  </a> <!-- runScenario("By entering lower and upper price rank  a user can get the items of given price rank", "The Interne...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By entering lower and upper price rank  a user can get the items of given price rank","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By search request a user can get the items of given names&quot;, &quot;The Internet http://shop.bugred.ru/ We...)">
+                  </a> <!-- runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By search request a user can get the items of given names","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By ticking the size  a user can get the items of given sizes&quot;, &quot;The Internet http://shop.bugred.ru/...)">
+                  </a> <!-- runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the size  a user can get the items of given sizes","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By ticking the size  a user can get the items of given sizes&quot;, &quot;The Internet http://shop.bugred.ru/...)">
+                  </a> <!-- runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the size  a user can get the items of given sizes","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Item can be added to cart&quot;, &quot;Cart&quot;)">
+                  </a> <!-- runScenario("Item can be added to cart", "Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Item can be added to cart","Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">
+                  </a> <!-- runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the color  a user can get the items of given colors","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Item can be booked with full credentials&quot;, &quot;Cart&quot;)">
+                  </a> <!-- runScenario("Item can be booked with full credentials", "Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Item can be booked with full credentials","Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Item can be removed from cart&quot;, &quot;Cart&quot;)">
+                  </a> <!-- runScenario("Item can be removed from cart", "Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Item can be removed from cart","Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Booked items are stored in account profile&quot;, &quot;Cart&quot;)">
+                  </a> <!-- runScenario("Booked items are stored in account profile", "Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Booked items are stored in account profile","Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">
+                  </a> <!-- runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the color  a user can get the items of given colors","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Item cannot be booked with partial credentials (only with phone number)&quot;, &quot;Cart&quot;)">
+                  </a> <!-- runScenario("Item cannot be booked with partial credentials (only with phone number)", "Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Item cannot be booked with partial credentials (only with phone number)","Cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;By ticking the color  a user can get the items of given colors&quot;, &quot;The Internet http://shop.bugred.r...)">
+                  </a> <!-- runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("By ticking the color  a user can get the items of given colors","The Internet http://shop.bugred.ru/ Website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\EpamLab\7\frameworklab\src\test\resources\suites\testng-correctFilter.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Filter&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.epam.reportportal.testng.ReportPortalTestNGListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;CorrectFilterTest&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.CorrectFilterTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;doSelectedItemsCorrespondToFilterConditionsOfColor&quot;/&gt;
-          &lt;include name=&quot;doSelectedItemsCorrespondToFilterConditionsOfSize&quot;/&gt;
-          &lt;include name=&quot;doSelectedItemsCorrespondToFilterConditionsOfPriceRank&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.CorrectFilterTest --&gt;
+      &lt;class name=&quot;RunCucumberTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CorrectFilterTest --&gt;
-&lt;/suite&gt; &lt;!-- Filter --&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Filter" class="panel">
+        <div panel-name="testlist-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Filter</span>
+            <span class="header-content">Tests for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">CorrectFilterTest (1 class)</span>
+                <span class="test-name">Surefire test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Filter" class="panel">
+        <div panel-name="group-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Filter</span>
+            <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Filter" class="panel">
+        <div panel-name="times-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Filter</span>
+            <span class="header-content">Times for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Filter');
-function tableData_Filter() {
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'doSelectedItemsCorrespondToFilterConditionsOfPriceRank')
-data.setCell(0, 2, 'test.CorrectFilterTest')
-data.setCell(0, 3, 36289);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'RunCucumberTest')
+data.setCell(0, 3, 63705);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'doSelectedItemsCorrespondToFilterConditionsOfSize')
-data.setCell(1, 2, 'test.CorrectFilterTest')
-data.setCell(1, 3, 8809);
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'RunCucumberTest')
+data.setCell(1, 3, 26225);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'doSelectedItemsCorrespondToFilterConditionsOfColor')
-data.setCell(2, 2, 'test.CorrectFilterTest')
-data.setCell(2, 3, 8004);
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'RunCucumberTest')
+data.setCell(2, 3, 24041);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'doSelectedItemsCorrespondToFilterConditionsOfColor')
-data.setCell(3, 2, 'test.CorrectFilterTest')
-data.setCell(3, 3, 4568);
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'RunCucumberTest')
+data.setCell(3, 3, 21945);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'doSelectedItemsCorrespondToFilterConditionsOfSize')
-data.setCell(4, 2, 'test.CorrectFilterTest')
-data.setCell(4, 3, 4286);
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'RunCucumberTest')
+data.setCell(4, 3, 15675);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'doSelectedItemsCorrespondToFilterConditionsOfColor')
-data.setCell(5, 2, 'test.CorrectFilterTest')
-data.setCell(5, 3, 3291);
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'RunCucumberTest')
+data.setCell(5, 3, 12068);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'doSelectedItemsCorrespondToFilterConditionsOfColor')
-data.setCell(6, 2, 'test.CorrectFilterTest')
-data.setCell(6, 3, 625);
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'RunCucumberTest')
+data.setCell(6, 3, 9397);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'doSelectedItemsCorrespondToFilterConditionsOfColor')
-data.setCell(7, 2, 'test.CorrectFilterTest')
-data.setCell(7, 3, 591);
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'RunCucumberTest')
+data.setCell(7, 3, 9000);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'doSelectedItemsCorrespondToFilterConditionsOfColor')
-data.setCell(8, 2, 'test.CorrectFilterTest')
-data.setCell(8, 3, 575);
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'RunCucumberTest')
+data.setCell(8, 3, 7613);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'doSelectedItemsCorrespondToFilterConditionsOfSize')
-data.setCell(9, 2, 'test.CorrectFilterTest')
-data.setCell(9, 3, 569);
-window.suiteTableData['Filter']= { tableData: data, tableDiv: 'times-div-Filter'}
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'RunCucumberTest')
+data.setCell(9, 3, 5787);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'RunCucumberTest')
+data.setCell(10, 3, 4823);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'RunCucumberTest')
+data.setCell(11, 3, 4686);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'RunCucumberTest')
+data.setCell(12, 3, 2888);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'RunCucumberTest')
+data.setCell(13, 3, 2805);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'RunCucumberTest')
+data.setCell(14, 3, 2561);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'RunCucumberTest')
+data.setCell(15, 3, 2438);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'RunCucumberTest')
+data.setCell(16, 3, 1636);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'RunCucumberTest')
+data.setCell(17, 3, 1530);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Filter">
-              </div> <!-- times-div-Filter -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Filter" class="panel">
+        <div panel-name="reporter-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Filter</span>
+            <span class="header-content">Reporter output for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Filter" class="panel">
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Filter" class="panel">
+        <div panel-name="chronological-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.CorrectFilterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">RunCucumberTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@b6a20ce)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor(1, 0, 0, 0)</span>
-                <span class="method-start">4563 ms</span>
+                <span class="method-name">runScenario("Item can be added to cart", "Cart")</span>
+                <span class="method-start">4320 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor(3, 14, 82, 247)</span>
-                <span class="method-start">9139 ms</span>
+                <span class="method-name">runScenario("Item can be removed from cart", "Cart")</span>
+                <span class="method-start">26287 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor(12, 224, 124, 11)</span>
-                <span class="method-start">12432 ms</span>
+                <span class="method-name">runScenario("Item cannot be booked with partial credentials (only with phone number)", "Cart")</span>
+                <span class="method-start">28850 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor(11, 20, 235, 56)</span>
-                <span class="method-start">13012 ms</span>
+                <span class="method-name">runScenario("Item can be booked with full credentials", "Cart")</span>
+                <span class="method-start">36464 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor(2, 254, 8, 8)</span>
-                <span class="method-start">13639 ms</span>
+                <span class="method-name">runScenario("Booked items are stored in account profile", "Cart")</span>
+                <span class="method-start">41152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfColor(5, 246, 244, 244)</span>
-                <span class="method-start">21645 ms</span>
+                <span class="method-name">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</span>
+                <span class="method-start">53221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfSize(5, 50)</span>
-                <span class="method-start">22240 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</span>
+                <span class="method-start">62222 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfSize(7, 42)</span>
-                <span class="method-start">22813 ms</span>
+                <span class="method-name">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</span>
+                <span class="method-start">68047 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfSize(3, 30)</span>
-                <span class="method-start">31625 ms</span>
+                <span class="method-name">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</span>
+                <span class="method-start">70937 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">doSelectedItemsCorrespondToFilterConditionsOfPriceRank</span>
-                <span class="method-start">35915 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</span>
+                <span class="method-start">72469 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTestCompleted</span>
-                <span class="method-start">72210 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By ticking the color  a user can get the items of given colors", "The Internet http://shop.bugred.r...)</span>
+                <span class="method-start">96511 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...)</span>
+                <span class="method-start">112189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...)</span>
+                <span class="method-start">113833 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By ticking the size  a user can get the items of given sizes", "The Internet http://shop.bugred.ru/...)</span>
+                <span class="method-start">140059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By entering lower and upper price rank  a user can get the items of given price rank", "The Interne...)</span>
+                <span class="method-start">149457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...)</span>
+                <span class="method-start">213167 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...)</span>
+                <span class="method-start">215607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("By search request a user can get the items of given names", "The Internet http://shop.bugred.ru/ We...)</span>
+                <span class="method-start">218412 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">223240 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
