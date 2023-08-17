@@ -1,169 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-10T09:03:13 MSK" name="Filter" finished-at="2023-08-10T09:04:26 MSK" duration-ms="72734">
+  <suite started-at="2023-08-17T12:15:06 MSK" name="Registration page Tests" finished-at="2023-08-17T12:15:22 MSK" duration-ms="15698">
     <groups>
     </groups>
-    <test started-at="2023-08-10T09:03:13 MSK" name="CorrectFilterTest" finished-at="2023-08-10T09:04:26 MSK" duration-ms="72734">
-      <class name="test.CorrectFilterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:13 MSK" name="setUp" description="setUp() gets the driver type from the bundle" finished-at="2023-08-10T09:03:18 MSK" duration-ms="4480" status="PASS">
+    <test started-at="2023-08-17T12:15:06 MSK" name="Registration page Tests" finished-at="2023-08-17T12:15:22 MSK" duration-ms="15698">
+      <class name="test.RegistrationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:06 MSK" name="setUp" description="setUp() gets the driver type from the bundle" finished-at="2023-08-17T12:15:12 MSK" duration-ms="5823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:18 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethodForColorTest" finished-at="2023-08-10T09:03:22 MSK" duration-ms="4568" status="PASS">
+        <test-method is-config="true" signature="preRegisterUserForRegistrationPageTests()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:12 MSK" name="preRegisterUserForRegistrationPageTests" finished-at="2023-08-17T12:15:15 MSK" duration-ms="2523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preRegisterUserForRegistrationPageTests -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:15 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-17T12:15:15 MSK" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="preregisteredUserFromBundleRegistrationTest()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:15 MSK" name="preregisteredUserFromBundleRegistrationTest" description="Registration of user from bundle " finished-at="2023-08-17T12:15:16 MSK" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preregisteredUserFromBundleRegistrationTest -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:16 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-17T12:15:16 MSK" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="randomUserRegistrationTest()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:16 MSK" name="randomUserRegistrationTest" description="Random user registration test" finished-at="2023-08-17T12:15:18 MSK" duration-ms="1654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomUserRegistrationTest -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:18 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-17T12:15:18 MSK" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="registerUserWithInvalidData(utils.RegistrationOptions)[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:18 MSK" name="registerUserWithInvalidData" description="Register user with invalid data input" data-provider="dataProviderMethodForInvalidDataTest" finished-at="2023-08-17T12:15:19 MSK" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0, 0, 0]]>
+                <![CDATA[NAME]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:22 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethodForColorTest" finished-at="2023-08-10T09:03:26 MSK" duration-ms="3291" status="PASS">
+        </test-method> <!-- registerUserWithInvalidData -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:19 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-17T12:15:19 MSK" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="registerUserWithInvalidData(utils.RegistrationOptions)[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:19 MSK" name="registerUserWithInvalidData" description="Register user with invalid data input" data-provider="dataProviderMethodForInvalidDataTest" finished-at="2023-08-17T12:15:21 MSK" duration-ms="1319" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[14, 82, 247]]>
+                <![CDATA[EMAIL]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:26 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethodForColorTest" finished-at="2023-08-10T09:03:26 MSK" duration-ms="575" status="PASS">
+        </test-method> <!-- registerUserWithInvalidData -->
+        <test-method is-config="true" signature="initialPage()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:21 MSK" name="initialPage" description="Initializes and opens registration page" finished-at="2023-08-17T12:15:21 MSK" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialPage -->
+        <test-method signature="registerUserWithInvalidData(utils.RegistrationOptions)[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:21 MSK" name="registerUserWithInvalidData" description="Register user with invalid data input" data-provider="dataProviderMethodForInvalidDataTest" finished-at="2023-08-17T12:15:22 MSK" duration-ms="1159" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[224, 124, 11]]>
+                <![CDATA[PASSWORD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:26 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethodForColorTest" finished-at="2023-08-10T09:03:27 MSK" duration-ms="625" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[20, 235, 56]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:27 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethodForColorTest" finished-at="2023-08-10T09:03:35 MSK" duration-ms="8004" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[254, 8, 8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfColor(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:35 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfColor" description="checks the selected items to be of ticked color" data-provider="dataProviderMethodForColorTest" finished-at="2023-08-10T09:03:35 MSK" duration-ms="591" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[246, 244, 244]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfColor -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfSize(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:35 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfSize" description="checks the selected items to be of ticked size" data-provider="dataProviderMethodForSizeTest" finished-at="2023-08-10T09:03:36 MSK" duration-ms="569" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfSize -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfSize(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:36 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfSize" description="checks the selected items to be of ticked size" data-provider="dataProviderMethodForSizeTest" finished-at="2023-08-10T09:03:45 MSK" duration-ms="8809" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[42]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfSize -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfSize(java.lang.String,java.lang.String)[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:45 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfSize" description="checks the selected items to be of ticked size" data-provider="dataProviderMethodForSizeTest" finished-at="2023-08-10T09:03:49 MSK" duration-ms="4286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfSize -->
-        <test-method signature="doSelectedItemsCorrespondToFilterConditionsOfPriceRank()[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:03:49 MSK" name="doSelectedItemsCorrespondToFilterConditionsOfPriceRank" description="checks the selected items to be of given price rank" finished-at="2023-08-10T09:04:25 MSK" duration-ms="36289" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSelectedItemsCorrespondToFilterConditionsOfPriceRank -->
-        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CorrectFilterTest@40ee0a22]" started-at="2023-08-10T09:04:25 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-08-10T09:04:26 MSK" duration-ms="469" status="PASS">
+        </test-method> <!-- registerUserWithInvalidData -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.RegistrationPageTest@566d0c69]" started-at="2023-08-17T12:15:22 MSK" name="afterTestCompleted" description="closes the browser" finished-at="2023-08-17T12:15:22 MSK" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCompleted -->
-      </class> <!-- test.CorrectFilterTest -->
-    </test> <!-- CorrectFilterTest -->
-  </suite> <!-- Filter -->
+      </class> <!-- test.RegistrationPageTest -->
+    </test> <!-- Registration page Tests -->
+  </suite> <!-- Registration page Tests -->
 </testng-results>

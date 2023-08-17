@@ -25,6 +25,7 @@ page\ShopPage.class
 page\ItemPage.class
 page\RegistrationPage$1.class
 page\CartPage.class
+rest_api_tests\CorrectSearchRestApiMethodTest.class
 test\RegistrationPageTest.class
 utils\CustomExceptions$InvalidNameException.class
 service\ItemFinder.class
