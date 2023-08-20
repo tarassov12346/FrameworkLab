@@ -1,6 +1,7 @@
 package step;
 
 import driver.DriverSingleton;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -9,22 +10,28 @@ import model.User;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import page.LoginPage;
+import page.ShopPage;
 import service.UserCreator;
 
-public class LoginPageFeatureSteps{
+public class LoginPageFeatureSteps {
 
-    LoginPage loginPage;
+
     WebDriver driver;
+    LoginPage loginPage;
+    ShopPage shopPage;
     User user = new UserCreator(true).createUser();
-
     @Before
-    void SetUp(){
+    public void setUp(){
         driver = DriverSingleton.getDriver();
+        loginPage = new LoginPage(driver);
+    }
+    @AfterAll
+    void tearDown(){
+        DriverSingleton.closeDriver();
     }
     @When("user opens login page")
     public void openLoginPage() {
-
-        loginPage.openPage();
+         loginPage.openPage();
     }
 
     @And("user enters registered email in email input")
@@ -38,12 +45,12 @@ public class LoginPageFeatureSteps{
     }
 
     @And("user clicks submit login button")
-    public void clicksSubmitLoginButton() {
+    public void clicksSubmitLoginButton() throws InterruptedException {
         loginPage.logIn();
     }
 
-    @Then("a confirmation message with the text {string} appears")
+    @Then("header menu contains button with logged in user name")
     public void confirmationMessageAppears() {
-        Assert.assertTrue(loginPage.successfulMessageAppear());
+        Assert.assertEquals(user.name(), new ShopPage(driver).getUserName());
     }
 }

@@ -36,8 +36,6 @@ public class BeforeSteps {
             registrationPage.registerUser(false);
         } catch (CustomExceptions.UserAlreadyRegisteredException e) {
             logger.info("User from bundle already registered");
-        } finally {
-            driver.quit();
         }
     }
 }

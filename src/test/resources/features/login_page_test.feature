@@ -13,4 +13,4 @@ Feature: Login page
       And user enters registered email in email input
       And user enters valid password in password input
       And user clicks submit login button
-      Then a confirmation message with the text "Теперь вы можете войти используя свой email и пароль!" appears
+      Then header menu contains button with logged in user name

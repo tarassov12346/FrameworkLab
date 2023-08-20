@@ -40,6 +40,8 @@ public class ShopPage extends AbstractPage {
     private WebElement itemSizeIcon;
     @FindBy(xpath = "//*[@class='col-md-4']/*/span[@class='label label-primary']")
     private WebElement itemPriceIcon;
+    @FindBy(id = "navbarDropdown2")
+    private WebElement userNavBarButton;
 
 
     private final String COLOUR_SELECT = "//input[@value='%s'][@name='colors[]']";
@@ -166,5 +168,9 @@ public class ShopPage extends AbstractPage {
     private void checkBoxHandling(WebElement checkBoxField) {
         waitForElementVisibility(checkBoxField, TIME_OUT);
         checkBoxField.click();
+    }
+
+    public String getUserName(){
+        return userNavBarButton.getText();
     }
 }
