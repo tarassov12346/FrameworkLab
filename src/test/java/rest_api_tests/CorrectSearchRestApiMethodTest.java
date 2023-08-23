@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.containsStringIgnoringCase;
+import static org.hamcrest.Matchers.everyItem;
 
 public class CorrectSearchRestApiMethodTest {
 
