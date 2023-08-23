@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
  * Implements reading data from user properties bundle
  */
 public class UserPropertiesReader {
-    private static ResourceBundle resourceBundle = ResourceBundle.getBundle(System.getProperty("environment"));
+    private static final ResourceBundle resourceBundle = ResourceBundle.getBundle(System.getProperty("environment"));
 
     /**
      * Gets value by the key from bundle

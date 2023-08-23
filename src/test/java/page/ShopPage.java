@@ -17,7 +17,7 @@ public class ShopPage extends AbstractPage {
     private final long TIME_OUT = 40;
     protected static final String HOMEPAGE_URL = "http://shop.bugred.ru/";
     Logger logger = LogManager.getRootLogger();
-    
+
     private By itemButtonBy = By.xpath("//a[contains(@href, 'item')]");
 
     @FindBy(xpath = "//*[@id='navbarSupportedContent']/form/input")
@@ -40,6 +40,8 @@ public class ShopPage extends AbstractPage {
     private WebElement itemSizeIcon;
     @FindBy(xpath = "//*[@class='col-md-4']/*/span[@class='label label-primary']")
     private WebElement itemPriceIcon;
+    @FindBy(id = "navbarDropdown2")
+    private WebElement userNavBarButton;
 
 
     private final String COLOUR_SELECT = "//input[@value='%s'][@name='colors[]']";
@@ -64,7 +66,7 @@ public class ShopPage extends AbstractPage {
         //Not all items in shop are available. It is not possible to enter count and book them.
         //Items that can be booked are considered as available.
         List<WebElement> items = getAllItemsOnPage();
-        for(int i = 0; i < items.size(); i++) {
+        for (int i = 0; i < items.size(); i++) {
             ItemPage itemPage = clickItem(items.get(i));
             if (itemPage.isItemAvailable()) {
                 return itemPage;
@@ -80,7 +82,7 @@ public class ShopPage extends AbstractPage {
         waitForElementVisibility(element, EXPLICIT_WAIT).click();
         return new ItemPage(driver);
     }
-    
+
     public List<WebElement> getAllItemsOnPage() {
         return driver.findElements(itemButtonBy);
     }
@@ -166,5 +168,9 @@ public class ShopPage extends AbstractPage {
     private void checkBoxHandling(WebElement checkBoxField) {
         waitForElementVisibility(checkBoxField, TIME_OUT);
         checkBoxField.click();
+    }
+
+    public String getUserName() {
+        return userNavBarButton.getText();
     }
 }
