@@ -7,12 +7,22 @@ mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-correctFilter.xml clean 
 
 mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-cart-all.xml clean test
 
-# Prompt to run cucumber log in ang registration tests
+# Prompt to run cucumber log in ang registration tests as well as cucumber filter and search tests 
+
 mvn -Denvironment=qa -Dbrowser=chrome test -Dtest=CucumberRunner -Dcucumber.filter.tags="@Registration or @Login"
 
 mvn -Dbrowser=Chrome -Denvironment=qa  -DsuiteXml=cucumber-login-registration-Test.xml clean test
 
 mvn -Dbrowser=Chrome -Denvironment=qa  -DsuiteXml=cucumber-filter-search-Test.xml clean test
+
+mvn -Denvironment=qa -Dbrowser=chrome test -Dtest=RunCucumberTest
+
+mvn -Dbrowser=Chrome -Denvironment=qa  -DsuiteXml=cucumber-filter-search-Test.xml clean test
+
+# Prompt to run search API method tests
+
+mvn -Dbrowser=Chrome -Denvironment=qa  -DsuiteXml=search-api-method-Test.xml clean test
+
 
 ## Getting started
 

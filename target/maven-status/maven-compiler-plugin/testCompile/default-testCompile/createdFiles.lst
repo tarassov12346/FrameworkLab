@@ -1,4 +1,5 @@
 utils\CustomExceptions.class
+runner\CucumberRunner.class
 RunCucumberTest.class
 page\HeaderPage.class
 utils\CustomExceptions$InvalidEmailException.class
@@ -14,8 +15,8 @@ utils\TestListener.class
 service\LogOutService.class
 service\PageService.class
 attributes\StepDefinitionsForFilter.class
+step\LoginPageFeatureSteps.class
 test\CorrectFilterTest.class
-test\RegistrationPageTest$1.class
 service\UserCreator.class
 page\LoginPage.class
 test\CartTest.class
@@ -34,5 +35,6 @@ test\CommonConditions.class
 utils\CustomExceptions$UserAlreadyRegisteredException.class
 attributes\Hook.class
 attributes\StepDefinitionsForSearch.class
+step\RegistrationPageFeatureSteps.class
 driver\DriverSingleton.class
 service\ItemFilter.class
