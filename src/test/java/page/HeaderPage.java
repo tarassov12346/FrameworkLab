@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class HeaderPage extends AbstractPage {
     private final String HOMEPAGE_URL = "http://shop.bugred.ru/";
+
     @FindBy(xpath = "//a[contains(@href, 'cart')]")
     private WebElement cartButton;
     @FindBy(xpath = "//*[contains(@href, 'login')]")
@@ -16,6 +17,8 @@ public class HeaderPage extends AbstractPage {
     private WebElement personalProfileButton;
     @FindBy(xpath = "//a[contains(text(), 'Выйти')]")
     private WebElement logOutButton;
+    @FindBy(xpath = "//a[contains(text(), 'Главная')]")
+    private WebElement mainButton;
 
     public HeaderPage(WebDriver driver) {
         super(driver);
@@ -50,5 +53,10 @@ public class HeaderPage extends AbstractPage {
     public LoginPage clickLogOutButton() {
         logOutButton.click();
         return new LoginPage(driver);
+    }
+    
+    public ShopPage clickMainButton() {
+ 	mainButton.click();
+ 	return new ShopPage(driver);
     }
 }

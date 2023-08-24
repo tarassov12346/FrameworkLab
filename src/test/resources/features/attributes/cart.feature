@@ -32,3 +32,15 @@ Feature: Cart
     And cart is opened   
     And item is booked
     Then booked item is visible in account profile
+    
+  @Cart
+  Scenario: Total price for the item is calculated correctly
+    Given cart has an item
+    When price for the item is calculated
+    Then calculated price is equal with total price for the item
+    
+  @Cart
+  Scenario: Total price for all items in cart is calculated correctly
+    Given cart has an item
+    When price for the item is calculated
+    Then calculated price is equal with total price for all items

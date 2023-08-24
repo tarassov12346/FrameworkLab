@@ -6,15 +6,13 @@ driver/DriverSingleton.class
 utils/CustomExceptions$InvalidNameException.class
 test/RegistrationPageTest.class
 test/CartTest.class
-attributes/HeaderPageTestSteps.class
+rest_api_tests/CorrectSearchRestApiMethodTest.class
 test/CorrectFilterTest.class
 page/ShopPage.class
 page/RegistrationPage.class
-attributes/CommonTestSteps.class
 utils/CustomExceptions$PasswordMismatchException.class
 page/ProfilePage.class
 test/LoginPageTest.class
-attributes/LoginPageTestSteps.class
 service/SearchRequestReader.class
 utils/CustomExceptions$UserAlreadyRegisteredException.class
 test/RegistrationPageTest$1.class

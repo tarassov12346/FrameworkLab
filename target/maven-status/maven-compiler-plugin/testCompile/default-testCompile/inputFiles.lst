@@ -3,7 +3,6 @@
 /home/oyatullo/frameworklab/src/test/java/page/ItemPage.java
 /home/oyatullo/frameworklab/src/test/java/service/ItemFinder.java
 /home/oyatullo/frameworklab/src/test/java/attributes/StepDefinitionsForSearch.java
-/home/oyatullo/frameworklab/src/test/java/attributes/HeaderPageTestSteps.java
 /home/oyatullo/frameworklab/src/test/java/test/CartTest.java
 /home/oyatullo/frameworklab/src/test/java/page/LoginPage.java
 /home/oyatullo/frameworklab/src/test/java/service/UserCreator.java
@@ -19,6 +18,7 @@
 /home/oyatullo/frameworklab/src/test/java/utils/RegistrationOptions.java
 /home/oyatullo/frameworklab/src/test/java/page/ShopPage.java
 /home/oyatullo/frameworklab/src/test/java/attributes/CartPageTestSteps.java
+/home/oyatullo/frameworklab/src/test/java/rest_api_tests/CorrectSearchRestApiMethodTest.java
 /home/oyatullo/frameworklab/src/test/java/service/ItemFilter.java
 /home/oyatullo/frameworklab/src/test/java/page/HeaderPage.java
 /home/oyatullo/frameworklab/src/test/java/page/ProfilePage.java
@@ -30,7 +30,5 @@
 /home/oyatullo/frameworklab/src/test/java/test/CorrectFilterTest.java
 /home/oyatullo/frameworklab/src/test/java/model/User.java
 /home/oyatullo/frameworklab/src/test/java/test/CommonConditions.java
-/home/oyatullo/frameworklab/src/test/java/attributes/CommonTestSteps.java
 /home/oyatullo/frameworklab/src/test/java/attributes/StepDefinitionsForFilter.java
-/home/oyatullo/frameworklab/src/test/java/attributes/LoginPageTestSteps.java
 /home/oyatullo/frameworklab/src/test/java/utils/TestListener.java

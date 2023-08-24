@@ -1,14 +1,14 @@
-2023-08-17 12:03:19,144 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
-2023-08-17 12:03:19,182 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
-2023-08-17 12:03:19,184 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
-2023-08-17 12:03:19,190 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3f81621c
-2023-08-17 12:03:19,249 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
-2023-08-17 12:03:19,250 DEBUG internal.PlatformDependent0 [main] Java version: 17
-2023-08-17 12:03:19,253 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
-2023-08-17 12:03:19,255 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
-2023-08-17 12:03:19,257 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
-2023-08-17 12:03:19,258 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
-2023-08-17 12:03:19,260 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
+2023-08-24 16:40:32,215 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-08-24 16:40:32,243 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-08-24 16:40:32,246 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-08-24 16:40:32,264 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@46349b95
+2023-08-24 16:40:32,304 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-08-24 16:40:32,307 DEBUG internal.PlatformDependent0 [main] Java version: 17
+2023-08-24 16:40:32,312 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-08-24 16:40:32,316 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-08-24 16:40:32,318 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-08-24 16:40:32,329 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-08-24 16:40:32,332 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
@@ -35,43 +35,17 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:31) ~[test-classes/:?]
-	at attributes.CucumberTestEnvironment.<init>(CucumberTestEnvironment.java:12) ~[test-classes/:?]
-	at attributes.CommonTestSteps.<init>(CommonTestSteps.java:5) ~[test-classes/:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.11.1.jar:7.11.1]
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) ~[cucumber-testng-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) ~[cucumber-testng-7.11.1.jar:7.11.1]
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) ~[cucumber-testng-7.11.1.jar:7.11.1]
+	at test.CommonConditions.setUp(CommonConditions.java:38) ~[test-classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122) ~[testng-7.7.0.jar:7.7.0]
 	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
 	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.0.jar:7.7.0]
 	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.0.jar:7.7.0]
@@ -85,16 +59,15 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.0.jar:7.7.0]
 	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.0.jar:7.7.0]
 	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.0.jar:7.7.0]
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) [surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112) [surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99) [surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) [surefire-testng-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283) [surefire-testng-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75) [surefire-testng-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120) [surefire-testng-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
-2023-08-17 12:03:19,273 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
-2023-08-17 12:03:19,276 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+2023-08-24 16:40:32,350 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-08-24 16:40:32,354 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @39ae7041
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
@@ -123,43 +96,17 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71) ~[selenium-chrome-driver-4.8.1.jar:?]
 	at driver.DriverSingleton.getDriver(DriverSingleton.java:31) ~[test-classes/:?]
-	at attributes.CucumberTestEnvironment.<init>(CucumberTestEnvironment.java:12) ~[test-classes/:?]
-	at attributes.CommonTestSteps.<init>(CommonTestSteps.java:5) ~[test-classes/:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.11.1.jar:7.11.1]
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) ~[cucumber-testng-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130) ~[cucumber-core-7.11.1.jar:7.11.1]
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) ~[cucumber-testng-7.11.1.jar:7.11.1]
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) ~[cucumber-testng-7.11.1.jar:7.11.1]
+	at test.CommonConditions.setUp(CommonConditions.java:38) ~[test-classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.0.jar:7.7.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122) ~[testng-7.7.0.jar:7.7.0]
 	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
 	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.0.jar:7.7.0]
 	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.0.jar:7.7.0]
@@ -173,316 +120,70 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.0.jar:7.7.0]
 	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.0.jar:7.7.0]
 	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.0.jar:7.7.0]
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135) [surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112) [surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99) [surefire-testng-2.22.1.jar:2.22.1]
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146) [surefire-testng-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283) [surefire-testng-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75) [surefire-testng-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120) [surefire-testng-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.1.jar:2.22.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.1.jar:2.22.1]
-2023-08-17 12:03:19,300 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
-2023-08-17 12:03:19,301 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
-2023-08-17 12:03:19,302 DEBUG internal.PlatformDependent [main] maxDirectMemory: 778043392 bytes (maybe)
-2023-08-17 12:03:19,304 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2023-08-17 12:03:19,304 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2023-08-17 12:03:19,308 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
-2023-08-17 12:03:19,309 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2023-08-17 12:03:19,312 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
-2023-08-17 12:03:19,312 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
-2023-08-17 12:03:19,330 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
-2023-08-17 12:03:19,421 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2023-08-17 12:03:19,422 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2023-08-17 12:03:19,511 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2023-08-17 12:03:19,511 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2023-08-17 12:03:19,582 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 4
-2023-08-17 12:03:19,635 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
-2023-08-17 12:03:19,636 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
-2023-08-17 12:03:19,661 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@c689973
-2023-08-17 12:03:19,664 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@2b148329
-2023-08-17 12:03:19,666 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@62c72501
-2023-08-17 12:03:19,666 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@c889805
-2023-08-17 12:03:19,720 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 4
-2023-08-17 12:03:19,721 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 4
-2023-08-17 12:03:19,722 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
-2023-08-17 12:03:19,724 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
-2023-08-17 12:03:19,725 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
-2023-08-17 12:03:19,726 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
-2023-08-17 12:03:19,729 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
-2023-08-17 12:03:19,730 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2023-08-17 12:03:19,731 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
-2023-08-17 12:03:19,732 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2023-08-17 12:03:19,732 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
-2023-08-17 12:03:19,733 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2023-08-17 12:03:19,751 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
-2023-08-17 12:03:19,754 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
-2023-08-17 12:03:19,755 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2023-08-17 12:03:21,143 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 13355 (auto-detected)
-2023-08-17 12:03:21,146 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
-2023-08-17 12:03:21,147 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
-2023-08-17 12:03:21,151 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
-2023-08-17 12:03:21,154 DEBUG util.NetUtil [Forwarding newSession on session null to remote] /proc/sys/net/core/somaxconn: 4096
-2023-08-17 12:03:21,161 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 00:22:68:ff:fe:77:dc:0c (auto-detected)
-2023-08-17 12:03:21,254 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
-2023-08-17 12:03:21,255 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
-2023-08-17 12:03:21,257 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@84334b1
-2023-08-17 12:03:21,324 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
-2023-08-17 12:03:21,325 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
-2023-08-17 12:03:21,326 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
-2023-08-17 12:03:21,327 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
-2023-08-17 12:03:26,670 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
-2023-08-17 12:03:29,484 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0x9a47975f50a355ee
-2023-08-17 12:03:30,977 INFO  [main] Page initialized
-2023-08-17 12:03:33,815 INFO  [main] Page initialized
-2023-08-17 12:03:33,818 INFO  [main] Page initialized
-2023-08-17 12:03:35,487 INFO  [main] Page initialized
-2023-08-17 12:03:35,994 INFO  [main] Page initialized
-2023-08-17 12:03:36,285 INFO  [main] Page initialized
-2023-08-17 12:03:37,576 INFO  [main] Page initialized
-2023-08-17 12:03:38,564 INFO  [main] Page initialized
-2023-08-17 12:03:38,790 INFO  [main] Page initialized
-2023-08-17 12:03:40,053 INFO  [main] Page initialized
-2023-08-17 12:03:46,159 INFO  [main] Page initialized
-2023-08-17 12:03:46,858 INFO  [main] Page initialized
-2023-08-17 12:03:48,916 INFO  [main] Page initialized
-2023-08-17 12:03:50,853 INFO  [main] Page initialized
-2023-08-17 12:03:52,715 INFO  [main] Page initialized
-2023-08-17 12:03:52,767 INFO  [main] Page initialized
-2023-08-17 12:03:52,777 INFO  [main] Page initialized
-2023-08-17 12:04:00,031 INFO  [main] Page initialized
-2023-08-17 12:04:02,970 INFO  [main] Page initialized
-2023-08-17 12:04:03,456 INFO  [main] Page loaded
-2023-08-17 12:04:03,472 INFO  [main] Page initialized
-2023-08-17 12:04:03,925 INFO  [main] Page loaded
-2023-08-17 12:04:05,952 INFO  [main] Page initialized
-2023-08-17 12:04:06,311 INFO  [main] Page loaded
-2023-08-17 12:04:07,229 INFO  [main] Page initialized
-2023-08-17 12:04:07,551 INFO  [main] Page loaded
-2023-08-17 12:04:09,590 INFO  [main] Page initialized
-2023-08-17 12:04:09,826 INFO  [main] Page initialized
-2023-08-17 12:04:10,202 INFO  [main] Page loaded
-2023-08-17 12:04:11,729 INFO  [main] Page initialized
-2023-08-17 12:04:11,916 INFO  [main] Page initialized
-2023-08-17 12:04:12,204 INFO  [main] Page loaded
-2023-08-17 12:04:12,213 INFO  [main] Page initialized
-2023-08-17 12:04:12,566 INFO  [main] Page loaded
-2023-08-17 12:04:13,449 INFO  [main] Page initialized
-2023-08-17 12:04:13,836 INFO  [main] Page loaded
-2023-08-17 12:04:15,357 INFO  [main] Page initialized
-2023-08-17 12:04:16,266 INFO  [main] Page loaded
-2023-08-17 12:04:17,747 INFO  [main] Page initialized
-2023-08-17 12:04:19,422 INFO  [main] Page loaded
-2023-08-17 12:04:19,465 INFO  [main] Page initialized
-2023-08-17 12:04:19,919 INFO  [main] Page loaded
-2023-08-17 12:04:20,666 INFO  [main] Page initialized
-2023-08-17 12:04:20,946 INFO  [main] Page loaded
-2023-08-17 12:04:20,955 INFO  [main] Page initialized
-2023-08-17 12:04:21,297 INFO  [main] Page loaded
-2023-08-17 12:04:22,200 INFO  [main] Page initialized
-2023-08-17 12:04:22,594 INFO  [main] Page loaded
-2023-08-17 12:04:22,617 INFO  [main] Page initialized
-2023-08-17 12:04:22,977 INFO  [main] Page loaded
-2023-08-17 12:04:24,795 INFO  [main] Page initialized
-2023-08-17 12:04:25,527 INFO  [main] Page loaded
-2023-08-17 12:04:26,615 INFO  [main] Page initialized
-2023-08-17 12:04:27,226 INFO  [main] Page loaded
-2023-08-17 12:04:29,384 INFO  [main] Page initialized
-2023-08-17 12:04:29,565 INFO  [main] Page initialized
-2023-08-17 12:04:30,856 INFO  [main] Page loaded
-2023-08-17 12:04:32,580 INFO  [main] Page initialized
-2023-08-17 12:04:32,704 INFO  [main] Page initialized
-2023-08-17 12:04:33,056 INFO  [main] Page loaded
-2023-08-17 12:04:36,256 INFO  [main] Page initialized
-2023-08-17 12:04:36,380 INFO  [main] Page initialized
-2023-08-17 12:04:37,419 INFO  [main] Page loaded
-2023-08-17 12:04:38,910 INFO  [main] Page initialized
-2023-08-17 12:04:39,852 INFO  [main] Page initialized
-2023-08-17 12:04:40,198 INFO  [main] Page loaded
-2023-08-17 12:04:42,554 INFO  [main] Page initialized
-2023-08-17 12:04:42,783 INFO  [main] Page initialized
-2023-08-17 12:04:44,501 INFO  [main] Page loaded
-2023-08-17 12:04:46,228 INFO  [main] Page initialized
-2023-08-17 12:04:46,817 INFO  [main] Page loaded
-2023-08-17 12:04:46,834 INFO  [main] Page initialized
-2023-08-17 12:04:48,308 INFO  [main] Page loaded
-2023-08-17 12:04:49,066 INFO  [main] Page initialized
-2023-08-17 12:04:49,428 INFO  [main] Page loaded
-2023-08-17 12:04:50,298 INFO  [main] Page initialized
-2023-08-17 12:04:50,721 INFO  [main] Page loaded
-2023-08-17 12:04:52,956 INFO  [main] Page initialized
-2023-08-17 12:04:53,166 INFO  [main] Page initialized
-2023-08-17 12:04:53,568 INFO  [main] Page loaded
-2023-08-17 12:04:56,033 INFO  [main] Page initialized
-2023-08-17 12:04:56,167 INFO  [main] Page initialized
-2023-08-17 12:04:56,614 INFO  [main] Page loaded
-2023-08-17 12:04:58,020 INFO  [main] Page initialized
-2023-08-17 12:04:58,175 INFO  [main] Page initialized
-2023-08-17 12:04:58,481 INFO  [main] Page loaded
-2023-08-17 12:04:59,696 INFO  [main] Page initialized
-2023-08-17 12:04:59,856 INFO  [main] Page initialized
-2023-08-17 12:05:00,172 INFO  [main] Page loaded
-2023-08-17 12:05:01,642 INFO  [main] Page initialized
-2023-08-17 12:05:01,911 INFO  [main] Page initialized
-2023-08-17 12:05:02,278 INFO  [main] Page loaded
-2023-08-17 12:05:02,283 INFO  [main] Page initialized
-2023-08-17 12:05:02,667 INFO  [main] Page loaded
-2023-08-17 12:05:03,526 INFO  [main] Page initialized
-2023-08-17 12:05:03,904 INFO  [main] Page loaded
-2023-08-17 12:05:03,921 INFO  [main] Page initialized
-2023-08-17 12:05:04,304 INFO  [main] Page loaded
-2023-08-17 12:05:05,138 INFO  [main] Page initialized
-2023-08-17 12:05:06,277 INFO  [main] Page loaded
-2023-08-17 12:05:07,210 INFO  [main] Page initialized
-2023-08-17 12:05:07,563 INFO  [main] Page loaded
-2023-08-17 12:05:09,066 INFO  [main] Page initialized
-2023-08-17 12:05:09,214 INFO  [main] Page initialized
-2023-08-17 12:05:09,604 INFO  [main] Page loaded
-2023-08-17 12:05:11,677 INFO  [main] Page initialized
-2023-08-17 12:05:11,742 INFO  [main] Page initialized
-2023-08-17 12:05:12,074 INFO  [main] Page loaded
-2023-08-17 12:05:16,827 INFO  [main] Page initialized
-2023-08-17 12:05:16,893 INFO  [main] Page initialized
-2023-08-17 12:05:17,380 INFO  [main] Page loaded
-2023-08-17 12:05:21,333 INFO  [main] Page initialized
-2023-08-17 12:05:21,406 INFO  [main] Page initialized
-2023-08-17 12:05:21,754 INFO  [main] Page loaded
-2023-08-17 12:05:25,004 INFO  [main] Page initialized
-2023-08-17 12:05:25,054 INFO  [main] Page initialized
-2023-08-17 12:05:25,388 INFO  [main] Page loaded
-2023-08-17 12:05:26,721 INFO  [main] Page initialized
-2023-08-17 12:05:26,804 INFO  [main] Page initialized
-2023-08-17 12:05:27,033 INFO  [main] Page loaded
-2023-08-17 12:05:28,170 INFO  [main] Page initialized
-2023-08-17 12:05:28,236 INFO  [main] Page initialized
-2023-08-17 12:05:28,489 INFO  [main] Page loaded
-2023-08-17 12:05:29,634 INFO  [main] Page initialized
-2023-08-17 12:05:29,755 INFO  [main] Page initialized
-2023-08-17 12:05:30,029 INFO  [main] Page loaded
-2023-08-17 12:05:30,036 INFO  [main] Page initialized
-2023-08-17 12:05:30,310 INFO  [main] Page loaded
-2023-08-17 12:05:30,962 INFO  [main] Page initialized
-2023-08-17 12:05:31,332 INFO  [main] Page loaded
-2023-08-17 12:05:32,142 INFO  [main] Page initialized
-2023-08-17 12:05:32,518 INFO  [main] Page loaded
-2023-08-17 12:05:34,051 INFO  [main] Page initialized
-2023-08-17 12:05:34,130 INFO  [main] Page initialized
-2023-08-17 12:05:34,636 INFO  [main] Page loaded
-2023-08-17 12:05:37,405 INFO  [main] Page initialized
-2023-08-17 12:05:37,468 INFO  [main] Page initialized
-2023-08-17 12:05:37,822 INFO  [main] Page loaded
-2023-08-17 12:05:39,053 INFO  [main] Page initialized
-2023-08-17 12:05:39,150 INFO  [main] Page initialized
-2023-08-17 12:05:39,520 INFO  [main] Page loaded
-2023-08-17 12:05:39,525 INFO  [main] Page initialized
-2023-08-17 12:05:39,858 INFO  [main] Page loaded
-2023-08-17 12:05:48,005 INFO  [main] Page initialized
-2023-08-17 12:05:48,238 INFO  [main] Page loaded
-2023-08-17 12:05:49,532 INFO  [main] Page initialized
-2023-08-17 12:05:49,795 INFO  [main] Page loaded
-2023-08-17 12:05:51,461 INFO  [main] Page initialized
-2023-08-17 12:05:51,545 INFO  [main] Page initialized
-2023-08-17 12:05:51,577 INFO  [main] Page initialized
-2023-08-17 12:05:51,825 INFO  [main] Page loaded
-2023-08-17 12:05:53,455 INFO  [main] Page initialized
-2023-08-17 12:05:53,531 INFO  [main] Page initialized
-2023-08-17 12:05:53,578 INFO  [main] Page initialized
-2023-08-17 12:05:53,873 INFO  [main] Page loaded
-2023-08-17 12:05:55,570 INFO  [main] Page initialized
-2023-08-17 12:05:55,632 INFO  [main] Page initialized
-2023-08-17 12:05:55,679 INFO  [main] Page initialized
-2023-08-17 12:05:55,941 INFO  [main] Page loaded
-2023-08-17 12:05:57,722 INFO  [main] Page initialized
-2023-08-17 12:05:57,778 INFO  [main] Page initialized
-2023-08-17 12:05:57,830 INFO  [main] Page initialized
-2023-08-17 12:05:58,046 INFO  [main] Page loaded
-2023-08-17 12:05:59,764 INFO  [main] Page initialized
-2023-08-17 12:05:59,810 INFO  [main] Page initialized
-2023-08-17 12:05:59,896 INFO  [main] Page initialized
-2023-08-17 12:06:00,107 INFO  [main] Page loaded
-2023-08-17 12:06:01,895 INFO  [main] Page initialized
-2023-08-17 12:06:01,962 INFO  [main] Page initialized
-2023-08-17 12:06:02,008 INFO  [main] Page initialized
-2023-08-17 12:06:02,259 INFO  [main] Page loaded
-2023-08-17 12:06:03,896 INFO  [main] Page initialized
-2023-08-17 12:06:03,963 INFO  [main] Page initialized
-2023-08-17 12:06:04,094 INFO  [main] Page initialized
-2023-08-17 12:06:04,368 INFO  [main] Page loaded
-2023-08-17 12:06:06,379 INFO  [main] Page initialized
-2023-08-17 12:06:06,452 INFO  [main] Page initialized
-2023-08-17 12:06:06,492 INFO  [main] Page initialized
-2023-08-17 12:06:06,830 INFO  [main] Page loaded
-2023-08-17 12:06:08,461 INFO  [main] Page initialized
-2023-08-17 12:06:08,501 INFO  [main] Page initialized
-2023-08-17 12:06:08,532 INFO  [main] Page initialized
-2023-08-17 12:06:08,760 INFO  [main] Page loaded
-2023-08-17 12:06:11,209 INFO  [main] Page initialized
-2023-08-17 12:06:11,253 INFO  [main] Page initialized
-2023-08-17 12:06:11,299 INFO  [main] Page initialized
-2023-08-17 12:06:11,520 INFO  [main] Page loaded
-2023-08-17 12:06:13,407 INFO  [main] Page initialized
-2023-08-17 12:06:13,443 INFO  [main] Page initialized
-2023-08-17 12:06:13,480 INFO  [main] Page initialized
-2023-08-17 12:06:13,675 INFO  [main] Page loaded
-2023-08-17 12:06:15,479 INFO  [main] Page initialized
-2023-08-17 12:06:15,559 INFO  [main] Page initialized
-2023-08-17 12:06:15,603 INFO  [main] Page initialized
-2023-08-17 12:06:15,790 INFO  [main] Page loaded
-2023-08-17 12:06:17,221 INFO  [main] Page initialized
-2023-08-17 12:06:17,464 INFO  [main] Page loaded
-2023-08-17 12:06:19,615 INFO  [main] Page initialized
-2023-08-17 12:06:19,680 INFO  [main] Page initialized
-2023-08-17 12:06:19,729 INFO  [main] Page initialized
-2023-08-17 12:06:19,949 INFO  [main] Page loaded
-2023-08-17 12:06:21,783 INFO  [main] Page initialized
-2023-08-17 12:06:21,869 INFO  [main] Page initialized
-2023-08-17 12:06:21,927 INFO  [main] Page initialized
-2023-08-17 12:06:22,153 INFO  [main] Page loaded
-2023-08-17 12:06:24,052 INFO  [main] Page initialized
-2023-08-17 12:06:24,110 INFO  [main] Page initialized
-2023-08-17 12:06:24,157 INFO  [main] Page initialized
-2023-08-17 12:06:24,372 INFO  [main] Page loaded
-2023-08-17 12:06:26,328 INFO  [main] Page initialized
-2023-08-17 12:06:26,391 INFO  [main] Page initialized
-2023-08-17 12:06:26,436 INFO  [main] Page initialized
-2023-08-17 12:06:26,691 INFO  [main] Page loaded
-2023-08-17 12:06:28,640 INFO  [main] Page initialized
-2023-08-17 12:06:28,725 INFO  [main] Page initialized
-2023-08-17 12:06:28,785 INFO  [main] Page initialized
-2023-08-17 12:06:28,991 INFO  [main] Page loaded
-2023-08-17 12:06:31,082 INFO  [main] Page initialized
-2023-08-17 12:06:31,142 INFO  [main] Page initialized
-2023-08-17 12:06:31,194 INFO  [main] Page initialized
-2023-08-17 12:06:31,427 INFO  [main] Page loaded
-2023-08-17 12:06:33,420 INFO  [main] Page initialized
-2023-08-17 12:06:33,490 INFO  [main] Page initialized
-2023-08-17 12:06:33,543 INFO  [main] Page initialized
-2023-08-17 12:06:33,825 INFO  [main] Page loaded
-2023-08-17 12:06:35,692 INFO  [main] Page initialized
-2023-08-17 12:06:35,729 INFO  [main] Page initialized
-2023-08-17 12:06:35,772 INFO  [main] Page initialized
-2023-08-17 12:06:36,001 INFO  [main] Page loaded
-2023-08-17 12:06:37,969 INFO  [main] Page initialized
-2023-08-17 12:06:38,016 INFO  [main] Page initialized
-2023-08-17 12:06:38,082 INFO  [main] Page initialized
-2023-08-17 12:06:38,513 INFO  [main] Page loaded
-2023-08-17 12:06:40,517 INFO  [main] Page initialized
-2023-08-17 12:06:40,579 INFO  [main] Page initialized
-2023-08-17 12:06:40,623 INFO  [main] Page initialized
-2023-08-17 12:06:40,854 INFO  [main] Page loaded
-2023-08-17 12:06:42,725 INFO  [main] Page initialized
-2023-08-17 12:06:42,781 INFO  [main] Page initialized
-2023-08-17 12:06:42,863 INFO  [main] Page initialized
-2023-08-17 12:06:43,118 INFO  [main] Page loaded
-2023-08-17 12:06:43,827 INFO  [main] Page initialized
-2023-08-17 12:06:44,117 INFO  [main] Page loaded
-2023-08-17 12:06:45,326 INFO  [main] Page initialized
-2023-08-17 12:06:45,619 INFO  [main] Page loaded
-2023-08-17 12:06:46,689 INFO  [main] Page initialized
-2023-08-17 12:06:46,930 INFO  [main] Page loaded
-2023-08-17 12:06:48,101 INFO  [main] Page initialized
-2023-08-17 12:06:48,392 INFO  [main] Page loaded
-2023-08-17 12:06:49,486 INFO  [main] Page initialized
-2023-08-17 12:06:49,774 INFO  [main] Page loaded
-2023-08-17 12:06:51,222 INFO  [main] Page initialized
-2023-08-17 12:06:51,473 INFO  [main] Page loaded
-2023-08-17 12:06:52,972 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
+2023-08-24 16:40:32,362 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-08-24 16:40:32,364 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
+2023-08-24 16:40:32,366 DEBUG internal.PlatformDependent [main] maxDirectMemory: 778043392 bytes (maybe)
+2023-08-24 16:40:32,367 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2023-08-24 16:40:32,369 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-08-24 16:40:32,376 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-08-24 16:40:32,378 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-08-24 16:40:32,381 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-08-24 16:40:32,383 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-08-24 16:40:32,397 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-08-24 16:40:32,565 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-08-24 16:40:32,566 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-08-24 16:40:32,616 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-08-24 16:40:32,618 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-08-24 16:40:32,694 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 4
+2023-08-24 16:40:32,738 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-08-24 16:40:32,740 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-08-24 16:40:32,748 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@5114b7c7
+2023-08-24 16:40:32,750 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@3a894088
+2023-08-24 16:40:32,751 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@370c1968
+2023-08-24 16:40:32,752 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.EPollSelectorImpl@2f0bfe17
+2023-08-24 16:40:32,820 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 4
+2023-08-24 16:40:32,821 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 4
+2023-08-24 16:40:32,821 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-08-24 16:40:32,822 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-08-24 16:40:32,823 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-08-24 16:40:32,824 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-08-24 16:40:32,824 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-08-24 16:40:32,825 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-08-24 16:40:32,825 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-08-24 16:40:32,826 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-08-24 16:40:32,826 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-08-24 16:40:32,827 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-08-24 16:40:32,860 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-08-24 16:40:32,861 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-08-24 16:40:32,868 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-08-24 16:40:33,990 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 12550 (auto-detected)
+2023-08-24 16:40:33,996 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-08-24 16:40:33,997 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-08-24 16:40:34,001 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2023-08-24 16:40:34,003 DEBUG util.NetUtil [Forwarding newSession on session null to remote] /proc/sys/net/core/somaxconn: 4096
+2023-08-24 16:40:34,006 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 00:22:68:ff:fe:77:dc:0c (auto-detected)
+2023-08-24 16:40:34,103 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-08-24 16:40:34,106 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-08-24 16:40:34,107 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6044c23
+2023-08-24 16:40:34,155 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-08-24 16:40:34,156 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-08-24 16:40:34,156 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-08-24 16:40:34,157 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-08-24 16:40:46,005 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-08-24 16:40:47,305 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0x0b8b348d17e16b25
+2023-08-24 16:40:53,973 INFO  [main] Page initialized
+2023-08-24 16:40:53,974 INFO  [main] Page initialized
+2023-08-24 16:40:59,126 INFO  [main] Page initialized
+2023-08-24 16:41:02,937 INFO  [main] Page initialized
+2023-08-24 16:41:05,088 INFO  [main] Page initialized
+2023-08-24 16:41:10,608 INFO  [main] Page initialized
+2023-08-24 16:41:18,665 INFO  [main] Page initialized
+2023-08-24 16:41:21,168 INFO  [main] Page initialized
+2023-08-24 16:41:23,240 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26

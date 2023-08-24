@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+<suite name="Cart verifyTotalPriceCalculatedCorrectly" verbose="1">
+  <listeners>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+  </listeners>
+  <test name="Cart verifyTotalPriceCalculatedCorrectly">
+    <classes>
+      <class name="test.CartTest">
+        <methods>
+          <include name="verifyTotalPriceCalculatedCorrectly" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

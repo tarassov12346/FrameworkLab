@@ -22,6 +22,8 @@ public class CartPage extends AbstractPage {
     private WebElement bookButton;
     @FindBy(xpath = "//*[contains(@class, 'alert-info')]")
     private WebElement bookingTextBox;
+    @FindBy(xpath = "//*[contains(text(), 'Итого')]//parent::td//following-sibling::td[1]")
+    private WebElement totalPrice;
 
     public CartPage(WebDriver driver) {
         super(driver);
@@ -80,6 +82,25 @@ public class CartPage extends AbstractPage {
     public String getBookingNumber() {
         String booking = waitForElementVisibility(bookingTextBox, EXPLICIT_WAIT).getText();
         return booking.replaceAll("[^0-9]", "");
+    }
+    
+    public int getItemCount(String itemName) {
+        WebElement itemCount = driver.findElement(By.xpath("//*[contains(text(), '"+itemName+"')]//parent::td//following-sibling::td[1]//input"));
+        return Integer.parseInt(itemCount.getAttribute("value").trim());
+    }
+    
+    public int getPriceForItem(String itemName) {
+        WebElement price = driver.findElement(By.xpath("//*[contains(text(), '"+itemName+"')]//parent::td//following-sibling::td[2]"));
+        return Integer.parseInt(price.getText().trim());
+    }
+    
+    public int getTotalPriceForItem(String itemName) {
+        WebElement price = driver.findElement(By.xpath("//*[contains(text(), '"+itemName+"')]//parent::td//following-sibling::td[3]"));
+        return Integer.parseInt(price.getText().trim());
+    }
+    
+    public int getTotalPrice() {
+        return Integer.parseInt(totalPrice.getText().trim());
     }
 
     public List<WebElement> getAllItemsInCart() {

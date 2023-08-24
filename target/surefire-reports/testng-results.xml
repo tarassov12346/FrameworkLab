@@ -1,363 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-17T12:03:09 UZT" name="Surefire suite" finished-at="2023-08-17T12:06:54 UZT" duration-ms="224604">
+  <suite started-at="2023-08-24T16:40:31 UZT" name="Cart" finished-at="2023-08-24T16:41:23 UZT" duration-ms="52581">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="logOut">
+        <method signature="CartTest.verifyBookedItemsStoredInAccountProfile()[pri:0, instance:test.CartTest@5e39850]" name="verifyBookedItemsStoredInAccountProfile" class="test.CartTest"/>
+      </group> <!-- logOut -->
     </groups>
-    <test started-at="2023-08-17T12:03:09 UZT" name="Surefire test" finished-at="2023-08-17T12:06:54 UZT" duration-ms="224604">
-      <class name="RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:03:09 UZT" name="setUpClass" finished-at="2023-08-17T12:03:13 UZT" duration-ms="4298" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@b6a20ce]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-08-24T16:40:31 UZT" name="Cart" finished-at="2023-08-24T16:41:23 UZT" duration-ms="52581">
+      <class name="test.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:40:31 UZT" name="setUp" description="setUp() gets the driver type from the bundle" finished-at="2023-08-24T16:40:47 UZT" duration-ms="16737" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:03:13 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:03:35 UZT" duration-ms="21945" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Item can be added to cart"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Cart"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBookedItemsStoredInAccountProfile()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:40:47 UZT" name="verifyBookedItemsStoredInAccountProfile" finished-at="2023-08-24T16:40:58 UZT" duration-ms="10145" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:03:35 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:03:38 UZT" duration-ms="2561" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Item can be removed from cart"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Cart"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyBookedItemsStoredInAccountProfile -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:40:58 UZT" name="logOut" finished-at="2023-08-24T16:40:58 UZT" duration-ms="755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:03:38 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:03:46 UZT" duration-ms="7613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Item cannot be booked with partial credentials (only with phone number)"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Cart"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- logOut -->
+        <test-method signature="verifyDeleteButtonRemovesItemFromCart()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:40:58 UZT" name="verifyDeleteButtonRemovesItemFromCart" finished-at="2023-08-24T16:41:02 UZT" duration-ms="3581" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:03:46 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:03:50 UZT" duration-ms="4686" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Item can be booked with full credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Cart"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyDeleteButtonRemovesItemFromCart -->
+        <test-method signature="verifyItemAddedToCartAppearInCartPage()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:41:02 UZT" name="verifyItemAddedToCartAppearInCartPage" finished-at="2023-08-24T16:41:04 UZT" duration-ms="2319" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:03:50 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:04:02 UZT" duration-ms="12068" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Booked items are stored in account profile"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Cart"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyItemAddedToCartAppearInCartPage -->
+        <test-method signature="verifyItemIsBookedWithPhoneAndAddress()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:41:04 UZT" name="verifyItemIsBookedWithPhoneAndAddress" finished-at="2023-08-24T16:41:10 UZT" duration-ms="5245" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:04:02 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:04:11 UZT" duration-ms="9000" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the color  a user can get the items of given colors"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyItemIsBookedWithPhoneAndAddress -->
+        <test-method signature="verifyItemIsNotBookedWithoutAddress()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:41:10 UZT" name="verifyItemIsNotBookedWithoutAddress" finished-at="2023-08-24T16:41:18 UZT" duration-ms="7987" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:04:11 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:04:17 UZT" duration-ms="5787" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the color  a user can get the items of given colors"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 0 out of bounds for length 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-at java.base/java.util.Objects.checkIndex(Objects.java:361)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at page.ShopPage.clickPageButton(ShopPage.java:115)
-at service.ItemFilter.filterItemsByColor(ItemFilter.java:19)
-at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$0(StepDefinitionsForFilter.java:40)
-at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$1(StepDefinitionsForFilter.java:39)
-at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-at attributes.StepDefinitionsForFilter.i_should_see_items_with_colors_corresponding_to(StepDefinitionsForFilter.java:38)
-at ✽.I should see items with colors 3 corresponding to "14, 82, 247"(file:///home/oyatullo/frameworklab/src/test/resources/features/attributes/filter.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+        </test-method> <!-- verifyItemIsNotBookedWithoutAddress -->
+        <test-method signature="verifyItemPriceCalculatedCorrectly()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:41:18 UZT" name="verifyItemPriceCalculatedCorrectly" finished-at="2023-08-24T16:41:20 UZT" duration-ms="2538" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:04:17 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:04:20 UZT" duration-ms="2888" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the color  a user can get the items of given colors"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyItemPriceCalculatedCorrectly -->
+        <test-method signature="verifyTotalPriceCalculatedCorrectly()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:41:20 UZT" name="verifyTotalPriceCalculatedCorrectly" finished-at="2023-08-24T16:41:23 UZT" duration-ms="2443" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:04:20 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:04:22 UZT" duration-ms="1530" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the color  a user can get the items of given colors"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyTotalPriceCalculatedCorrectly -->
+        <test-method is-config="true" signature="afterTestCompleted()[pri:0, instance:test.CartTest@5e39850]" started-at="2023-08-24T16:41:23 UZT" name="afterTestCompleted" description="closes the browser" finished-at="2023-08-24T16:41:23 UZT" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:04:22 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:04:46 UZT" duration-ms="24041" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the color  a user can get the items of given colors"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 0 out of bounds for length 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-at java.base/java.util.Objects.checkIndex(Objects.java:361)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at page.ShopPage.clickPageButton(ShopPage.java:115)
-at service.ItemFilter.filterItemsByColor(ItemFilter.java:19)
-at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$0(StepDefinitionsForFilter.java:40)
-at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-at attributes.StepDefinitionsForFilter.lambda$i_should_see_items_with_colors_corresponding_to$1(StepDefinitionsForFilter.java:39)
-at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-at attributes.StepDefinitionsForFilter.i_should_see_items_with_colors_corresponding_to(StepDefinitionsForFilter.java:38)
-at ✽.I should see items with colors 2 corresponding to "254, 8, 8"(file:///home/oyatullo/frameworklab/src/test/resources/features/attributes/filter.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:04:46 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:05:01 UZT" duration-ms="15675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the color  a user can get the items of given colors"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:05:01 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:05:03 UZT" duration-ms="1636" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the size  a user can get the items of given sizes"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:05:03 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:05:29 UZT" duration-ms="26225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the size  a user can get the items of given sizes"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:05:29 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:05:39 UZT" duration-ms="9397" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By ticking the size  a user can get the items of given sizes"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:05:39 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:06:42 UZT" duration-ms="63705" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By entering lower and upper price rank  a user can get the items of given price rank"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:06:42 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:06:45 UZT" duration-ms="2438" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By search request a user can get the items of given names"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:06:45 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:06:48 UZT" duration-ms="2805" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By search request a user can get the items of given names"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:06:48 UZT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-17T12:06:52 UZT" duration-ms="4823" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["By search request a user can get the items of given names"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["The Internet http://shop.bugred.ru/ Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunCucumberTest@7c417213]" started-at="2023-08-17T12:06:52 UZT" name="tearDownClass" finished-at="2023-08-17T12:06:54 UZT" duration-ms="1245" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- RunCucumberTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- afterTestCompleted -->
+      </class> <!-- test.CartTest -->
+    </test> <!-- Cart -->
+  </suite> <!-- Cart -->
 </testng-results>

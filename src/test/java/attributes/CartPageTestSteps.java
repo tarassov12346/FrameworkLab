@@ -8,13 +8,30 @@ import io.cucumber.java.en.Then;
 public class CartPageTestSteps extends CucumberTestEnvironment {
     String item;
     String bookingNumber;
+    int calculatedTotalPrice;
+
+    @Given("main page is open")
+    public void openMainPage() {
+        pageService.openHomePage();
+    }
 
     @Given("cart has an item")
     public void cartHasItem() {
         item = pageService.openHomePage()
         	.addAvailableItemToCart("1")
         	.getItemName();
-        new HeaderPageTestSteps().openCart();
+        openCart();
+    }
+
+    @Given("login is performed")
+    public void login() {
+        pageService.openHomePage()
+        	.login("hello@gmail.com", "hello");
+    }
+
+    @When("cart is opened")
+    public void openCart() {
+        headerPage.clickCartButton();
     }
 
     @When("item is added to cart")
@@ -38,6 +55,21 @@ public class CartPageTestSteps extends CucumberTestEnvironment {
     public void bookItemWithFullCredentials() {
         bookingNumber = pageService.bookItem("12345", "221b Baker Street")
         	.getBookingNumber();
+    }
+    
+    @When("price for the item is calculated")
+    public void calculateTotalPriceForItem() {
+        calculatedTotalPrice = cartPage.getPriceForItem(item) * cartPage.getItemCount(item);
+    }
+    
+    @Then("calculated price is equal with total price for the item")
+    public void verifyCalculatedPriceEqualsToTotalPrice() {
+        Assert.assertTrue(calculatedTotalPrice == cartPage.getTotalPriceForItem(item), "Item price is not calculated correctly");
+    }
+    
+    @Then("calculated price is equal with total price for all items")
+    public void verifyCalculatedPriceEqualsToTotalPriceForAllItems() {
+        Assert.assertTrue(calculatedTotalPrice == cartPage.getTotalPrice(), "Total price is not calculated correctly");
     }
     
     @Then("item is visible in cart")
