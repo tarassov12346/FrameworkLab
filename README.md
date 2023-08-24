@@ -6,6 +6,7 @@ mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-correctSearch.xml clean 
 mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-correctFilter.xml clean test
 
 mvn -Dbrowser=chrome -Denvironment=qa -DsuiteXml=testng-cart-all.xml clean test
+mvn -Dbrowser=chrome -Denvironment=qa clean test -Dtest=CucumberRunnerForCart
 
 # Prompt to run cucumber log in ang registration tests as well as cucumber filter and search tests 
 

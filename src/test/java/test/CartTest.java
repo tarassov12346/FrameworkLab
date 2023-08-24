@@ -62,4 +62,30 @@ public class CartTest extends CommonConditions {
                 .clickPersonalProfileButton();
         Assert.assertTrue(profilePage.isBookingRegistered(bookingNumber), "Booking is not registered in account profile");
     }
+    
+    @Test
+    public void verifyItemPriceCalculatedCorrectly() {
+        CartPage cartPage = new CartPage(driver);
+        HeaderPage headerPage = new HeaderPage(driver);
+        PageService pageService = new PageService(driver);
+        String item = pageService.openHomePage()
+        	.addAvailableItemToCart("2")
+        	.getItemName();
+        int totalPrice = headerPage.clickCartButton()
+        	.getTotalPriceForItem(item);
+        Assert.assertTrue(totalPrice == cartPage.getPriceForItem(item) * cartPage.getItemCount(item), "Item price is not calculated correctly");
+    }
+    
+    @Test
+    public void verifyTotalPriceCalculatedCorrectly() {
+        CartPage cartPage = new CartPage(driver);
+        HeaderPage headerPage = new HeaderPage(driver);
+        PageService pageService = new PageService(driver);
+        String item = pageService.openHomePage()
+        	.addAvailableItemToCart("2")
+        	.getItemName();
+        int totalPrice = headerPage.clickCartButton()
+        	.getTotalPrice();
+        Assert.assertTrue(totalPrice == cartPage.getPriceForItem(item) * cartPage.getItemCount(item), "Total price is not calculated correctly");
+    }
 }
