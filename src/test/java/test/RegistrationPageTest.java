@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import page.RegistrationPage;
 import utils.RegistrationOptions;
 
+import java.lang.reflect.Method;
+
 import static utils.CustomExceptions.UserAlreadyRegisteredException;
 import static utils.RegistrationOptions.*;
 
@@ -23,11 +25,10 @@ public class RegistrationPageTest extends CommonConditions {
     }
 
     @BeforeMethod(description = "Initializes and opens registration page")
-    public void initialPage() {
+    public void initialPage(Method method) {
         registrationPage = new RegistrationPage(driver);
         registrationPage.openPage();
-        logger.info("Registration page has been opened for " + new Object() {
-        }.getClass().getEnclosingMethod().getName());
+        logger.info("Registration page has been opened for " + method.getAnnotation(Test.class).testName());
     }
 
     @DataProvider
@@ -39,14 +40,14 @@ public class RegistrationPageTest extends CommonConditions {
         };
     }
 
-    @Test(description = "Registration of user from bundle ")
+    @Test(description = "Registration of user from bundle ", testName = "Register preregistered user from bundle test")
     public void preregisteredUserFromBundleRegistrationTest() {
         logger.info("[preregisteredUserFromBundleRegistrationTest] : has been started");
         Assert.assertThrows(UserAlreadyRegisteredException.class, () -> registrationPage
                 .registerUser(false));
     }
 
-    @Test(description = "Random user registration test")
+    @Test(description = "Random user registration test", testName = "Random user registration test")
     public void randomUserRegistrationTest() {
         logger.info("[randomUserRegistrationTest] : has been started");
         Assert.assertTrue(registrationPage
@@ -54,7 +55,8 @@ public class RegistrationPageTest extends CommonConditions {
                 .successfulMessageAppear());
     }
 
-    @Test(description = "Register user with invalid data input", dataProvider = "dataProviderMethodForInvalidDataTest")
+    @Test(description = "Register user with invalid data input", dataProvider = "dataProviderMethodForInvalidDataTest",
+            testName = "Register user with invalid data")
     public void registerUserWithInvalidData(RegistrationOptions option) {
         logger.info(String.format("[registerUserWithInvalid%sTest] : has been started",
                 option.name().charAt(0) + option.name().substring(1).toLowerCase()));

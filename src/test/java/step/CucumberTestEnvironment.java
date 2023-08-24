@@ -1,4 +1,4 @@
-package attributes;
+package step;
 
 import driver.DriverSingleton;
 import page.ShopPage;

@@ -8,14 +8,20 @@ public class CustomExceptions {
     }
 
     public static class InvalidNameException extends RuntimeException {
-        public InvalidNameException(String message) { super(message) ;}
+        public InvalidNameException(String message) {
+            super(message);
+        }
     }
 
     public static class PasswordMismatchException extends RuntimeException {
-        public PasswordMismatchException(String message) { super(message); }
+        public PasswordMismatchException(String message) {
+            super(message);
+        }
     }
 
     public static class InvalidEmailException extends RuntimeException {
-        public InvalidEmailException(String message) { super(message); }
+        public InvalidEmailException(String message) {
+            super(message);
+        }
     }
 }

@@ -40,8 +40,8 @@ public class DriverSingleton {
         driver.quit();
         driver = null;
     }
-    
+
     public static void jumpToPreviousPage() {
-        driver.navigate().back();    
+        driver.navigate().back();
     }
 }

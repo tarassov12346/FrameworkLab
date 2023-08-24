@@ -3,6 +3,7 @@
 /home/oyatullo/frameworklab/src/test/java/page/ItemPage.java
 /home/oyatullo/frameworklab/src/test/java/service/ItemFinder.java
 /home/oyatullo/frameworklab/src/test/java/attributes/StepDefinitionsForSearch.java
+/home/oyatullo/frameworklab/src/test/java/runner/CucumberRunnerForCart.java
 /home/oyatullo/frameworklab/src/test/java/test/CartTest.java
 /home/oyatullo/frameworklab/src/test/java/page/LoginPage.java
 /home/oyatullo/frameworklab/src/test/java/service/UserCreator.java
@@ -10,14 +11,16 @@
 /home/oyatullo/frameworklab/src/test/java/test/CorrectSearchTest.java
 /home/oyatullo/frameworklab/src/test/java/page/CartPage.java
 /home/oyatullo/frameworklab/src/test/java/utils/CustomExceptions.java
-/home/oyatullo/frameworklab/src/test/java/attributes/CucumberTestEnvironment.java
 /home/oyatullo/frameworklab/src/test/java/test/LoginPageTest.java
 /home/oyatullo/frameworklab/src/test/java/service/SearchRequestReader.java
+/home/oyatullo/frameworklab/src/test/java/step/CucumberTestEnvironment.java
 /home/oyatullo/frameworklab/src/test/java/utils/CustomConditions.java
+/home/oyatullo/frameworklab/src/test/java/step/CartPageTestSteps.java
+/home/oyatullo/frameworklab/src/test/java/step/LoginPageFeatureSteps.java
+/home/oyatullo/frameworklab/src/test/java/runner/CucumberRunner.java
 /home/oyatullo/frameworklab/src/test/java/test/RegistrationPageTest.java
 /home/oyatullo/frameworklab/src/test/java/utils/RegistrationOptions.java
 /home/oyatullo/frameworklab/src/test/java/page/ShopPage.java
-/home/oyatullo/frameworklab/src/test/java/attributes/CartPageTestSteps.java
 /home/oyatullo/frameworklab/src/test/java/rest_api_tests/CorrectSearchRestApiMethodTest.java
 /home/oyatullo/frameworklab/src/test/java/service/ItemFilter.java
 /home/oyatullo/frameworklab/src/test/java/page/HeaderPage.java
@@ -26,6 +29,7 @@
 /home/oyatullo/frameworklab/src/test/java/driver/DriverSingleton.java
 /home/oyatullo/frameworklab/src/test/java/page/RegistrationPage.java
 /home/oyatullo/frameworklab/src/test/java/service/PageService.java
+/home/oyatullo/frameworklab/src/test/java/step/RegistrationPageFeatureSteps.java
 /home/oyatullo/frameworklab/src/test/java/attributes/Hook.java
 /home/oyatullo/frameworklab/src/test/java/test/CorrectFilterTest.java
 /home/oyatullo/frameworklab/src/test/java/model/User.java

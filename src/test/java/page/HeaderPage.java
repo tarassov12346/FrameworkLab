@@ -23,33 +23,33 @@ public class HeaderPage extends AbstractPage {
     public HeaderPage(WebDriver driver) {
         super(driver);
     }
-    
+
     @Override
     public HeaderPage openPage() {
         driver.get(HOMEPAGE_URL);
         return this;
     }
-    
+
     public CartPage clickCartButton() {
         cartButton.click();
         return new CartPage(driver);
     }
-    
+
     public LoginPage clickLoginButton() {
         loginButton.click();
         return new LoginPage(driver);
     }
-    
+
     public HeaderPage clickAccountButton() {
         accountButton.click();
         return this;
     }
-    
+
     public ProfilePage clickPersonalProfileButton() {
         personalProfileButton.click();
         return new ProfilePage(driver);
     }
-    
+
     public LoginPage clickLogOutButton() {
         logOutButton.click();
         return new LoginPage(driver);

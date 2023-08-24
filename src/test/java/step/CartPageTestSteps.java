@@ -1,4 +1,4 @@
-package attributes;
+package step;
 
 import org.testng.Assert;
 import io.cucumber.java.en.Given;

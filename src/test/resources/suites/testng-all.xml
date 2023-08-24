@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
-<suite name="All tests" verbose="1">         
+<suite name="All tests" verbose="1">
+  <listeners>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+  </listeners>
   <listeners>
     <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
   </listeners>

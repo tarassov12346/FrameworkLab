@@ -46,7 +46,7 @@ public abstract class AbstractPage {
      * @param expression Parameter assumes string text of the link
      * @return True if element exist and false over-wise
      */
-    protected boolean checkIfElementExistByLinkText(String expression) {
+    public boolean checkIfElementExistByLinkText(String expression) {
         return !(driver.findElements(By.xpath(String.format("//p[contains(text(),'%s')]", expression))).isEmpty());
     }
 
