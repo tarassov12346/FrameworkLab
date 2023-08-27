@@ -5,8 +5,8 @@
 *.jar
 *.war
 *.ear
-target/
-test-output/
+/target/
+/test-output/
 
 # Eclipse
 .classpath
@@ -16,3 +16,4 @@ test-output/
 # Idea
 .idea/
 *.iml
+/target/

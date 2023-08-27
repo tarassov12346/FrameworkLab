@@ -1,4 +1,4 @@
-package rest_api_tests;
+package api.rest_api_tests;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
